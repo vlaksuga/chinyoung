@@ -467,7 +467,7 @@
 								var limit = 8 ;
 								for(var i = 0;i<dd.data.length && i<limit;i++){
 									var curitems = $(".row>div");
-									var curitem = $(curitem.get(i));
+									var curitem = $(curitems.get(i));
 									$(".single-gallery-image",curitem).css("background","url("+dd.data[i].images.standard_resolution.url+")");
 									$("a",curitem).attr("href",dd.data[i].images.standard_resolution.url);
 									
