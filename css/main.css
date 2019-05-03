@@ -2194,7 +2194,7 @@ body.mobile-nav-active #mobile-nav-toggle {
           margin-right: 8px; }
 
 .banner-area {
-  background: url(../img/banner/common-banner1.jpg) no-repeat;
+  background: url(../img/banner/common-banner.jpg) no-repeat;
   background-size: cover;
   position: relative; }
   .banner-area:after {
