@@ -30,6 +30,7 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -448,38 +449,38 @@
 							</a>
 						</div>
 					
-					<script>
-
-							$.ajax({
-									url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=13101798829.dfbb32e.0921db1a73434cdea2008c8e9a6b9349&callback=?',        
-									error: function() {
-									alert('error');
-									},        
-									success: function(data) {
-										set1(data);
-										
-									},
-									type: 'GET',
-									dataType: "jsonp"
-								});
-							
-							function set1(dd){
-								var limit = 8 ;
-								for(var i = 0;i<dd.data.length && i<limit;i++){
-									var curitems = $(".row>div");
-									var curitem = $(curitems.get(i));
-									$(".single-gallery-image",curitem).css("background","url("+dd.data[i].images.standard_resolution.url+")");
-									$("a",curitem).attr("href",dd.data[i].images.standard_resolution.url);
-									
-								}
-							}
-							</script>
+						
 				</div>
 			</div>
 
 		</div>
 	</section>
-
+	<script>
+        
+			$.ajax({
+					url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=13101798829.dfbb32e.0921db1a73434cdea2008c8e9a6b9349&callback=?',        
+					error: function() {
+					alert('error');
+					},        
+					success: function(data) {
+						set1(data);
+						
+					},
+					type: 'GET',
+					dataType: "jsonp"
+				});
+			
+			function set1(dd){
+				var limit = 8 ;
+				for(var i = 0;i<dd.data.length && i<limit;i++){
+					var curitems = $("#instaarea .row>div");
+					var curitem = $(curitems.get(i));
+					$(".single-gallery-image",curitem).css("background","url("+dd.data[i].images.standard_resolution.url+")");
+					$("a",curitem).attr("href",dd.data[i].images.standard_resolution.url);
+					
+				}
+			}
+	</script>
 	<!-- End Blog Area -->
 
 
