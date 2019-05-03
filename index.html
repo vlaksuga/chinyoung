@@ -387,7 +387,7 @@
 
 
 	<!-- Start Blog Area -->
-	<section class="blog-area section-gap-top">
+	<section class="blog-area section-gap-top" id="instaarea">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -402,46 +402,78 @@
 				<h3><a href="https://www.instagram.com/chinyoungkorea_official/" target="_blank"><i class="ti-instagram"></i>
 						CHINYOUNGKOREA_OFFICIAL</h3></a>
 				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
-						</a>
-					</div>
+					
+						<div class="col-md-4">
+							<a href="img/elements/g1.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="img/elements/g2.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="img/elements/g3.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+							</a>
+						</div>
+
+
+						<div class="col-md-6">
+							<a href="img/elements/g4.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="img/elements/g5.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
+							</a>
+						</div>
+
+						
+						<div class="col-md-4">
+							<a href="img/elements/g6.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="img/elements/g7.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="img/elements/g8.jpg" class="img-gal">
+								<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
+							</a>
+						</div>
+					
+					<script>
+
+							$.ajax({
+									url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=13101798829.dfbb32e.0921db1a73434cdea2008c8e9a6b9349&callback=?',        
+									error: function() {
+									alert('error');
+									},        
+									success: function(data) {
+										set1(data);
+										
+									},
+									type: 'GET',
+									dataType: "jsonp"
+								});
+							
+							function set1(dd){
+								var limit = 8 ;
+								for(var i = 0;i<dd.data.length && i<limit;i++){
+									var curitems = $(".row>div");
+									var curitem = $(curitem.get(i));
+									$(".single-gallery-image",curitem).css("background","url("+dd.data[i].images.standard_resolution.url+")");
+									$("a",curitem).attr("href",dd.data[i].images.standard_resolution.url);
+									
+								}
+							}
+							</script>
 				</div>
 			</div>
 
