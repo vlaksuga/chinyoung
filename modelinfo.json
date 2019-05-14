@@ -1,15 +1,6 @@
 {
       "model": [
             {
-                  "id": "0",
-                  "mname": "",
-                  "kname": "",
-                  "cata": "",
-                  "sub1": "",
-                  "sub2": "",
-                  "thumb": ""
-            },
-            {
                   "id": "1",
                   "grp": "mb",
                   "mname": "LUXURY",

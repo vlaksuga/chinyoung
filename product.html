@@ -169,7 +169,7 @@
 <Script>
 	$(function(){
 		$.getJSON("./modelinfo.json",function(data){
-			mapData(data,"data-list1");
+			mapData(data,"data-list1");   new WOW().init();
 		});
 	});
 	
@@ -207,7 +207,6 @@
 				for(j=0;j<curitem.length;j++){
 					try{
 						var templete = $(this).clone();
-						templete.css("display","");
 						mapData(curitem[j],prefix+"-"+mapinfo,templete);
 						$(this).parent().append(templete);
 					}catch(e){alert(e);}
