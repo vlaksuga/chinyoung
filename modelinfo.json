@@ -7,12 +7,7 @@
                   "cata": "",
                   "sub1": "",
                   "sub2": "",
-                  "thumb": "",
-                  "img": [
-                        {
-                              "url": ""
-                        }
-                  ]
+                  "thumb": ""
             },
             {
                   "id": "1",
@@ -22,14 +17,27 @@
                   "cata": "Marble&Stone",
                   "sub1": "sub1",
                   "sub2": "sub2",
-                  "thumb": {
-                        "url": "img/mb/thumb1.jpg"
-                  },
-                  "img": [
-                        {
-                              "url": ""
-                        }
-                  ]
+                  "thumb":"img/mb/thumb1.jpg"
+            },
+            {
+                  "id": "2",
+                  "grp": "mb",
+                  "mname": "MARBLE STONE",
+                  "kname": "마블스톤",
+                  "cata": "Marble&Stone",
+                  "sub1": "sub1",
+                  "sub2": "sub2",
+                  "thumb":"img/mb/thumb2.jpg"
+            },
+            {
+                  "id": "3",
+                  "grp": "mb",
+                  "mname": "LIME-ROCK",
+                  "kname": "라임-락",
+                  "cata": "Marble&Stone",
+                  "sub1": "sub1",
+                  "sub2": "sub2",
+                  "thumb":"img/mb/thumb3.jpg"
             }
       ]
 }
