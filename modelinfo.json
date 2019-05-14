@@ -17,7 +17,7 @@
                   "cata": "Marble&Stone",
                   "sub1": "sub1",
                   "sub2": "sub2",
-                  "thumb":"img/mb/thumb1.jpg"
+                  "thumb":"img/mb/mb_thumb1.jpg"
             },
             {
                   "id": "2",
@@ -27,7 +27,7 @@
                   "cata": "Marble&Stone",
                   "sub1": "sub1",
                   "sub2": "sub2",
-                  "thumb":"img/mb/thumb2.jpg"
+                  "thumb":"img/mb/mb_thumb2.jpg"
             },
             {
                   "id": "3",
@@ -37,7 +37,7 @@
                   "cata": "Marble&Stone",
                   "sub1": "sub1",
                   "sub2": "sub2",
-                  "thumb":"img/mb/thumb3.jpg"
-            }
+                  "thumb":"img/mb/mb_thumb3.jpg"
+            },
       ]
 }
