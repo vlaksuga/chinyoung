@@ -94,8 +94,7 @@
 				<div class="row grid">
 					<div class="col-lg-4 col-md-6 grid-sizer"></div>
 
-					<div data-list1="model"  class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s"
-						data-wow-delay="0.4s">
+					<div data-list1="model"  class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s" style="display:none;">
 						<div class="single-work">
 							<div class="relative">
 								<div class="thumb">
@@ -209,6 +208,7 @@
 				for(j=0;j<curitem.length;j++){
 					try{
 						var templete = $(this).clone();
+						templete.css("display","");
 						mapData(curitem[j],prefix+"-"+mapinfo,templete);
 						$(this).parent().append(templete);
 					}catch(e){alert(e);}
