@@ -172,9 +172,7 @@
 	$(function(){
 		$.getJSON("./modelinfo.json",function(data){
 			for(i=0;i<data.model.length;i++){
-				if(data.model[i].id==p){
 					mapData(data.model[i],"data-single");
-				}
 			}
 			modelcarousel();
 			
