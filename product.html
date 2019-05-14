@@ -94,16 +94,16 @@
 				<div class="row grid">
 					<div class="col-lg-4 col-md-6 grid-sizer"></div>
 
-					<div class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s"
+					<div data-list1="entirelist"  class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s"
 						data-wow-delay="0.4s">
 						<div class="single-work">
 							<div class="relative">
 								<div class="thumb">
-									<img class="image img-fluid" data-single="thumb" src="" alt="thumb1">
+									<img class="image img-fluid" data-list1-entirelist="thumb" src="" alt="thumb1">
 								</div>
 								<div class="middle">
-									<h4 data-single="cata"></h4>
-									<div class="cat" data-single="mname"></div>
+									<h4 data-list1-entirelist="cata"></h4>
+									<div class="cat" data-list1-entirelist="mname"></div>
 								</div>
 								<a class="overlay" href="mb_page1.html"></a>
 							</div>
@@ -171,15 +171,62 @@
 <Script>
 	$(function(){
 		$.getJSON("./modelinfo.json",function(data){
-			for(i=0;i<data.model.length;i++){
-					mapData(data.model[i],"data-single");
-			}
-			modelcarousel();
-			
+			mapData(data.model[i],"data-list");
 		});
-
 	});
 	
 </Script>
+
+<script>
+	window.vlsg = {
+		getP: function(name) {
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++) {
+				try{
+					hash = hashes[i].split('=');
+					if(hash[0]==name){
+						if(hash[1].substr(hash[1].length-1)=="#"){
+							return hash[1].substr(0,hash[1].length-1);
+						}else{
+							return hash[1];
+						}
+					}
+				}catch(e){}
+			}
+		}
+	};
+</script>
+
+<script>
+	var p = vlsg.getP("model");
+	function mapData(item,prefix,ele=$("body")){
+		var eles = $("["+prefix+"]",$(ele));
+		eles.each(function(){
+			var mapinfo = $(this).attr(prefix);
+			var curitem = item[mapinfo];
+			if(Array.isArray(curitem)){
+				for(j=0;j<curitem.length;j++){
+					try{
+						var templete = $(this).clone();
+						mapData(curitem[j],prefix+"-"+mapinfo,templete);
+						$(this).parent().append(templete);
+					}catch(e){alert(e);}
+				}
+				$(this).remove();
+			}else{
+				var vals = mapinfo.split(":",100);
+				var key = vals[0];
+				var attr = null;
+				try{ attr = vals[1];}catch(e){}
+				if(attr==null){
+					$(this).text(item[key]);
+				}else{
+					$(this).attr(attr,item[key]);
+				}
+			}
+		});
+	}
+</script>
 
 </html>
