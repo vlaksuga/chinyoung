@@ -46,7 +46,8 @@ class vlsg_Controller extends CI_Controller {
 
 
 	function _setHeaderAndFooter(){
-		
+		$this->appendView("header","tile/header");
+		$this->appendView("footer","tile/footer");
 	}
 	function setMeta($data){
 		define("OG_TITLE",addslashes($data["OG_TITLE"]));
@@ -122,5 +123,7 @@ class vlsg_Controller extends CI_Controller {
 
         return $ret;
     }
+
+
 
 }
