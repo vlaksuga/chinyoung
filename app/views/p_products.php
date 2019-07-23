@@ -44,17 +44,10 @@
 
             <div class="grid">
                 <?php
-                    for($i=0;$i<count($list);$i++){
-                ?>
-                <div class="tile">
-                    <img src="img/thumb/thumb1.jpg" alt="thumb1">
-                    <div class="detail">
-                        <h2>CALACATTA</h2>
-                        <p>MARBLE</p>
-                    </div>
-                    <div class="new"></div>
-                </div>
-                <?php }?>
+                    for($i=0;$i<count($list);$i++){$item = $list[$i];
+                        echo drawView("tile/articleitem",$item); 
+                    }
+                 ?>
             </div>
 
 
