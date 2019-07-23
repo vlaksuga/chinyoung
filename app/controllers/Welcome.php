@@ -28,8 +28,26 @@ class Welcome extends vlsg_Controller {
 
 	public function l()
 	{
-	
-		$this->appendView("sections","p_products");
+		$p = $this->input->get("p",true);
+
+		$menutitlemap["kerlite"] = "KERLITE / BIG SLAB";
+		$menutitlemap["marble"] = "MARBLE";
+		$menutitlemap["stone"] = "STONE";
+		$menutitlemap["concrete"] = "CONCRETE";
+		$menutitlemap["terracotta"] = "TERRACOTTA";
+		$menutitlemap["wood"] = "WOOD";
+		$menutitlemap["brick"] = "BRICK / DÉCOR";
+		$menutitlemap["colour"] = "COLOUR";
+		$menutitlemap["outdoor"] = "OUTDOOR";
+
+
+		$data["productname"] = $menutitlemap[$p];
+		$data["producttotalcount"] = "?";
+
+
+		$data["list"] = [1,2,3,4,5,6,7,1,1,1,1];
+		
+		$this->appendView("sections","p_products",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
 		$this->printLayout("l_main",false);
@@ -47,7 +65,15 @@ class Welcome extends vlsg_Controller {
 	public function projects()
 	{
 	
-		$this->appendView("sections","p_projects");
+	
+
+		$data["projectname"] = $menutitlemap[$p];
+		$data["projecttotalcount"] = "?";
+
+
+		$data["list"] = [1,2,3,4,5,6,7,1,1,1,1];
+
+		$this->appendView("sections","p_projects",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
 		$this->printLayout("l_main",false);
