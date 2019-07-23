@@ -26,7 +26,7 @@ class Welcome extends vlsg_Controller {
 	}
 
 
-	public function products()
+	public function l()
 	{
 	
 		$this->appendView("sections","p_products");

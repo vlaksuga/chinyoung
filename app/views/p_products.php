@@ -16,15 +16,15 @@
 
             <div class="group">
                 <ul>
-                    <li><a href="#">KERLITE/BIG SLAB</a></li>
-                    <li class="active"><a href="#">MARBLE</a></li>
-                    <li><a href="#">STONE</a></li>
-                    <li><a href="#">CONCRETE</a></li>
-                    <li><a href="#">TERRACOTTA</a></li>
-                    <li><a href="#">WOOD</a></li>
-                    <li><a href="#">BRICK/DÉCOR</a></li>
-                    <li><a href="#">COLOUR</a></li>
-                    <li><a href="#">OUTDOOR</a></li>
+                    <li><a href="./?m=l&p=kerlite">KERLITE/BIG SLAB</a></li>
+                    <li class="active"><a href="./?m=l&p=marble">MARBLE</a></li>
+                    <li><a href="./?m=l&p=stone">STONE</a></li>
+                    <li><a href="./?m=l&p=concrete">CONCRETE</a></li>
+                    <li><a href="./?m=l&p=teracotta">TERRACOTTA</a></li>
+                    <li><a href="./?m=l&p=wood">WOOD</a></li>
+                    <li><a href="./?m=l&p=brick">BRICK/DÉCOR</a></li>
+                    <li><a href="./?m=l&p=colour">COLOUR</a></li>
+                    <li><a href="./?m=l&p=outdoor">OUTDOOR</a></li>
                 </ul>
 
             </div>
