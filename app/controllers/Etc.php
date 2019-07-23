@@ -19,6 +19,15 @@ class Etc extends vlsg_Controller {
 		$this->printLayout("l_main",false);
 	}
 
+	public function contact()
+	{
+	
+		$this->appendView("sections","p_contact");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
+
 
 
 

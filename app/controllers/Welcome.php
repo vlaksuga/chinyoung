@@ -26,6 +26,48 @@ class Welcome extends vlsg_Controller {
 	}
 
 
+	public function products()
+	{
+	
+		$this->appendView("sections","p_products");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
 
+	public function product()
+	{
+	
+		$this->appendView("sections","p_product_detail");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
+
+	public function projects()
+	{
+	
+		$this->appendView("sections","p_projects");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
+	public function project()
+	{
+	
+		$this->appendView("sections","p_project_detail");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
+
+	public function search()
+	{
+	
+		$this->appendView("sections","p_search");
+		$this->_setHeaderAndFooter();
+		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+		$this->printLayout("l_main",false);
+	}
 
 }

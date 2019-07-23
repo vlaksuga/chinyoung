@@ -1,26 +1,25 @@
 <nav>
             <ul id="scroll_fade">
-                <li><a href="#"><img src="img/logo.png" alt="LOGO"></a></li>
+                <li><a href="/"><img src="img/logo.png" alt="LOGO"></a></li>
                 <li><a href="/?c=etc&m=about">ABOUT</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
                     <div class="dropdown-content">
-                        <a href="#">KERLITE / BIG SLAB</a>
-                        <a href="#">MARBLE</a>
-                        <a href="#">STONE</a>
-                        <a href="#">CONCRETE</a>
-                        <a href="#">TERRACOTTA</a>
-                        <a href="#">WOOD</a>
-                        <a href="#">BRICK / DÉCOR</a>
-                        <a href="#">COLOUR</a>
-                        <a href="#">OUTDOOR</a>
+                        <a href="./?m=products&p=1">KERLITE / BIG SLAB</a>
+                        <a href="./?m=products&p=1">MARBLE</a>
+                        <a href="./?m=products&p=1">STONE</a>
+                        <a href="./?m=products&p=1">CONCRETE</a>
+                        <a href="./?m=products&p=1">TERRACOTTA</a>
+                        <a href="./?m=products&p=1">WOOD</a>
+                        <a href="./?m=products&p=1">BRICK / DÉCOR</a>
+                        <a href="./?m=products&p=1">COLOUR</a>
+                        <a href="./?m=products&p=1">OUTDOOR</a>
                     </div>
                 </li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SEARCH</a></li>
-                <li style="float: right;"><a href="#"><i class="fa fa-cog"></i></a></li>
-                <li style="float: right;"><a href="#">CATALOG</a></li>
+                <li><a href="./?m=projects">PROJECTS</a></li>
+                <li><a href="./?c=etc&m=contact">CONTACT</a></li>
+                <li><a href="./?m=search">SEARCH</a></li>
+                <li style="float: right;"><a href="/catalog.pdf">CATALOG</a></li>
             </ul>
         </nav>
 
