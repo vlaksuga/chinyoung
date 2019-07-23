@@ -5,15 +5,15 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
                     <div class="dropdown-content">
-                        <a href="./?m=products&p=1">KERLITE / BIG SLAB</a>
-                        <a href="./?m=products&p=1">MARBLE</a>
-                        <a href="./?m=products&p=1">STONE</a>
-                        <a href="./?m=products&p=1">CONCRETE</a>
-                        <a href="./?m=products&p=1">TERRACOTTA</a>
-                        <a href="./?m=products&p=1">WOOD</a>
-                        <a href="./?m=products&p=1">BRICK / DÉCOR</a>
-                        <a href="./?m=products&p=1">COLOUR</a>
-                        <a href="./?m=products&p=1">OUTDOOR</a>
+                        <a href="./?m=l&p=kerlite">KERLITE / BIG SLAB</a>
+                        <a href="./?m=l&p=marble">MARBLE</a>
+                        <a href="./?m=l&p=stone">STONE</a>
+                        <a href="./?m=l&p=concrete">CONCRETE</a>
+                        <a href="./?m=l&p=terracotta">TERRACOTTA</a>
+                        <a href="./?m=l&p=wood">WOOD</a>
+                        <a href="./?m=l&p=brick">BRICK / DÉCOR</a>
+                        <a href="./?m=l&p=colour">COLOUR</a>
+                        <a href="./?m=l&p=outdoor">OUTDOOR</a>
                     </div>
                 </li>
                 <li><a href="./?m=projects">PROJECTS</a></li>
