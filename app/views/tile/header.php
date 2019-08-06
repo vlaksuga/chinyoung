@@ -1,24 +1,24 @@
 <nav>
             <ul id="scroll_fade">
-                <li><a href="#"><img src="img/logo.png" alt="LOGO"></a></li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="./"><img src="img/logo.png" alt="LOGO"></a></li>
+                <li><a href="./c=etc&m=about">ABOUT</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
                     <div class="dropdown-content">
-                        <a href="#">KERLITE / BIG SLAB</a>
-                        <a href="#">MARBLE</a>
-                        <a href="#">STONE</a>
-                        <a href="#">CONCRETE</a>
-                        <a href="#">TERRACOTTA</a>
-                        <a href="#">WOOD</a>
-                        <a href="#">BRICK / DÉCOR</a>
-                        <a href="#">COLOUR</a>
-                        <a href="#">OUTDOOR</a>
+                        <a href="./m=l&p=kelite">KERLITE / BIG SLAB</a>
+                        <a href="./m=l&p=marble">MARBLE</a>
+                        <a href="./m=l&p=stone">STONE</a>
+                        <a href="./m=l&p=concrete">CONCRETE</a>
+                        <a href="./m=l&p=terracotta">TERRACOTTA</a>
+                        <a href="./m=l&p=wood">WOOD</a>
+                        <a href="./m=l&p=brick">BRICK / DÉCOR</a>
+                        <a href="./m=l&p=colour">COLOUR</a>
+                        <a href="./m=l&p=outdoor">OUTDOOR</a>
                     </div>
                 </li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SEARCH</a></li>
+                <li><a href="./m=project">PROJECTS</a></li>
+                <li><a href="./c=etc&m=contact">CONTACT</a></li>
+                <li><a href="./m=search">SEARCH</a></li>
                 <li style="float: right;"><a href="#">CATALOG</a></li>
             </ul>
         </nav>
@@ -51,20 +51,20 @@
                     <div class="menu"><a href="#">ABOUT</a></div>
                     <div class="menu"><a href="javascript:void(0)" onclick="togSub()">PRODUCTS</a>
                         <div class="sub" id="sub">
-                            <p><a href="#">KERLITE / BIG SLAB</a></p>
-                            <p><a href="#">MARBLE</a></p>
-                            <p><a href="#">STONE</a></p>
-                            <p><a href="#">CONCRETE</a></p>
-                            <p><a href="#">TERRACOTTA</a></p>
-                            <p><a href="#">WOOD</a></p>
-                            <p><a href="#">BRICK / DÉCOR</a></p>
-                            <p><a href="#">COLOUR</a></p>
-                            <p><a href="#">OUTDOOR</a></p>
+                            <p><a href="./m=l&p=kelite">KERLITE / BIG SLAB</a></p>
+                            <p><a href="./m=l&p=marble">MARBLE</a></p>
+                            <p><a href="./m=l&p=stone">STONE</a></p>
+                            <p><a href="./m=l&p=concrete">CONCRETE</a></p>
+                            <p><a href="./m=l&p=terracotta">TERRACOTTA</a></p>
+                            <p><a href="./m=l&p=wood">WOOD</a></p>
+                            <p><a href="./m=l&p=brick">BRICK / DÉCOR</a></p>
+                            <p><a href="./m=l&p=colour">COLOUR</a></p>
+                            <p><a href="./m=l&p=outdoor">OUTDOOR</a></p>
                         </div>
                     </div>
-                    <div class="menu"><a href="#">PROJECTS</a></div>
-                    <div class="menu"><a href="#">CONTACT</a></div>
-                    <div class="menu"><a href="#">SEARCH</a></div>
+                    <div class="menu"><a href="./m=project">PROJECTS</a></div>
+                    <div class="menu"><a href="./c=etc&m=contact">CONTACT</a></div>
+                    <div class="menu"><a href="./m=search">SEARCH</a></div>
                 </div>
         
         
