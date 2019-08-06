@@ -15,7 +15,7 @@ class Welcome extends vlsg_Controller {
 		$data["a"]="This is";
 		$data["b"]="vslg company";
 
-		$ttt = $this->m_test->t();
+		//$ttt = $this->m_test->t();
 		$data["c"]=$ttt;
 
 	
