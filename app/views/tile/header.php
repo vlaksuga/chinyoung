@@ -5,7 +5,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
                     <div class="dropdown-content">
-                        <a href="./?m=l&p=kelite">KERLITE / BIG SLAB</a>
+                        <a href="./?m=l&p=kerlite">KERLITE / BIG SLAB</a>
                         <a href="./?m=l&p=marble">MARBLE</a>
                         <a href="./?m=l&p=stone">STONE</a>
                         <a href="./?m=l&p=concrete">CONCRETE</a>
@@ -51,7 +51,7 @@
                     <div class="menu"><a href="./?c=etc&m=about">ABOUT</a></div>
                     <div class="menu"><a href="javascript:void(0)" onclick="togSub()">PRODUCTS</a>
                         <div class="sub" id="sub">
-                            <p><a href="./?m=l&p=kelite">KERLITE / BIG SLAB</a></p>
+                            <p><a href="./?m=l&p=kerlite">KERLITE / BIG SLAB</a></p>
                             <p><a href="./?m=l&p=marble">MARBLE</a></p>
                             <p><a href="./?m=l&p=stone">STONE</a></p>
                             <p><a href="./?m=l&p=concrete">CONCRETE</a></p>
