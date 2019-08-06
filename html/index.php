@@ -39,7 +39,7 @@ switch (ENVIRONMENT)
 
 
 
-	$application_folder = "/var/www/app/";
+	$application_folder = "/var/www/apps/default/teki/chinyoung";
 
 	$system_path = $application_folder.'system';
 
