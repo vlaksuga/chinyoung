@@ -265,11 +265,13 @@ float: right;
 
  /* xs */
 #intro_box {
+    display: none;
     max-width:100%;
     height: 250px;
     background-image: url('../img/intro/intro_01.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-attachment: fixed;
 
 }
 /* xs */
@@ -301,6 +303,93 @@ float: right;
     font-weight: 100;
     font-size: 1.5rem;
 }
+
+
+/* INTRO */
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/intro/intro_01.jpg) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  
+  #intro:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  #intro h1 {
+    color: WHITE;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  #intro h1 span {
+    color: #f82249;
+  }
+  
+  #intro p {
+    color: #ebebeb;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 30px;
+  }
+  
+  #intro .about-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid white;
+  }
+  
+  #intro .about-btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+
+
 
 /*======================
     INDEX BANNER
@@ -834,7 +923,7 @@ float: right;
 
 #search .select {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     width: 100%;
     margin-top: 20px;
 }
