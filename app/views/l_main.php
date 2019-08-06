@@ -11,7 +11,6 @@
     <link rel="stylesheet" media="(min-width: 640px)" href="css/style.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="css/640.css">
     <script src="./js/common.js"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
