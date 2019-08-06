@@ -1,18 +1,26 @@
-
     <!-- / INTRO BOX / -->
-    <section id="intro_box">
+    <section id="intro_box"> 
         <div class="bottom_art">
             <div>GRAYSTONE</div>
             <div><a href="#">DETAILS</a></div>
         </div>
     </section>
 
+    <!-- / INTRO BOX ALT / -->
+
+    <section id="intro">
+            <div class="intro-container" style="visibility: visible; animation-name: fadeIn;">
+              <h1>GRAYSTONE</h1>
+              <a class="about-btn" href="#">VIEW DETAIL</a>
+            </div>
+    </section>
+
     <!-- / INDEX BANNER / -->
-    <section id="index_banner">
+    <section id="index_banner"> 
         <div class="banner_left">
             <h1>COTTO D'ESTE</h1>
-            <svg width="400" height="50">
-                <rect width="400" height="20" style="fill:rgba(0,0,255,0.8); stroke:none" />
+            <svg width="30%" height="20">
+                <rect width="100%" height="10" style="fill:rgba(0,0,255,0.8); stroke:none" />
             </svg>
             <p>Cotto d’Este’s mission is based on the values of Italian beauty:
                 taste, elegance, and style that bring the highest levels
@@ -20,7 +28,7 @@
             <p><a href="#"> > view more</a></p>
         </div>
         <div class="banner_right"></div>
-    </section>
+    </section> 
 
     <!-- / INDEX TILES / -->
     <section id="index_tiles">
