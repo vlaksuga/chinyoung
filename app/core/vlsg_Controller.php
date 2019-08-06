@@ -118,6 +118,7 @@ class vlsg_Controller extends CI_Controller {
         $ret["curviewpagestart"] = $curviewpagestart;
         $ret["curviewpageend"] = $curviewpageend;
         $ret["page"] = $page + 0;
+        $ret["start"] = ($page-1)*$cntperpage;
         $ret["totalpagecnt"] = $totalpagecnt;
         $ret["itemcnt"] = $cnt;
 

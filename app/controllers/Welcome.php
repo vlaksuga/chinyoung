@@ -5,7 +5,7 @@ class Welcome extends vlsg_Controller {
 	public function __construct()
      {
          parent::__construct();
-		// $this->load->model('m_test', 'm_test', TRUE);
+		 $this->load->model('m_test', 'm_test', TRUE);
 
      }
 	
@@ -15,7 +15,7 @@ class Welcome extends vlsg_Controller {
 		$data["a"]="This is";
 		$data["b"]="vslg company";
 
-		//$ttt = $this->m_test->t();
+		$ttt = $this->m_test->t();
 		$data["c"]=$ttt;
 
 	
@@ -28,6 +28,7 @@ class Welcome extends vlsg_Controller {
 
 	public function l()
 	{
+		$listingcountinpage = 9;
 		$p = $this->input->get("p",true);
 
 		$menutitlemap["kerlite"] = "KERLITE / BIG SLAB";
@@ -42,21 +43,53 @@ class Welcome extends vlsg_Controller {
 
 
 		$data["productname"] = $menutitlemap[$p];
-		$data["producttotalcount"] = "?";
 
+		switch($p){
+			case "kerlite":
+				$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
+				$data["list"] = $this->m_test->l($page["start"],$listingcountinpage);
+			break;
+			case "marble":
+			break;
+			case "stone":
+			break;
+			case "concrete":
+			break;
+			case "terracotta":
+			break;
+			case "wood":
+			break;
+			case "brick":
+			break;
+			case "colour":
+			break;
+			case "outdoor":
+			break;
 
-		$data["list"] = [1,2,3,4,5,6,7,1,1,1,1];
+		}
+
 		
+		
+
+		$data["pageinfo"] = $page;
+
 		$this->appendView("sections","p_products",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
+
+		
+
+
 		$this->printLayout("l_main",false);
 	}
 
 	public function product()
 	{
-	
-		$this->appendView("sections","p_product_detail");
+		$data["collection"] = $this->m_test->g($this->input->get("cid",true));
+		$data["list"] = $this->m_test->tilelist($this->input->get("cid",true));
+		$data["collectionimglist"] = $this->m_test->collectionimglist($this->input->get("cid",true));
+
+		$this->appendView("sections","p_product_detail",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
 		$this->printLayout("l_main",false);
@@ -89,8 +122,12 @@ class Welcome extends vlsg_Controller {
 
 	public function search()
 	{
-	
-		$this->appendView("sections","p_search");
+		$listingcountinpage = 9;
+		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
+		$data["list"] = $this->m_test->search($page["start"],$listingcountinpage);
+		$data["page"] = $page;
+
+		$this->appendView("sections","p_search",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
 		$this->printLayout("l_main",false);

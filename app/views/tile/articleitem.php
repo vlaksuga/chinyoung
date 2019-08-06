@@ -1,26 +1,46 @@
-<?php
-	if(!isset($thumbsize)){
-		$thumbsize=1;
-	}
-	$i=$i+1;
-?>
 
-<?php if($type=="websearch") { ?>
-	<div class="contbox <?=$class?>"  style="<?=$style?>" articleid="<?php echo $item["articleid"];?>" url="<?php echo getNewsUrl($item);?>">
-		<span class="imgwrap_w"><img src="<?php echo getImgUrl($item);?>" alt="" /></span>
-		<span class="imgwrap_h"><img src="<?php echo getImgUrl($item);?>" alt="" /></span>
-		<span class="mask"><?=$i?></span>
-		<span class="icon"></span>
-		<span class="title"><span><?=getTitle($item)?></span></span>
-		<span class="date"><?php echo formatDate($item["publishdate"]);?></span>
-		<span class="content"><?php echo strip_tags($item["article"]);?></span>
+<?php if($type=="tile") { ?>
+<div class="col">
+	<div class="img_box">
+		<a href="#">
+			<img src="img/tile/t_0001/td_03.jpg" class="modal_img">
+		</a>
 	</div>
+
+	<div class="txt_box">
+		<h3><?=$item["productname"]?></h3>
+		<div class="row">
+			<div class="t_label">CODE</div>
+			<div class="t_data"><?=$item["collectionid"]?></div>
+		</div>
+		<div class="row">
+			<div class="t_label">DESIGN</div>
+			<div class="t_data"><?=$item["effect"]?></div>
+		</div>
+		<div class="row">
+			<div class="t_label">COLOUR</div>
+			<div class="t_data"><?=$item["productname"]?></div>
+		</div>
+		<div class="row">
+			<div class="t_label">TECHNOLOGY</div>
+			<div class="t_data">PrintTech</div>
+		</div>
+		<div class="row">
+			<div class="t_label">THICKNESS</div>
+			<div class="t_data">?T</div>
+		</div>
+		<div class="row">
+			<div class="t_label">SIZE</div>
+			<div class="t_data">?*?</div>
+		</div>
+	</div>
+</div>
 <?php }else { ?>
-	<div class="tile">
-		<img src="img/thumb/thumb1.jpg" alt="thumb1">
+	<div class="tile" style="min-width:278px;min-height:260px;background-color:white">
+		<a href="?m=product&cid=<?=$item["collectionid"]?>"><img src="./img/i_data/<?=$item["thumb"]?>" alt="thumb1"></a>
 		<div class="detail">
-			<h2>CALACATTA</h2>
-			<p>MARBLE</p>
+			<h2><?=$item["cename"]?></h2>
+			<p><?=$productname?></p>
 		</div>
 		<div class="new"></div>
 	</div>

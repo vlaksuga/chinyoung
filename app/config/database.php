@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mariadbdb_test',
-	'username' => 'root',
-	'password' => 'EnrEkrEnrEkr1.',
+	'hostname' => 'sev.adand.co.kr:13306',
+	'username' => 'kkk',
+	'password' => 'kkk',
 	'database' => 'chinyoung',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

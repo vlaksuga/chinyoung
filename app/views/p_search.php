@@ -1,4 +1,30 @@
+<?php
+    $page = $model["page"];
+    $list = &$model["list"];
+?>
+<script>
+    function space(){
+        alert($("#space").val());
+    }
+    function size0(){
+        alert($("#size").val());
+    }
+    function design(){
+        alert($("#design").val());
+    }
+    function finish(){
+        alert($("#finish").val());
+    }
+    function thickness(){
+        alert($("#thickness").val());
+    }
+    function technology(){
+        alert($("#technology").val());
+    }
+    
 
+
+</script>
     <div class="container">
 
 <!-- / SEARCH / -->
@@ -6,45 +32,45 @@
     <h2>SEARCH</h2>
     <div class="alpha">
         <ul>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">H</a></li>
-            <li><a href="#">I</a></li>
-            <li><a href="#">J</a></li>
-            <li><a href="#">K</a></li>
-            <li><a href="#">L</a></li>
-            <li><a href="#">M</a></li>
-            <li><a href="#">N</a></li>
-            <li><a href="#">O</a></li>
-            <li><a href="#">P</a></li>
-            <li><a href="#">Q</a></li>
-            <li><a href="#">R</a></li>
-            <li><a href="#">S</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">U</a></li>
-            <li><a href="#">V</a></li>
-            <li><a href="#">W</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Y</a></li>
-            <li><a href="#">Z</a></li>
-            <li><a href="#">0-9</a></li>
+            <li><a href="#" onclick="sh('A')">A</a></li>
+            <li><a href="#" onclick="sh('B')">B</a></li>
+            <li><a href="#" onclick="sh('C')">C</a></li>
+            <li><a href="#" onclick="sh('D')">D</a></li>
+            <li><a href="#" onclick="sh('E')">E</a></li>
+            <li><a href="#" onclick="sh('F')">F</a></li>
+            <li><a href="#" onclick="sh('G')">G</a></li>
+            <li><a href="#" onclick="sh('H')">H</a></li>
+            <li><a href="#" onclick="sh('I')">I</a></li>
+            <li><a href="#" onclick="sh('J')">J</a></li>
+            <li><a href="#" onclick="sh('K')">K</a></li>
+            <li><a href="#" onclick="sh('L')">L</a></li>
+            <li><a href="#" onclick="sh('M')">M</a></li>
+            <li><a href="#" onclick="sh('N')">N</a></li>
+            <li><a href="#" onclick="sh('O')">O</a></li>
+            <li><a href="#" onclick="sh('P')">P</a></li>
+            <li><a href="#" onclick="sh('Q')">Q</a></li>
+            <li><a href="#" onclick="sh('R')">R</a></li>
+            <li><a href="#" onclick="sh('S')">S</a></li>
+            <li><a href="#" onclick="sh('T')">T</a></li>
+            <li><a href="#" onclick="sh('U')">U</a></li>
+            <li><a href="#" onclick="sh('V')">V</a></li>
+            <li><a href="#" onclick="sh('W')">W</a></li>
+            <li><a href="#" onclick="sh('X')">X</a></li>
+            <li><a href="#" onclick="sh('Y')">Y</a></li>
+            <li><a href="#" onclick="sh('Z')">Z</a></li>
+            <li><a href="#" onclick="sh('num')">0-9</a></li>
         </ul>
     </div>
     <div class="select">
         <div class="s_space">
-            <select id="space" name="space">
+            <select id="space" name="space" onchange="space()">
                 <option value="" disabled selected>SPACE</option>
                 <option value="indoor">INDOOR</option>
                 <option value="outdoor">OUTDOOR</option>
             </select>
         </div>
         <div class="s_size">
-            <select id="size" name="size">
+            <select id="size" name="size" onchange="size0()">
                 <option value="" disabled selected>SIZE</option>
                 <option value="1">150*600 / 200*800 / 150*900</option>
                 <option value="2">200*1200</option>
@@ -67,7 +93,7 @@
             </select>
         </div>
         <div class="s_design">
-            <select id="design" name="design">
+            <select id="design" name="design" onchange="design()">
                 <option value="" disabled selected>DESIGN</option>
                 <option value="stone">STONE</option>
                 <option value="marble">MARBLE</option>
@@ -81,7 +107,7 @@
             </select>
         </div>
         <div class="s_finish">
-            <select id="finish" name="finish">
+            <select id="finish" name="finish" onchange="finish()">
                 <option value="" disabled selected>FINISH</option>
                 <option value="matt">MATT, NATURAL</option>
                 <option value="glossy">GLOSSY, POLISHED</option>
@@ -91,7 +117,7 @@
         </div>
 
         <div class="s_thickness">
-            <select id="thickness" name="thickness">
+            <select id="thickness" name="thickness" onchange="thickness()">
                 <option value="" disabled selected>THICHNESS</option>
                 <option value="1">3.5T - 6.5T</option>
                 <option value="2">8T</option>
@@ -103,7 +129,7 @@
             </select>
         </div>
         <div class="s_technology">
-            <select id="technology" name="technology">
+            <select id="technology" name="technology" onchange="technology()">
                 <option value="" disabled selected>TECHNOLOGY</option>
                 <option value="kerite">KERILITE@</option>
                 <option value="bigslab">BIG SLAB</option>
@@ -121,7 +147,7 @@
     <h2>SEARCH RESULT</h2>
 
     <div class="result">
-        <span>24</span> PRODUCTS
+        <span><?=$page["itemcnt"]?></span> PRODUCTS
     </div>
 
     <!--  -->
@@ -130,80 +156,18 @@
     </div>
 
     <div class="grid">
-        <div class="tile">
-            <img src="img/thumb/thumb1.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb2.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb3.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb4.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb5.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb6.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb7.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb8.jpg" alt="thumb1">
-            <div class="detail">
-                <h2>CALACATTA</h2>
-                <p>MARBLE</p>
-            </div>
-            <div class="new"></div>
-        </div>
+        <?php
+                    for($i=0;$i<count($list);$i++){$item = $list[$i];
+                       // print_r($item);
+                        echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"])); 
+                    }
+                 ?>
     </div>
 
 
     <div class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-    </div>
+                 <? echo drawView("tile/paging",$model["page"]);?>
+            </div>
 
 </section>
 

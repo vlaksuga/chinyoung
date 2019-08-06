@@ -45,18 +45,15 @@
             <div class="grid">
                 <?php
                     for($i=0;$i<count($list);$i++){$item = $list[$i];
-                        echo drawView("tile/articleitem",$item); 
+                       // print_r($item);
+                        echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"])); 
                     }
                  ?>
             </div>
 
 
             <div class="pagination">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
+                 <? echo drawView("tile/paging",$model["page"]);?>
             </div>
 
         </section>

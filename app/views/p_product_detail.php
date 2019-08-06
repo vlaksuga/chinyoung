@@ -1,10 +1,18 @@
+<?php
+    $list = $model["list"];
+
+    $collectionimglist = $model["collectionimglist"];
+
+    $collection = $model["collection"];
+?>
+
 <div class="container">
 
 
         <!-- / PRODUCT_DETAIL / -->
         <section id="product_detail" class="sec_gap">
-            <h2>GARDENA</h2>
-            <p>MARBLE</p>
+            <h2><?=$collection["cename"]?></h2>
+            <p><?=$collection["brand"]?></p>
         </section>
 
         <!-- / PRODUCT_IMAGE / -->
@@ -13,34 +21,30 @@
 
             <!-- SLIDESHOW GALLERY -->
             <div class="image_container">
+                <?php
+                    for($i=0;$i<count($collectionimglist);$i++){$item = $collectionimglist[$i];
+                ?>
                 <div class="slides">
-                    <img src="img/project/project_01/img_01.jpg" style="width:100%">
+                    <img src="./img/i_data/<?=$item["url"]?>" style="width:100%">
                 </div>
+                 <?php }?>
 
-                <div class="slides">
-                    <img src="img/project/project_01/img_02.jpg" style="width:100%">
-                </div>
 
-                <div class="slides">
-                    <img src="img/project/project_01/img_03.jpg" style="width:100%">
-                </div>
+                
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
 
                 <div class="nav_row">
-                    <div class="nav_column">
-                        <img class="thumb cursor" src="img/project/project_01/img_01.jpg" style="width:100%"
-                            onclick="currentSlide(1)" alt="01">
+                    <?php
+                        for($i=0;$i<count($collectionimglist);$i++){$item = $collectionimglist[$i];
+                    ?>
+                     <div class="nav_column">
+                        <img class="thumb cursor" src="./img/i_data/<?=$item["url"]?>" style="width:100%"
+                            onclick="currentSlide(<?=$i+1?>)" alt="<?=$i+1?>">
                     </div>
-                    <div class="nav_column">
-                        <img class="thumb cursor" src="img/project/project_01/img_02.jpg" style="width:100%"
-                            onclick="currentSlide(2)" alt="02">
-                    </div>
-                    <div class="nav_column">
-                        <img class="thumb cursor" src="img/project/project_01/img_03.jpg" style="width:100%"
-                            onclick="currentSlide(3)" alt="03">
-                    </div>
+                    <?php }?>
+                   
                 </div>
 
                 <!-- SLIDES SCRIPT -->
@@ -83,230 +87,16 @@
             <div class="tile_box">
                 <div class="row">
 
-                    <div class="col">
-                        <div class="img_box">
-                            <a href="#">
-                                <img src="img/tile/t_0001/td_01.jpg" class="modal_img">
-                            </a>
-                        </div>
+<?php
+for($i=0;$i<count($list);$i++){$item = $list[$i];
 
-                        <div class="txt_box">
-                            <h3>GARDENA BIANCO</h3>
-                            <div class="row">
-                                <div class="t_label">CODE</div>
-                                <div class="t_data">GARDENA</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">DESIGN</div>
-                                <div class="t_data">MARBLE</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">COLOUR</div>
-                                <div class="t_data">001 BIANCO</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">TECHNOLOGY</div>
-                                <div class="t_data">KERLITE@</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">THICKNESS</div>
-                                <div class="t_data">8T</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">SIZE</div>
-                                <div class="t_data">400*800</div>
-                            </div>
-                        </div>
-                    </div>
+    echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"]),"tile"); 
+}
+?>
 
-                    <div class="col">
-
-                        <div class="img_box">
-                            <a href="#">
-                                <img src="img/tile/t_0001/td_02.jpg" class="modal_img">
-                            </a>
-                        </div>
-
-                        <div class="txt_box">
-                            <h3>GARDENA BIANCO</h3>
-                            <div class="row">
-                                <div class="t_label">CODE</div>
-                                <div class="t_data">GARDENA</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">DESIGN</div>
-                                <div class="t_data">MARBLE</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">COLOUR</div>
-                                <div class="t_data">001 BIANCO</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">TECHNOLOGY</div>
-                                <div class="t_data">KERLITE@</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">THICKNESS</div>
-                                <div class="t_data">8T</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">SIZE</div>
-                                <div class="t_data">400*800</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-
-                        <div class="img_box">
-                            <a href="#">
-                                <img src="img/tile/t_0001/td_03.jpg" class="modal_img">
-                            </a>
-                        </div>
-
-                        <div class="txt_box">
-                            <h3>GARDENA BIANCO</h3>
-                            <div class="row">
-                                <div class="t_label">CODE</div>
-                                <div class="t_data">GARDENA</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">DESIGN</div>
-                                <div class="t_data">MARBLE</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">COLOUR</div>
-                                <div class="t_data">001 BIANCO</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">TECHNOLOGY</div>
-                                <div class="t_data">KERLITE@</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">THICKNESS</div>
-                                <div class="t_data">8T</div>
-                            </div>
-                            <div class="row">
-                                <div class="t_label">SIZE</div>
-                                <div class="t_data">400*800</div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
-                <div class="row">
-
-                        <div class="col">
-                            <div class="img_box">
-                                <a href="#">
-                                    <img src="img/tile/t_0001/td_01.jpg" class="modal_img">
-                                </a>
-                            </div>
-    
-                            <div class="txt_box">
-                                <h3>GARDENA BIANCO</h3>
-                                <div class="row">
-                                    <div class="t_label">CODE</div>
-                                    <div class="t_data">GARDENA</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">DESIGN</div>
-                                    <div class="t_data">MARBLE</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">COLOUR</div>
-                                    <div class="t_data">001 BIANCO</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">TECHNOLOGY</div>
-                                    <div class="t_data">KERLITE@</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">THICKNESS</div>
-                                    <div class="t_data">8T</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">SIZE</div>
-                                    <div class="t_data">400*800</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-    
-                            <div class="img_box">
-                                <a href="#">
-                                    <img src="img/tile/t_0001/td_02.jpg" class="modal_img">
-                                </a>
-                            </div>
-    
-                            <div class="txt_box">
-                                <h3>GARDENA BIANCO</h3>
-                                <div class="row">
-                                    <div class="t_label">CODE</div>
-                                    <div class="t_data">GARDENA</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">DESIGN</div>
-                                    <div class="t_data">MARBLE</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">COLOUR</div>
-                                    <div class="t_data">001 BIANCO</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">TECHNOLOGY</div>
-                                    <div class="t_data">KERLITE@</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">THICKNESS</div>
-                                    <div class="t_data">8T</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">SIZE</div>
-                                    <div class="t_data">400*800</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-    
-                            <div class="img_box">
-                                <a href="#">
-                                    <img src="img/tile/t_0001/td_03.jpg" class="modal_img">
-                                </a>
-                            </div>
-    
-                            <div class="txt_box">
-                                <h3>GARDENA BIANCO</h3>
-                                <div class="row">
-                                    <div class="t_label">CODE</div>
-                                    <div class="t_data">GARDENA</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">DESIGN</div>
-                                    <div class="t_data">MARBLE</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">COLOUR</div>
-                                    <div class="t_data">001 BIANCO</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">TECHNOLOGY</div>
-                                    <div class="t_data">KERLITE@</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">THICKNESS</div>
-                                    <div class="t_data">8T</div>
-                                </div>
-                                <div class="row">
-                                    <div class="t_label">SIZE</div>
-                                    <div class="t_data">400*800</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                </div>
+               
             </div>
         </section>
 

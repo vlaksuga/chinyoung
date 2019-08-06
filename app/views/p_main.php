@@ -1,3 +1,6 @@
+  <?php
+    //print_r($model);
+  ?>
     <!-- / INTRO BOX / -->
     <section id="intro_box"> 
         <div class="bottom_art">
