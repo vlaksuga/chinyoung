@@ -16,7 +16,7 @@
                         <a href="./?m=l&p=outdoor">OUTDOOR</a>
                     </div>
                 </li>
-                <li><a href="./?m=project">PROJECTS</a></li>
+                <li><a href="./?m=projects">PROJECTS</a></li>
                 <li><a href="./?c=etc&m=contact">CONTACT</a></li>
                 <li><a href="./?m=search">SEARCH</a></li>
                 <li style="float: right;"><a href="#">CATALOG</a></li>
