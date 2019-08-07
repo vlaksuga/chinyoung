@@ -18,6 +18,20 @@
         <!-- / PROJECTS TILES / -->
         <section id="projects_tiles" class="sec_gap">
 
+        <h2>PROJECTS</h2>
+                <div class="group">
+                        <ul>
+                            <li><a href="#">INDOOR</a></li>
+                            <li class="active"><a href="#">OUTDOOR</a></li>
+                            <li><a href="#">RESIDENTIAL</a></li>
+                            <li><a href="#">COMMERCIAL</a></li>
+                            <li><a href="#">PUBLIC</a></li>
+                            <li><a href="#">FURNISHING</a></li>
+                            <li><a href="#">ETC</a></li>
+                        </ul>
+        
+                    </div>
+
             <div class="grid">
 
                 <?php
