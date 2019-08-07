@@ -3,6 +3,9 @@
     $list = &$model["list"];
 ?>
 
+
+    <div class="container">
+
         <!-- / PROJECTS TILES / -->
         <section id="projects_tiles" class="sec_gap">
 
