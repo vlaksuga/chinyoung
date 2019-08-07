@@ -3,18 +3,6 @@
     $list = &$model["list"];
 ?>
 
-  <!-- / HALF BOX / -->
-  <section id="half_projects" class="half_box">
-        <div class="bottom_art">
-            <div>
-                <p>PROJECTS</p>
-                <p><span><?=$data["projecttotalcount"]?></span> PROJECTS</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
-
         <!-- / PROJECTS TILES / -->
         <section id="projects_tiles" class="sec_gap">
 
