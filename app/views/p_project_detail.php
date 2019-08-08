@@ -7,9 +7,10 @@
 <section id="project_detail" class="sec_gap topsec_gap">
     <h2><?=$item["projectname"]?></h2>
     <p>LOCATION : <span><?=$item["location"]?></span></p>
-    <p>YEAR : <span>????</span></p>
+    <p>SPACE : <span>INDOOR</span></p> <!-- 작업후 주석 삭제 요망 -->
+    <p>TYPE : <span>RESIDENTIAL, FURNISHING</span></p> <!-- 작업후 주석 삭제 요망 -->
+    <p>AREA : <span>싱크 상판, 주방벽</span></p> <!-- 작업후 주석 삭제 요망 -->
     <p>TILES : <span><a href="?m=product&cid=<?=$item["collectionid"]?>"><?=$item["productname"]?></a></span></p>
-    <p>DETAIL : <span>?????????????????????<?=$item["area"]?></span></p>
 </section>
 
 
@@ -19,59 +20,6 @@
     <div class="grid">
         <div class="tile">
             <img src="img/thumb/thumb1.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEOUL CITY-HALL</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb2.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEO-CHO DAESUNG OFFICE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb1.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEOUL CITY-HALL</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb2.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEO-CHO DAESUNG OFFICE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb1.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEOUL CITY-HALL</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb2.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEO-CHO DAESUNG OFFICE</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb1.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEOUL CITY-HALL</p>
-            </div>
-            <div class="new"></div>
-        </div>
-        <div class="tile">
-            <img src="img/thumb/thumb2.jpg" alt="thumb1">
-            <div class="detail">
-                <p>SEO-CHO DAESUNG OFFICE</p>
-            </div>
-            <div class="new"></div>
         </div>
     </div>
 
