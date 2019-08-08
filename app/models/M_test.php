@@ -13,6 +13,8 @@ class M_test extends CI_Model{
 		return $rsa[0];
 	}
 
+	
+
 	public function l($start,$cnt)
 	{
 		$sql="select *,(select GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',')  from tile where collectionid = collection.collectionid) effect from collection limit ?,?";
@@ -32,6 +34,102 @@ class M_test extends CI_Model{
 
 		return $rsa[0]["cnt"];
 	}
+
+
+	public function lbyeffect($effect,$start,$cnt)
+	{
+		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and t.effect = ? limit ?,?";
+		$rs = $this->db->query($sql, array($effect,$start,$cnt));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function lbyeffectcnt($effect)
+	{
+		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and t.effect = ? ";
+		$rs = $this->db->query($sql, array($effect));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
+	public function lkelitebigslab($start,$cnt)
+	{
+		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and ( t.kerlite = 1 or t.bigslab = 1)  limit ?,?";
+		$rs = $this->db->query($sql, array($start,$cnt));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function lkelitebigslabcnt()
+	{
+		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and ( t.kerlite = 1 or t.bigslab = 1)";
+		$rs = $this->db->query($sql);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
+	public function loutdoor($start,$cnt)
+	{
+		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$rs = $this->db->query($sql, array($start,$cnt));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function loutdoorcnt()
+	{
+		$sql="select count(DISTINCT collectionid) cnt from tile t  where t.outdoor = 1 ";
+		$rs = $this->db->query($sql);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
+	
+	
+	public function lbyeffectwithin($effect,$start,$cnt)
+	{
+		$iiii = array();
+		for($i=0;$i<count($effect);$i++){
+			$iiii[] = "?";		
+		}
+		$in = implode(', ', $iiii);
+		$effect[] = $start;
+		$effect[] = $cnt;
+		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and effect in ($in) limit ?,?";
+		$rs = $this->db->query($sql, $effect);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function lbyeffectwithincnt($effect)
+	{
+		$iiii = array();
+		for($i=0;$i<count($effect);$i++){
+			$iiii[] = "?";		
+		}
+		$in = implode(', ', $iiii);
+		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and effect in ($in) ";
+		$rs = $this->db->query($sql, $effect);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
 
 
 	public function collectionimglist($collectionid)

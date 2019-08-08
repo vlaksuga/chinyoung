@@ -46,25 +46,30 @@ class Welcome extends vlsg_Controller {
 		$data["productname"] = $menutitlemap[$p];
 
 		switch($p){
-			case "kerlite":
-				$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
-				$data["list"] = $this->m_test->l($page["start"],$listingcountinpage);
-			break;
-			case "marble":
-			break;
-			case "stone":
-			break;
-			case "concrete":
-			break;
-			case "terracotta":
-			break;
-			case "wood":
+			
+			case "MARBLE":
+			case "STONE":
+			case "CONCRETE":
+			case "TERRACOTTA":
+			case "WOOD":
+			
+			case "COLOUR":
+				$p="COLOURS";
+				$page = $this->procpage($listingcountinpage, $this->m_test->lbyeffectcnt($p),"page",10000);
+				$data["list"] = $this->m_test->lbyeffect($p,$page["start"],$listingcountinpage);
 			break;
 			case "brick":
+
+				$page = $this->procpage($listingcountinpage, $this->m_test->lbyeffectwithincnt(array("BRICK","DÉCOR")),"page",10000);
+				$data["list"] = $this->m_test->lbyeffectwithin(array("BRICK","DÉCOR"),$page["start"],$listingcountinpage);
 			break;
-			case "colour":
+			case "kerlite":
+				$page = $this->procpage($listingcountinpage, $this->m_test->lkelitebigslabcnt(),"page",10000);
+				$data["list"] = $this->m_test->lkelitebigslab($page["start"],$listingcountinpage);
 			break;
 			case "outdoor":
+				$page = $this->procpage($listingcountinpage, $this->m_test->loutdoorcnt(),"page",10000);
+				$data["list"] = $this->m_test->loutdoor($page["start"],$listingcountinpage);
 			break;
 
 		}
