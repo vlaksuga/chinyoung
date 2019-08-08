@@ -98,14 +98,17 @@ class Welcome extends vlsg_Controller {
 
 	public function projects()
 	{
-	
-	
+		$listingcountinpage=9;
+		$cate = $this->input->get("cate",true);
 
-		$data["projectname"] = $menutitlemap[$p];
-		$data["projecttotalcount"] = "?";
-
-
-		$data["list"] = [1,2,3,4,5,6,7,1,1,1,1];
+		if($cate==""){
+			$cate="indoor";
+		}
+		
+		$page = $this->procpage($listingcountinpage, $this->m_test->projectlistcnt($cate),"page",10000);
+		$data["list"] = $this->m_test->projectlist($cate,$page["start"],$listingcountinpage);
+		$data["pageinfo"] = $page;
+		$data["cate"] = $cate;
 
 		$this->appendView("sections","p_projects",$data);
 		$this->_setHeaderAndFooter();

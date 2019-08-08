@@ -51,10 +51,9 @@
                  ?>
             </div>
 
-
-            <div class="pagination">
+ 
                  <? echo drawView("tile/paging",$model["page"]);?>
-            </div>
+
 
         </section>
 

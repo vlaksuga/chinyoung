@@ -1,6 +1,7 @@
 <?php
     $data = &$model;
     $list = &$model["list"];
+    $cate = $model["cate"];
 ?>
 
 
@@ -12,42 +13,32 @@
         <h2>PROJECTS</h2>
                 <div class="group">
                         <ul>
-                            <li><a href="#">INDOOR</a></li>
-                            <li class="active"><a href="#">OUTDOOR</a></li>
-                            <li><a href="#">RESIDENTIAL</a></li>
-                            <li><a href="#">COMMERCIAL</a></li>
-                            <li><a href="#">PUBLIC</a></li>
-                            <li><a href="#">FURNISHING</a></li>
-                            <li><a href="#">ETC</a></li>
+                            <li><a <? if($cate=="indoor") {?>class="active"<? }?> href="?&m=projects&cate=indoor">INDOOR</a></li>
+                            <li ><a  <? if($cate=="outdoor") {?>class="active"<? }?> href="?&m=projects&cate=outdoor">OUTDOOR</a></li>
+                            <li><a  <? if($cate=="residential") {?>class="active"<? }?> href="?&m=projects&cate=residential">RESIDENTIAL</a></li>
+                            <li><a  <? if($cate=="commercial") {?>class="active"<? }?> href="?&m=projects&cate=commercial">COMMERCIAL</a></li>
+                            <li><a  <? if($cate=="public") {?>class="active"<? }?> href="?&m=projects&cate=public">PUBLIC</a></li>
+                            <li><a  <? if($cate=="furnishing") {?>class="active"<? }?> href="?&m=projects&cate=furnishing">FURNISHING</a></li>
+                            <li><a  <? if($cate=="etc") {?>class="active"<? }?> href="?&m=projects&cate=etc">ETC</a></li>
                         </ul>
         
                     </div>
-
+                   
             <div class="grid">
 
                 <?php
-                    for($i=0;$i<count($list);$i++){
+                    for($i=0;$i<count($list);$i++){ $item = $list[$i];
+                        echo drawView("tile/projectitem",array("item"=>$item)); 
+                    }
                 ?>
-                <div class="tile">
-                    <img src="img/thumb/thumb1.jpg" alt="thumb1">
-                    <div class="detail">
-                        <p>SEOUL CITY-HALL</p>
-                    </div>
-                    <div class="new"></div>
-                </div>
-                <?php }?>
                 
                 
             </div>
 
 
-            <div class="pagination">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-            </div>
+                <? echo drawView("tile/paging",$model["page"]);?>
+
+
 
         </section>
 
