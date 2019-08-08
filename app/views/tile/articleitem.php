@@ -36,7 +36,7 @@
 	</div>
 </div>
 <?php }else { ?>
-	<div class="tile" style="min-width:278px;min-height:260px;background-color:white">
+	<div class="tile" >
 		<a href="?m=product&cid=<?=$item["collectionid"]?>"><img src="./img/i_data/<?=$item["thumb"]?>" alt="thumb1"></a>
 		<div class="detail">
 			<h2><?=$item["cename"]?></h2>

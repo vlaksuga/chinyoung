@@ -6,13 +6,14 @@ class Welcome extends vlsg_Controller {
      {
          parent::__construct();
 		 $this->load->model('m_test', 'm_test', TRUE);
+		 $this->load->model('m_edit', 'm_edit', TRUE);
 
      }
 	
 
 	public function index()
 	{
-		$data["a"]="This is";
+		$data["main8"]=$this->m_edit->l("main8");
 		$data["b"]="vslg company";
 
 		//$ttt = $this->m_test->t();

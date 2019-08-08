@@ -1,5 +1,5 @@
   <?php
-    //print_r($model);
+    $list = &$model["main8"];
   ?>
     <!-- / INTRO BOX / -->
     <section id="intro_box"> 
@@ -37,70 +37,13 @@
     <section id="index_tiles">
 
         <div class="grid">
-            <div class="tile">
-                <img src="img/thumb/thumb1.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb2.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb3.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb4.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb5.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb6.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb7.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
-            <div class="tile">
-                <img src="img/thumb/thumb8.jpg" alt="thumb1">
-                <div class="detail">
-                    <h2>CALACATTA</h2>
-                    <p>MARBLE</p>
-                </div>
-                <div class="new"></div>
-            </div>
+  
+        <?php
+                    for($i=0;$i<count($list);$i++){$item = $list[$i];
+                       // print_r($item);
+                        echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"])); 
+                    }
+                 ?>
         </div>
 
         <div class="more">
