@@ -1,6 +1,6 @@
 <div class="tile">
+	<a href="?m=project&pid=<?=$item["projectid"]?>"><img src="./img/i_data/<?=$item["thumb"]?>" alt="thumb1"></a>
 	<div class="detail">
-		<h2><?=$item["cename"]?></h2>
 		<p><?=$item["projectname"]?></p>
 	</div>
 	<div class="new"></div>

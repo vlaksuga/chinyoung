@@ -122,8 +122,10 @@ class Welcome extends vlsg_Controller {
 	}
 	public function project()
 	{
-	
-		$this->appendView("sections","p_project_detail");
+		$data["project"] = $this->m_test->project($this->input->get("pid",true));
+		$data["projectimglist"] = $this->m_test->projectimglist($this->input->get("pid",true));
+
+		$this->appendView("sections","p_project_detail",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
 		$this->printLayout("l_main",false);

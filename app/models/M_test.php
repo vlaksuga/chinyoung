@@ -233,4 +233,25 @@ class M_test extends CI_Model{
 		return $rsa[0]["cnt"];
 	}
 
+
+	public function project($projectid)
+	{
+		$sql="select *,(select productname from tile where tileid = project.tileid) productname,(select collectionid from tile where tileid = project.tileid) collectionid from project where projectid = ?";
+		$rs = $this->db->query($sql, array($projectid));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0];
+	}
+
+	public function projectimglist($projectid)
+	{
+		$sql="select * from projectimg where projectid = ? ";
+		$rs = $this->db->query($sql, array($projectid));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
 }

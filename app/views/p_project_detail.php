@@ -1,12 +1,15 @@
+<?php
+    $item = $model["project"];
+?>
 <div class="container">
 
 <!-- / PROJECT_DETAIL / -->
 <section id="project_detail" class="sec_gap topsec_gap">
-    <h2>SEOUL CITY-HALL</h2>
-    <p>LOCATION : <span>서울 중구</span></p>
-    <p>YEAR : <span>2019</span></p>
-    <p>TILES : <span><a href="#">GARDENA BIANCO</a>, <a href="#">MARS L GREY</a></span></p>
-    <p>DETAIL : <span>서울 시청에 관한 프로젝트 입니다</span></p>
+    <h2><?=$item["projectname"]?></h2>
+    <p>LOCATION : <span><?=$item["location"]?></span></p>
+    <p>YEAR : <span>????</span></p>
+    <p>TILES : <span><a href="?m=product&cid=<?=$item["collectionid"]?>"><?=$item["productname"]?></a></span></p>
+    <p>DETAIL : <span>?????????????????????<?=$item["area"]?></span></p>
 </section>
 
 
