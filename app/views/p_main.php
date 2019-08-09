@@ -14,7 +14,7 @@
     <section id="intro">
             <div class="intro-container" style="visibility: visible; animation-name: fadeIn;">
               <h1>GRAYSTONE</h1>
-              <a class="about-btn" href="#">VIEW DETAIL</a>
+              <a class="about-btn" href="/?m=product&cid=32">VIEW DETAIL</a>
             </div>
     </section>
 
