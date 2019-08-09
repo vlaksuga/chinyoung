@@ -142,6 +142,9 @@
     </div>
 </section>
 
+<!-- / RESET TEMP./ -->
+<button>RESET</button>
+
 <!-- / SEARCH RESULT / -->
 <section id="search_result" class="sec_gap">
     <h2>SEARCH RESULT</h2>

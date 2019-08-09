@@ -5,7 +5,7 @@
     <section id="intro_box"> 
         <div class="bottom_art">
             <div>GRAYSTONE</div>
-            <div><a href="#">DETAILS</a></div>
+            <div><a href="#">DETAILS</a></div> <!-- 프로젝트 디테일에 collection이 graystone -->
         </div>
     </section>
 
@@ -19,7 +19,7 @@
     </section>
 
     <!-- / INDEX BANNER / -->
-    <section id="index_banner"> 
+    <section id="index_banner">
         <div class="banner_left">
             <h1>COTTO D'ESTE</h1>
             <svg width="30%" height="20">
