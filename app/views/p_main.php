@@ -5,7 +5,7 @@
     <section id="intro_box"> 
         <div class="bottom_art">
             <div>GRAYSTONE</div>
-            <div><a href="#">DETAILS</a></div> <!-- 프로젝트 디테일에 collection이 graystone -->
+            <div><a href="./?m=product&cid=32">DETAILS</a></div> <!-- 프로젝트 디테일에 collection이 graystone -->
         </div>
     </section>
 
@@ -14,7 +14,7 @@
     <section id="intro">
             <div class="intro-container" style="visibility: visible; animation-name: fadeIn;">
               <h1>GRAYSTONE</h1>
-              <a class="about-btn" href="/?m=product&cid=32">VIEW DETAIL</a>
+              <a class="about-btn" href="./?m=product&cid=32">VIEW DETAIL</a>
             </div>
     </section>
 
