@@ -4,13 +4,23 @@
 <head>
     <title>CHINYOUNG | 프리미엄 타일 갤러리</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/799568d786.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+
     <link rel="stylesheet" media="(min-width: 640px)" href="css/style.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="css/640.css">
-    <script src="./js/common.js"></script>
+
+    <!-- LIBs -->
+    <script src="./lib/owl.carousel.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./lib/wow.min.js"></script>
+    <link rel="stylesheet" href="./lib/owl.carousel.css">
+    <link rel="stylesheet" href="./lib/ionicons.min.css">
+
 </head>
 
 <body>

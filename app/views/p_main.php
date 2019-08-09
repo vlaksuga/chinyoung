@@ -1,22 +1,73 @@
   <?php
     $list = &$model["main8"];
   ?>
-    <!-- / INTRO BOX / -->
-    <section id="intro_box"> 
-        <div class="bottom_art">
-            <div>GRAYSTONE</div>
-            <div><a href="./?m=product&cid=32">DETAILS</a></div> <!-- 프로젝트 디테일에 collection이 graystone -->
-        </div>
-    </section>
-
-    <!-- / INTRO BOX ALT / -->
-
+  
     <section id="intro">
-            <div class="intro-container" style="visibility: visible; animation-name: fadeIn;">
-              <h1>GRAYSTONE</h1>
-              <a class="about-btn" href="./?m=product&cid=32">VIEW DETAIL</a>
+        <div class="intro-container">
+          <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+    
+            <ol class="carousel-indicators"></ol>
+    
+            <div class="carousel-inner" role="listbox">
+    
+              <div class="carousel-item active">
+                <div class="carousel-background">
+                  <img src="img/intro/intro_01.jpg" alt="">
+                </div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>GRAYSCALE</span></h2>
+                    <div><a href="#">VIEW MORE</a></div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="img/intro/intro_02.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>METAL</h2>
+                    <div><a href="#">VIEW MORE</a></div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="img/intro/intro_03.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>WOODLAND</h2>
+                    <div><a href="#">VIEW MORE</a></div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="carousel-background"><img src="img/intro/intro_04.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>LIMESTONE</h2>
+                    <div><a href="#">VIEW MORE</a></div>
+                  </div>
+                </div>
+              </div>
+    
             </div>
-    </section>
+    
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+    
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+    
+          </div>
+        </div>
+      </section>
+    
 
     <!-- / INDEX BANNER / -->
     <section id="index_banner">
