@@ -41,6 +41,7 @@ class Welcome extends vlsg_Controller {
 		$menutitlemap["brick"] = "BRICK / DÉCOR";
 		$menutitlemap["colour"] = "COLOUR";
 		$menutitlemap["outdoor"] = "OUTDOOR";
+		$menutitlemap["cotoo"] = "COTTO D'ESTE";
 
 
 		$data["productname"] = $menutitlemap[$p];
