@@ -74,7 +74,7 @@ class Welcome extends vlsg_Controller {
 				$data["list"] = $this->m_test->loutdoor($page["start"],$listingcountinpage);
 			break;
 			case "cotto":
-				$page = $this->procpage($listingcountinpage, $this->m_test->lbybrand("COTTO D'ESTE"),"page",10000);
+				$page = $this->procpage($listingcountinpage, $this->m_test->lbybrandcnt("COTTO D'ESTE"),"page",10000);
 				$data["list"] = $this->m_test->lbybrand("COTTO D'ESTE",$page["start"],$listingcountinpage);
 			break;
 
