@@ -58,7 +58,7 @@ class Welcome extends vlsg_Controller {
 			
 				$page = $this->procpage($listingcountinpage, $this->m_test->lbyeffectcnt($p),"page",10000);
 				$data["list"] = $this->m_test->lbyeffect($p,$page["start"],$listingcountinpage);
-				echo $p;
+
 			break;
 			case "brick":
 
@@ -141,6 +141,13 @@ class Welcome extends vlsg_Controller {
 		$finish=$this->input->get("finish",true);
 		$technology=$this->input->get("technology",true);
 		$hint=$this->input->get("hint",true);
+
+		$data["space"] = $space;
+		$data["design"] = $design;
+		$data["finish"] = $finish;
+		$data["technology"] = $technology;
+		$data["hint"] = $hint;
+
 
 		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
 		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$page["start"],$listingcountinpage);

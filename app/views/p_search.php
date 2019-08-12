@@ -1,6 +1,12 @@
 <?php
+
     $page = $model["page"];
     $list = &$model["list"];
+    $p_space = $model["space"];
+    $p_design = $model["design"];
+    $p_finish = $model["finish"];
+    $p_technology = $model["technology"];
+    $p_hint = $model["hint"];
 ?>
 <script>
 
@@ -38,7 +44,16 @@
 
     }
 
-var curhint = "";
+var curhint = "<?=$p_hint?>";
+
+
+$(function(){
+    $("#space").val("<?=$p_space?>");
+    $("#design").val("<?=$p_design?>");
+    $("#finish").val("<?=$p_finsh?>");
+    $("#technology").val("<?=$p_technology?>");
+    });
+
 </script>
     <div class="container">
 

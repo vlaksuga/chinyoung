@@ -256,7 +256,9 @@ class M_test extends CI_Model{
 		if($technology == "antislip") $where .= " and antislip = 1 ";
 		if($technology == "antibacterial") $where .= " and antibacterial = 1 ";
 		if($technology == "bigslab") $where .= " and bigslab = 1 ";
-		if($hint!=null) {$where .= " and searchhint like concat('%',?)"; $r[]=$hint;}
+		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
+		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
+		if($hint!=null) {$where .= " and searchhint like concat('%',?) "; $r[]=$hint;}
 
 		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid";
 		$rs = $this->db->query($sql, $r);
