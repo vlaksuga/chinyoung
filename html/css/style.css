@@ -291,6 +291,17 @@ nav li.dropdown {
     color: #18d26e;
   }
 
+  .carousel-content {
+    text-align: center;
+}
+
+.carousel-content div {
+  margin : 0 auto;
+    border: 2px solid white;
+    width: 180px;
+    padding: 5px 0;
+}
+
 
 
 /*======================
