@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,c.brand as effect from collection c,(select collectionid from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
+		$sql="select c.* from collection c,(select collectionid from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -58,7 +58,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslab($start,$cnt)
 	{
-		$sql="select c.*,c.brand as effect from collection c,(select collectionid from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
+		$sql="select c.* from collection c,(select collectionid from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -78,7 +78,7 @@ class M_test extends CI_Model{
 
 	public function loutdoor($start,$cnt)
 	{
-		$sql="select c.*,c.brand effect from collection c,(select collectionid from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.* from collection c,(select collectionid from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -107,7 +107,7 @@ class M_test extends CI_Model{
 		$in = implode(', ', $iiii);
 		$effect[] = $start;
 		$effect[] = $cnt;
-		$sql="select c.*,c.brand effect from collection c,(select collectionid from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.* from collection c,(select collectionid from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, $effect);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -132,6 +132,26 @@ class M_test extends CI_Model{
 
 
 
+	public function lbybrand($brand,$start,$cnt)
+	{
+		$sql="select c.* from collection c where c.brand=?  limit ?,?";
+		$rs = $this->db->query($sql, array($brand,$start,$cnt));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function lbybrandcnt($brand)
+	{
+		$sql="select count(*) cnt from collection c where c.brand=?";
+		$rs = $this->db->query($sql,array($brand));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
 	public function collectionimglist($collectionid)
 	{
 		$sql="select * from collectionimg where collectionid = ? ";
@@ -152,16 +172,7 @@ class M_test extends CI_Model{
 		return $rsa;
 	}
 
-	public function search()
-	{
-		$sql="select t.productname,t.effect,indoor,outdoor,material,finish,finish2,sizes,cename,thumb,searchhint,kerlite,antislip,antibacterial,bigslab from tile t,collection c where t.collectionid = c.collectionid;
-		";
-		$rs = $this->db->query($sql, array(1));
-        $rsa = $rs->result_array();
-		$rs->free_result();
-
-		return $rsa;
-	}
+	
 
 	public function projectlist($cate,$start,$cnt)
 	{
@@ -190,7 +201,7 @@ class M_test extends CI_Model{
 			break;
 			
 		}
-		$sql="select * from project p,tile t where p.tileid = t.tileid $ooo limit ?,?";
+		$sql="select * from project p where 1=1  $ooo limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -225,7 +236,7 @@ class M_test extends CI_Model{
 			break;
 			
 		}
-		$sql="select count(*) cnt from project p,tile t where p.tileid = t.tileid $ooo";
+		$sql="select count(*) cnt from project p where 1=1 $ooo";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -236,7 +247,7 @@ class M_test extends CI_Model{
 
 	public function project($projectid)
 	{
-		$sql="select *,(select productname from tile where tileid = project.tileid) productname,(select collectionid from tile where tileid = project.tileid) collectionid from project where projectid = ?";
+		$sql="select * from project where projectid = ?";
 		$rs = $this->db->query($sql, array($projectid));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -253,5 +264,37 @@ class M_test extends CI_Model{
 
 		return $rsa;
 	}
+	public function projecttilelist($projectid)
+	{
+		$sql="select * from (select * from tile where tileid in (select tileid from projecttile where projectid = ?)) t,collection c where t.collectionid = c.collectionid ";
+		$rs = $this->db->query($sql, array($projectid));
+        $rsa = $rs->result_array();
+		$rs->free_result();
 
+		return $rsa;
+	}
+
+	public function search($space,$design,$finish,$technology,$hint)
+	{
+		$r = array();
+		if($space == "indoor") $where .= " and indoor = 1 ";
+		if($space == "outdoor") $where .= " and outdoor = 1 ";
+		if($design!=null) {$where .= " and effect = ? "; $r[]=$design;}
+		if($finish!=null) {$where .= " and (finish = ? or finish2 = ?) "; $r[]=$finish;$r[]=$finish;}
+		if($technology == "kerlite") $where .= " and kerlite = 1 ";
+		if($technology == "antislip") $where .= " and antislip = 1 ";
+		if($technology == "antibacterial") $where .= " and antibacterial = 1 ";
+		if($technology == "bigslab") $where .= " and bigslab = 1 ";
+		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
+		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
+		
+		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
+		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		$rs = $this->db->query($sql, $r);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+	
 }

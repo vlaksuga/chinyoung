@@ -4,6 +4,7 @@
     $collectionimglist = $model["collectionimglist"];
 
     $collection = $model["collection"];
+    $tilelist = $model["tilelist"];
 ?>
 
 <div class="container">
@@ -75,6 +76,16 @@
                         slides[slideIndex - 1].style.display = "block";
                         dots[slideIndex - 1].className += " nav_active";
                     }
+
+                    $(function(){
+                        $(".autohide").each(function(){
+                            var fr = $(".t_data",$(this)).text();
+
+                            if(fr=="" || fr.trim()=="") {
+                                $(this).hide();
+                            }
+                        });
+                    });
                 </script>
 
             </div>
@@ -92,8 +103,8 @@
                 <div class="tile_container mo_slide">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
-                        <p>GARDENA BIANCO</p>
-                        <p>400*800*8T</p>
+                        <p data-p="pname">GARDENA BIANCO</p>
+                        <p data-p="size">400*800*8T</p>
                     </div>
                 </div>
             </div>
@@ -103,8 +114,12 @@
                     document.getElementById("modal_container").style.display = "none";
                     }
 
-                    function openModal() {
-                    document.getElementById("modal_container").style.display = "block";
+                    function openModal(a,b,c) {
+                        
+                        $(".tile_container img").attr("src","/img/i_data/"+a);
+                        $(".tile_container [data-p=pname]").text(b);
+                        $(".tile_container [data-p=size]").text(c);
+                        document.getElementById("modal_container").style.display = "block";
                     }
             </script>
 
@@ -114,7 +129,7 @@
                 <div class="row">
 
 <?php
-for($i=0;$i<count($list);$i++){$item = $list[$i];
+for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
 
     echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"]),"tile"); 
 }

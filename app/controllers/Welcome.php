@@ -58,7 +58,7 @@ class Welcome extends vlsg_Controller {
 			
 				$page = $this->procpage($listingcountinpage, $this->m_test->lbyeffectcnt($p),"page",10000);
 				$data["list"] = $this->m_test->lbyeffect($p,$page["start"],$listingcountinpage);
-				echo $p;
+
 			break;
 			case "brick":
 
@@ -72,6 +72,10 @@ class Welcome extends vlsg_Controller {
 			case "outdoor":
 				$page = $this->procpage($listingcountinpage, $this->m_test->loutdoorcnt(),"page",10000);
 				$data["list"] = $this->m_test->loutdoor($page["start"],$listingcountinpage);
+			break;
+			case "cotto":
+				$page = $this->procpage($listingcountinpage, $this->m_test->lbybrandcnt("COTTO D'ESTE"),"page",10000);
+				$data["list"] = $this->m_test->lbybrand("COTTO D'ESTE",$page["start"],$listingcountinpage);
 			break;
 
 		}
@@ -96,6 +100,7 @@ class Welcome extends vlsg_Controller {
 		$data["collection"] = $this->m_test->g($this->input->get("cid",true));
 		$data["list"] = $this->m_test->tilelist($this->input->get("cid",true));
 		$data["collectionimglist"] = $this->m_test->collectionimglist($this->input->get("cid",true));
+		$data["tilelist"] = $this->m_test->tilelist($this->input->get("cid",true));
 
 		$this->appendView("sections","p_product_detail",$data);
 		$this->_setHeaderAndFooter();
@@ -124,9 +129,12 @@ class Welcome extends vlsg_Controller {
 	}
 	public function project()
 	{
+
 		$data["project"] = $this->m_test->project($this->input->get("pid",true));
 		$data["projectimglist"] = $this->m_test->projectimglist($this->input->get("pid",true));
-
+		
+		$data["projecttilelist"] = $this->m_test->projecttilelist($this->input->get("pid",true));
+		
 		$this->appendView("sections","p_project_detail",$data);
 		$this->_setHeaderAndFooter();
 		//$this->setMeta(array("OG_TITLE"=>"TITLE","OG_URL"=>"URL","OG_DESC"=>"DESC","OG_IMG"=>"img"));
@@ -136,8 +144,21 @@ class Welcome extends vlsg_Controller {
 	public function search()
 	{
 		$listingcountinpage = 9;
+		$space=$this->input->get("space",true);
+		$design=$this->input->get("design",true);
+		$finish=$this->input->get("finish",true);
+		$technology=$this->input->get("technology",true);
+		$hint=$this->input->get("hint",true);
+
+		$data["space"] = $space;
+		$data["design"] = $design;
+		$data["finish"] = $finish;
+		$data["technology"] = $technology;
+		$data["hint"] = $hint;
+
+
 		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
-		$data["list"] = $this->m_test->search($page["start"],$listingcountinpage);
+		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$page["start"],$listingcountinpage);
 		$data["page"] = $page;
 
 		$this->appendView("sections","p_search",$data);

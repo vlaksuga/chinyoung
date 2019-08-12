@@ -30,13 +30,13 @@
             <div class="group">
                 <ul>
                     <li data-p="kerlite"><a href="./?m=l&p=kerlite">KERLITE/BIG SLAB</a></li>
-                    <li data-p="marble"><a href="./?m=l&p=MARBLE">MARBLE</a></li>
-                    <li data-p="stone"><a href="./?m=l&p=STONE">STONE</a></li>
-                    <li data-p="concrete"><a href="./?m=l&p=CONCRETE">CONCRETE</a></li>
-                    <li data-p="terracotta"><a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a></li>
-                    <li data-p="wood"><a href="./?m=l&p=WOOD">WOOD</a></li>
+                    <li data-p="MARBLE"><a href="./?m=l&p=MARBLE">MARBLE</a></li>
+                    <li data-p="STONE"><a href="./?m=l&p=STONE">STONE</a></li>
+                    <li data-p="CONCRETE"><a href="./?m=l&p=CONCRETE">CONCRETE</a></li>
+                    <li data-p="TERRACOTTA"><a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a></li>
+                    <li data-p="WOOD"><a href="./?m=l&p=WOOD">WOOD</a></li>
                     <li data-p="brick"><a href="./?m=l&p=brick">BRICK/DÉCOR</a></li>
-                    <li data-p="colour"><a href="./?m=l&p=COLOUR">COLOUR</a></li>
+                    <li data-p="COLOUR"><a href="./?m=l&p=COLOUR">COLOUR</a></li>
                     <li data-p="outdoor"><a href="./?m=l&p=outdoor">OUTDOOR</a></li>
                 </ul>
 

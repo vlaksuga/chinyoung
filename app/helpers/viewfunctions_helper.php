@@ -26,9 +26,31 @@ function p($str){
 	echo htmlspecialchars($str);
 }
 
+
+
+
 function cleanstr($str){
 	echo remove_invisible_characters($str);
 }
+
+function getSizeStr($item){
+	echo htmlspecialchars($item["sizes"]);
+}
+
+function getThicknessStr($item){
+//	$item["sizes"];
+	echo htmlspecialchars($str);
+}
+function getTechStr($item){
+	if($item["kerlite"]=="1") $ret .="<span>KERLITE</span>";
+	if($item["bigslab"]=="1") $ret .="<span>BIGSLAB</span>";
+	if($item["antislip"]=="1") $ret .="<span>ANTISLIP</span>";
+	if($item["antibacterial"]=="1") $ret .="<span>ANTI-BACTERIAL</span>";
+
+	echo ($ret);
+}
+
+
 
 if(!function_exists('getNewsUrl')){
 	function getNewsUrl($item){
