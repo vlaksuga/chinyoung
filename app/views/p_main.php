@@ -6,8 +6,7 @@
         <div class="intro-container">
           <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
     
-            <ol class="carousel-indicators"></ol>
-    
+  
             <div class="carousel-inner" role="listbox">
     
               <div class="carousel-item active">
@@ -53,7 +52,7 @@
               </div>
     
             </div>
-            
+
             <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon fas fa-angle-left" aria-hidden="true"></span>
             </a>
