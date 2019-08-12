@@ -76,6 +76,16 @@
                         slides[slideIndex - 1].style.display = "block";
                         dots[slideIndex - 1].className += " nav_active";
                     }
+
+                    $(function(){
+                        $(".autohide").each(function(){
+                            var fr = $(".t_data",$(this)).text();
+
+                            if(fr=="" || fr.trim()=="") {
+                                $(this).hide();
+                            }
+                        });
+                    });
                 </script>
 
             </div>
