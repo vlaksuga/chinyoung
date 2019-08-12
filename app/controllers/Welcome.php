@@ -96,6 +96,7 @@ class Welcome extends vlsg_Controller {
 		$data["collection"] = $this->m_test->g($this->input->get("cid",true));
 		$data["list"] = $this->m_test->tilelist($this->input->get("cid",true));
 		$data["collectionimglist"] = $this->m_test->collectionimglist($this->input->get("cid",true));
+		$data["tilelist"] = $this->m_test->tilelist($this->input->get("cid",true));
 
 		$this->appendView("sections","p_product_detail",$data);
 		$this->_setHeaderAndFooter();

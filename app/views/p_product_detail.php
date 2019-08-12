@@ -4,6 +4,7 @@
     $collectionimglist = $model["collectionimglist"];
 
     $collection = $model["collection"];
+    $tilelist = $model["tilelist"];
 ?>
 
 <div class="container">
@@ -114,7 +115,7 @@
                 <div class="row">
 
 <?php
-for($i=0;$i<count($list);$i++){$item = $list[$i];
+for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
 
     echo drawView("tile/articleitem",array("item"=>$item,"productname"=>$data["productname"]),"tile"); 
 }

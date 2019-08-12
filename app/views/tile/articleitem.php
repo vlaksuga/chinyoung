@@ -3,7 +3,7 @@
 <div class="col">
 	<div class="img_box">
 		<a href="#">
-			<img src="img/tile/t_0001/td_03.jpg" class="modal_img">
+			<img src="./img/i_data/<?=$item["imgs"]?>" class="modal_img">
 		</a>
 	</div>
 
