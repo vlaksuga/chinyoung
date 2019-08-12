@@ -2,7 +2,7 @@
 <?php if($type=="tile") { ?>
 <div class="col">
 	<div class="img_box">
-		<a href="#">
+		<a onclick="openModal('<?=$item["imgs"]?>');">
 			<img src="./img/i_data/<?=$item["imgs"]?>" class="modal_img">
 		</a>
 	</div>
@@ -11,16 +11,13 @@
 		<h3><?=$item["productname"]?></h3>
 		<div class="row">
 			<div class="t_label">CODE</div>
-			<div class="t_data"><?=$item["collectionid"]?></div>
+			<div class="t_data"><?=$item["tileid"]?></div>
 		</div>
 		<div class="row">
 			<div class="t_label">DESIGN</div>
 			<div class="t_data"><?=$item["effect"]?></div>
 		</div>
-		<div class="row">
-			<div class="t_label">COLOUR</div>
-			<div class="t_data"><?=$item["productname"]?></div>
-		</div>
+		
 		<div class="row">
 			<div class="t_label">TECHNOLOGY</div>
 			<div class="t_data">PrintTech</div>

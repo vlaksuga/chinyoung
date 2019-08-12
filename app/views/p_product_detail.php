@@ -104,8 +104,10 @@
                     document.getElementById("modal_container").style.display = "none";
                     }
 
-                    function openModal() {
-                    document.getElementById("modal_container").style.display = "block";
+                    function openModal(a) {
+                        
+                        $(".tile_container img").attr("src","/img/i_data/"+a);
+                        document.getElementById("modal_container").style.display = "block";
                     }
             </script>
 
