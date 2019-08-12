@@ -1,5 +1,7 @@
 <?php
     $item = $model["project"];
+    $projectimglist = $model["projectimglist"];
+    $projecttilelist = $model["projecttilelist"];
 ?>
 <div class="container">
 
@@ -18,19 +20,24 @@
 <section id="projects_detail_tiles" class="sec_gap">
 
     <div class="grid">
-        <div class="tile">
-            <img src="img/thumb/thumb1.jpg" alt="thumb1">
-        </div>
+        <?php for($i=0;$i<count($projectimglist);$i++){ $item = $projectimglist[$i];?>
+                        <div class="tile">
+                            <img src="./img/i_data/<?=$item["url"]?>" alt="thumb1">
+                        </div>
+                 
+        <?php }?>
+        
     </div>
 
 
-    <div class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-    </div>
+                
+                
+            </div>
+
+
+                <? echo drawView("tile/paging",$model["page"]);?>
+
+
 
 </section>
 
