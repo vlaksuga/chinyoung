@@ -132,20 +132,20 @@ class M_test extends CI_Model{
 
 
 
-	public function lbybrand($start,$cnt)
+	public function lbybrand($brand,$start,$cnt)
 	{
 		$sql="select c.* from collection c where c.brand=?  limit ?,?";
-		$rs = $this->db->query($sql, array($start,$cnt));
+		$rs = $this->db->query($sql, array($brand,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
 
 		return $rsa;
 	}
 
-	public function lbybrandcnt()
+	public function lbybrandcnt($brand)
 	{
 		$sql="select count(*) cnt from collection c where c.brand=?";
-		$rs = $this->db->query($sql);
+		$rs = $this->db->query($sql,array($brand));
         $rsa = $rs->result_array();
 		$rs->free_result();
 
