@@ -152,16 +152,7 @@ class M_test extends CI_Model{
 		return $rsa;
 	}
 
-	public function search()
-	{
-		$sql="select t.productname,t.effect,indoor,outdoor,material,finish,finish2,sizes,cename,thumb,searchhint,kerlite,antislip,antibacterial,bigslab from tile t,collection c where t.collectionid = c.collectionid;
-		";
-		$rs = $this->db->query($sql, array(1));
-        $rsa = $rs->result_array();
-		$rs->free_result();
-
-		return $rsa;
-	}
+	
 
 	public function projectlist($cate,$start,$cnt)
 	{
@@ -254,4 +245,25 @@ class M_test extends CI_Model{
 		return $rsa;
 	}
 
+	public function search($space,$design,$finish,$technology,$hint)
+	{
+		$r = array();
+		if($space == "indoor") $where .= " and indoor = 1 ";
+		if($space == "outdoor") $where .= " and outdoor = 1 ";
+		if($design!=null) {$where .= " and effect = ? "; $r[]=$design;}
+		if($finish!=null) {$where .= " and (finish = ? or finish2 = ?) "; $r[]=$finish;$r[]=$finish;}
+		if($technology == "kerlite") $where .= " and kerlite = 1 ";
+		if($technology == "antislip") $where .= " and antislip = 1 ";
+		if($technology == "antibacterial") $where .= " and antibacterial = 1 ";
+		if($technology == "bigslab") $where .= " and bigslab = 1 ";
+		if($hint!=null) {$where .= " and searchhint like concat('%',?)"; $r[]=$hint;}
+
+		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid";
+		$rs = $this->db->query($sql, $r);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+	
 }

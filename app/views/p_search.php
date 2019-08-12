@@ -3,27 +3,42 @@
     $list = &$model["list"];
 ?>
 <script>
-    function space(){
-        alert($("#space").val());
-    }
+
     function size0(){
         alert($("#size").val());
     }
-    function design(){
-        alert($("#design").val());
-    }
-    function finish(){
-        alert($("#finish").val());
-    }
+
     function thickness(){
         alert($("#thickness").val());
     }
-    function technology(){
-        alert($("#technology").val());
+    function sh(a){
+        curhint = a;
+       search();
     }
     
+    function search(){
+        var u = "/?m=search&";
+        if($("#space").val()){
+            u+="&space="+$("#space").val();
+        }
+        if($("#design").val()){
+            u+="&design="+$("#design").val();
+        }
+        if($("#finish").val()){
+            u+="&finish="+$("#finish").val();
+        }
+        if($("#technology").val()){
+            u+="&technology="+$("#technology").val();
+        }
+        if(curhint!=""){
+            u+="&hint="+curhint;
+        }
 
+        window.location.href = u;
 
+    }
+
+var curhint = "";
 </script>
     <div class="container">
 
@@ -32,38 +47,38 @@
     <h2>SEARCH</h2>
     <div class="alpha">
         <ul>
-            <li><a href="#" onclick="sh('A')">A</a></li>
-            <li><a href="#" onclick="sh('B')">B</a></li>
-            <li><a href="#" onclick="sh('C')">C</a></li>
-            <li><a href="#" onclick="sh('D')">D</a></li>
-            <li><a href="#" onclick="sh('E')">E</a></li>
-            <li><a href="#" onclick="sh('F')">F</a></li>
-            <li><a href="#" onclick="sh('G')">G</a></li>
-            <li><a href="#" onclick="sh('H')">H</a></li>
-            <li><a href="#" onclick="sh('I')">I</a></li>
-            <li><a href="#" onclick="sh('J')">J</a></li>
-            <li><a href="#" onclick="sh('K')">K</a></li>
-            <li><a href="#" onclick="sh('L')">L</a></li>
-            <li><a href="#" onclick="sh('M')">M</a></li>
-            <li><a href="#" onclick="sh('N')">N</a></li>
-            <li><a href="#" onclick="sh('O')">O</a></li>
-            <li><a href="#" onclick="sh('P')">P</a></li>
-            <li><a href="#" onclick="sh('Q')">Q</a></li>
-            <li><a href="#" onclick="sh('R')">R</a></li>
-            <li><a href="#" onclick="sh('S')">S</a></li>
-            <li><a href="#" onclick="sh('T')">T</a></li>
-            <li><a href="#" onclick="sh('U')">U</a></li>
-            <li><a href="#" onclick="sh('V')">V</a></li>
-            <li><a href="#" onclick="sh('W')">W</a></li>
-            <li><a href="#" onclick="sh('X')">X</a></li>
-            <li><a href="#" onclick="sh('Y')">Y</a></li>
-            <li><a href="#" onclick="sh('Z')">Z</a></li>
-            <li><a href="#" onclick="sh('num')">0-9</a></li>
+            <li><a onclick="sh('A')">A</a></li>
+            <li><a  onclick="sh('B')">B</a></li>
+            <li><a onclick="sh('C')">C</a></li>
+            <li><a  onclick="sh('D')">D</a></li>
+            <li><a  onclick="sh('E')">E</a></li>
+            <li><a  onclick="sh('F')">F</a></li>
+            <li><a  onclick="sh('G')">G</a></li>
+            <li><a  onclick="sh('H')">H</a></li>
+            <li><a  onclick="sh('I')">I</a></li>
+            <li><a  onclick="sh('J')">J</a></li>
+            <li><a  onclick="sh('K')">K</a></li>
+            <li><a  onclick="sh('L')">L</a></li>
+            <li><a onclick="sh('M')">M</a></li>
+            <li><a  onclick="sh('N')">N</a></li>
+            <li><a  onclick="sh('O')">O</a></li>
+            <li><a onclick="sh('P')">P</a></li>
+            <li><a  onclick="sh('Q')">Q</a></li>
+            <li><a  onclick="sh('R')">R</a></li>
+            <li><a onclick="sh('S')">S</a></li>
+            <li><a  onclick="sh('T')">T</a></li>
+            <li><a  onclick="sh('U')">U</a></li>
+            <li><a  onclick="sh('V')">V</a></li>
+            <li><a onclick="sh('W')">W</a></li>
+            <li><a  onclick="sh('X')">X</a></li>
+            <li><a  onclick="sh('Y')">Y</a></li>
+            <li><a onclick="sh('Z')">Z</a></li>
+            <li><a  onclick="sh('num')">0-9</a></li>
         </ul>
     </div>
     <div class="select">
         <div class="s_space">
-            <select id="space" name="space" onchange="space()">
+            <select id="space" name="space" onchange="search()">
                 <option value="" disabled selected>SPACE</option>
                 <option value="indoor">INDOOR</option>
                 <option value="outdoor">OUTDOOR</option>
@@ -93,7 +108,7 @@
             </select>
         </div>
         <div class="s_design">
-            <select id="design" name="design" onchange="design()">
+            <select id="design" name="design" onchange="search()">
                 <option value="" disabled selected>DESIGN</option>
                 <option value="stone">STONE</option>
                 <option value="marble">MARBLE</option>
@@ -107,7 +122,7 @@
             </select>
         </div>
         <div class="s_finish">
-            <select id="finish" name="finish" onchange="finish()">
+            <select id="finish" name="finish" onchange="search()">
                 <option value="" disabled selected>FINISH</option>
                 <option value="matt">MATT, NATURAL</option>
                 <option value="glossy">GLOSSY, POLISHED</option>
@@ -129,7 +144,7 @@
             </select>
         </div>
         <div class="s_technology">
-            <select id="technology" name="technology" onchange="technology()">
+            <select id="technology" name="technology" onchange="search()">
                 <option value="" disabled selected>TECHNOLOGY</option>
                 <option value="kerite">KERILITE@</option>
                 <option value="bigslab">BIG SLAB</option>

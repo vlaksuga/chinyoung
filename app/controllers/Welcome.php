@@ -136,8 +136,14 @@ class Welcome extends vlsg_Controller {
 	public function search()
 	{
 		$listingcountinpage = 9;
+		$space=$this->input->get("space",true);
+		$design=$this->input->get("design",true);
+		$finish=$this->input->get("finish",true);
+		$technology=$this->input->get("technology",true);
+		$hint=$this->input->get("hint",true);
+
 		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
-		$data["list"] = $this->m_test->search($page["start"],$listingcountinpage);
+		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$page["start"],$listingcountinpage);
 		$data["page"] = $page;
 
 		$this->appendView("sections","p_search",$data);
