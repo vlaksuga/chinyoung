@@ -84,6 +84,32 @@
         <!-- / TILE DETAIL / -->
         <section id="tile_detail" class="sec_gap">
             <h2>TILE DETAIL</h2>
+            
+                        <!-- MODAL START -->
+
+                        <div id="modal_container">
+                <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
+                <div class="tile_container mo_slide">
+                    <img src="img/tile/t_0001/td_02.jpg">
+                    <div class="tile_data">
+                        <p>GARDENA BIANCO</p>
+                        <p>400*800*8T</p>
+                    </div>
+                </div>
+            </div>
+    
+            <script>
+                    function closeModal() {
+                    document.getElementById("modal_container").style.display = "none";
+                    }
+
+                    function openModal() {
+                    document.getElementById("modal_container").style.display = "block";
+                    }
+            </script>
+
+            <!-- MODAL END -->
+
             <div class="tile_box">
                 <div class="row">
 
