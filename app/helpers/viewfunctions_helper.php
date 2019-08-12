@@ -50,6 +50,23 @@ function getTechStr($item){
 	echo ($ret);
 }
 
+function getProjectTypeStr($item){
+	if($item["residential"]=="1") $ret .="<span>RESIDENTIAL</span><span>,</span>";
+	if($item["commercial"]=="1") $ret .="<span>COMMERCIAL</span><span>,</span>";
+	if($item["public"]=="1") $ret .="<span>PUBLIC</span><span>,</span>";
+	if($item["furnishing"]=="1") $ret .="<span>FURNISHING</span><span>,</span>";
+	if($item["etc"]=="1") $ret .="<span>ANTI-ETC</span><span>,</span>";
+	if(strlen($ret)>13){ $ret = substr($ret,0,strlen($ret)-14);}
+	echo ($ret);
+}
+
+function getProjectSpaceStr($item){
+	if($item["indoor"]=="1") $ret .="<span>INDOOR</span><span>,</span>";
+	if($item["outdoor"]=="1") $ret .="<span>OUTDOOR</span><span>,</span>";
+	
+	if(strlen($ret)>13){ $ret = substr($ret,0,strlen($ret)-14);}
+	echo ($ret);
+}
 
 
 if(!function_exists('getNewsUrl')){
