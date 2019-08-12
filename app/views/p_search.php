@@ -52,7 +52,7 @@ var curhint = "<?=$p_hint?>";
 $(function(){
     $("#space").val("<?=$p_space?>");
     $("#design").val("<?=$p_design?>");
-    $("#finish").val("<?=$p_finsh?>");
+    $("#finish").val("<?=$p_finish?>");
     $("#technology").val("<?=$p_technology?>");
     });
 

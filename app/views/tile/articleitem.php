@@ -2,7 +2,7 @@
 <?php if($type=="tile") { ?>
 <div class="col">
 	<div class="img_box">
-		<a onclick="openModal('<?=$item["imgs"]?>');">
+		<a onclick="openModal('<?=$item["imgs"]?>','<?=$item["productname"]?>','<?=$item["sizes"]?>');">
 			<img src="./img/i_data/<?=$item["imgs"]?>" class="modal_img">
 		</a>
 	</div>

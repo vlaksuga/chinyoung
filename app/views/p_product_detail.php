@@ -93,8 +93,8 @@
                 <div class="tile_container mo_slide">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
-                        <p>GARDENA BIANCO</p>
-                        <p>400*800*8T</p>
+                        <p data-p="pname">GARDENA BIANCO</p>
+                        <p data-p="size">400*800*8T</p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,11 @@
                     document.getElementById("modal_container").style.display = "none";
                     }
 
-                    function openModal(a) {
+                    function openModal(a,b,c) {
                         
                         $(".tile_container img").attr("src","/img/i_data/"+a);
+                        $(".tile_container [data-p=pname]").text(b);
+                        $(".tile_container [data-p=size]").text(c);
                         document.getElementById("modal_container").style.display = "block";
                     }
             </script>
