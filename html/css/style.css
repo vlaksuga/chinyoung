@@ -794,13 +794,6 @@ nav li.dropdown {
     color: gray;
 }
 
-.tile_box .row .col .txt_box .row:nth-child(2),
-.tile_box .row .col .txt_box .row:nth-child(3),
-.tile_box .row .col .txt_box .row:nth-child(5) {
-    display: none;
-}
-
-
 /* modal */
 
 #modal_container {
