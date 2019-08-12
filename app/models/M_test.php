@@ -201,7 +201,7 @@ class M_test extends CI_Model{
 			break;
 			
 		}
-		$sql="select * from project p,tile t where p.tileid = t.tileid $ooo limit ?,?";
+		$sql="select * from project p where 1=1  $ooo limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -236,7 +236,7 @@ class M_test extends CI_Model{
 			break;
 			
 		}
-		$sql="select count(*) cnt from project p,tile t where p.tileid = t.tileid $ooo";
+		$sql="select count(*) cnt from project p where 1=1 $ooo";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
