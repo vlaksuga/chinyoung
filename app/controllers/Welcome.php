@@ -47,17 +47,18 @@ class Welcome extends vlsg_Controller {
 		$data["productname"] = $menutitlemap[$p];
 
 		switch($p){
-			
+			case "COLOUR":
+				$p="COLOURS";
 			case "MARBLE":
 			case "STONE":
 			case "CONCRETE":
 			case "TERRACOTTA":
 			case "WOOD":
 			
-			case "COLOUR":
-				$p="COLOURS";
+			
 				$page = $this->procpage($listingcountinpage, $this->m_test->lbyeffectcnt($p),"page",10000);
 				$data["list"] = $this->m_test->lbyeffect($p,$page["start"],$listingcountinpage);
+				echo $p;
 			break;
 			case "brick":
 
@@ -74,7 +75,7 @@ class Welcome extends vlsg_Controller {
 			break;
 
 		}
-
+	//	print_r($data);
 		
 		
 

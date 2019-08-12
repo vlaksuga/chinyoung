@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and t.effect = ? limit ?,?";
+		$sql="select c.*,c.brand as effect from collection c,(select collectionid from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -48,7 +48,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffectcnt($effect)
 	{
-		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and t.effect = ? ";
+		$sql="select count(*) cnt from collection c,(select collectionid from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid";
 		$rs = $this->db->query($sql, array($effect));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -58,7 +58,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslab($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and ( t.kerlite = 1 or t.bigslab = 1)  limit ?,?";
+		$sql="select c.*,c.brand as effect from collection c,(select collectionid from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -68,7 +68,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslabcnt()
 	{
-		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and ( t.kerlite = 1 or t.bigslab = 1)";
+		$sql="select count(*) cnt from collection c,(select collectionid from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t  where c.collectionid = t.collectionid";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -78,7 +78,7 @@ class M_test extends CI_Model{
 
 	public function loutdoor($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,c.brand effect from collection c,(select collectionid from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -88,7 +88,7 @@ class M_test extends CI_Model{
 
 	public function loutdoorcnt()
 	{
-		$sql="select count(DISTINCT collectionid) cnt from tile t  where t.outdoor = 1 ";
+		$sql="select count(*) cnt from collection c,(select collectionid from tile  where outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid ";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -107,7 +107,7 @@ class M_test extends CI_Model{
 		$in = implode(', ', $iiii);
 		$effect[] = $start;
 		$effect[] = $cnt;
-		$sql="select c.*,t.effect from collection c,tile t where c.collectionid = t.collectionid and effect in ($in) limit ?,?";
+		$sql="select c.*,c.brand effect from collection c,(select collectionid from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, $effect);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -122,7 +122,7 @@ class M_test extends CI_Model{
 			$iiii[] = "?";		
 		}
 		$in = implode(', ', $iiii);
-		$sql="select count(*) cnt from collection c,tile t  where c.collectionid = t.collectionid and effect in ($in) ";
+		$sql="select count(*) cnt from collection c,(select collectionid from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  ";
 		$rs = $this->db->query($sql, $effect);
         $rsa = $rs->result_array();
 		$rs->free_result();
