@@ -247,7 +247,7 @@ class M_test extends CI_Model{
 
 	public function project($projectid)
 	{
-		$sql="select *,(select productname from tile where tileid = project.tileid) productname,(select collectionid from tile where tileid = project.tileid) collectionid from project where projectid = ?";
+		$sql="select * from project where projectid = ?";
 		$rs = $this->db->query($sql, array($projectid));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -258,6 +258,15 @@ class M_test extends CI_Model{
 	public function projectimglist($projectid)
 	{
 		$sql="select * from projectimg where projectid = ? ";
+		$rs = $this->db->query($sql, array($projectid));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+	public function projecttilelist($projectid)
+	{
+		$sql="select * from (select * from tile where tileid in (select tileid from projecttile where projectid = ?)) t,collection c where t.collectionid = c.collectionid ";
 		$rs = $this->db->query($sql, array($projectid));
         $rsa = $rs->result_array();
 		$rs->free_result();
