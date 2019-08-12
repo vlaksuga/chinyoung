@@ -98,7 +98,7 @@
             
                         <!-- MODAL START -->
 
-                        <div id="modal_container">
+                        <div id="modal_container" style="display:none">
                 <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
                 <div class="tile_container mo_slide">
                     <img src="img/tile/t_0001/td_02.jpg">

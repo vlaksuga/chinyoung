@@ -17,7 +17,14 @@
 			<div class="t_label">DESIGN</div>
 			<div class="t_data"><?=$item["effect"]?></div>
 		</div>
-		
+		<div class="row autohide">
+			<div class="t_label">MATERIAL</div>
+			<div class="t_data" ><?=$item["material"]?></div>
+		</div>
+		<div class="row autohide">
+			<div class="t_label">ORIGIN</div>
+			<div class="t_data" ><?=$item["origin"]?></div>
+		</div>
 		<div class="row autohide">
 			<div class="t_label">TECHNOLOGY</div>
 			<div class="t_data" ><?=getTechStr($item)?></div>
