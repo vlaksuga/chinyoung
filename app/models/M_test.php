@@ -132,6 +132,26 @@ class M_test extends CI_Model{
 
 
 
+	public function lbybrand($start,$cnt)
+	{
+		$sql="select c.* from collection c where c.brand=?  limit ?,?";
+		$rs = $this->db->query($sql, array($start,$cnt));
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa;
+	}
+
+	public function lbybrandcnt()
+	{
+		$sql="select count(*) cnt from collection c where c.brand=?";
+		$rs = $this->db->query($sql);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
+	}
+
 	public function collectionimglist($collectionid)
 	{
 		$sql="select * from collectionimg where collectionid = ? ";

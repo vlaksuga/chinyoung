@@ -20,15 +20,15 @@
 		
 		<div class="row">
 			<div class="t_label">TECHNOLOGY</div>
-			<div class="t_data">PrintTech</div>
+			<div class="t_data"><?=getTechStr($item)?></div>
 		</div>
 		<div class="row">
 			<div class="t_label">THICKNESS</div>
-			<div class="t_data">?T</div>
+			<div class="t_data"><?=getThicknessStr($item)?></div>
 		</div>
 		<div class="row">
 			<div class="t_label">SIZE</div>
-			<div class="t_data">?*?</div>
+			<div class="t_data"><?=getSizeStr($item)?></div>
 		</div>
 	</div>
 </div>
