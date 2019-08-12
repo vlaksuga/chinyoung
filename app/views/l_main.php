@@ -16,7 +16,6 @@
     <!-- LIBs -->
     <script src="./lib/owl.carousel.js"></script>
     <script src="./lib/bootstrap.bundle.min.js"></script>
-    <script src="./lib/wow.min.js"></script>
     <link rel="stylesheet" href="./lib/owl.carousel.css">
     <link rel="stylesheet" href="./lib/ionicons.min.css">
 
