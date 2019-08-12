@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/799568d786.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/main.js"></script>
 
     <link rel="stylesheet" media="(min-width: 640px)" href="css/style.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="css/640.css">
