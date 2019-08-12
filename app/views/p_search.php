@@ -9,7 +9,9 @@
     $p_hint = $model["hint"];
 ?>
 <script>
-
+    function reset(){
+        window.location.href="./?m=search";
+    }
     function size0(){
         alert($("#size").val());
     }
@@ -173,7 +175,7 @@ $(function(){
 </section>
 
 <!-- / RESET TEMP./ -->
-<button>RESET</button>
+<button onclick = "reset()">RESET</button>
 
 <!-- / SEARCH RESULT / -->
 <section id="search_result" class="sec_gap">

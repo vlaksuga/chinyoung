@@ -258,9 +258,9 @@ class M_test extends CI_Model{
 		if($technology == "bigslab") $where .= " and bigslab = 1 ";
 		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
 		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
-		if($hint!=null) {$where .= " and searchhint like concat('%',?) "; $r[]=$hint;}
-
-		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid";
+		
+		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
+		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
 		$rs = $this->db->query($sql, $r);
         $rsa = $rs->result_array();
 		$rs->free_result();
