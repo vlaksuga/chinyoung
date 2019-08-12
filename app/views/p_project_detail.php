@@ -12,7 +12,13 @@
     <p>SPACE : <span>INDOOR</span></p> <!-- 작업후 주석 삭제 요망 -->
     <p>TYPE : <span>RESIDENTIAL, FURNISHING</span></p> <!-- 작업후 주석 삭제 요망 -->
     <p>AREA : <span>싱크 상판, 주방벽</span></p> <!-- 작업후 주석 삭제 요망 -->
-    <p>TILES : <span><a href="?m=product&cid=<?=$item["collectionid"]?>"><?=$item["productname"]?></a></span></p>
+    <p>TILES : 
+         
+         <?php for($i=0;$i<count($projecttilelist);$i++){ $item = $projecttilelist[$i];?>
+            <span><?=$item["productname"]?></span>
+                 
+        <?php }?>
+    </p>
 </section>
 
 
