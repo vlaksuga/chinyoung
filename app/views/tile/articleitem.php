@@ -40,7 +40,7 @@
 		<a href="?m=product&cid=<?=$item["collectionid"]?>"><img src="./img/i_data/<?=$item["thumb"]?>" alt="thumb1"></a>
 		<div class="detail">
 			<h2><?=$item["cename"]?></h2>
-			<p><?=$item["effect"]?></p>
+			<p><?=$item["brand"]?></p>
 		</div>
 		<div class="new"></div>
 	</div>
