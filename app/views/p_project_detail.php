@@ -16,7 +16,7 @@
          
          <?php for($i=0;$i<count($projecttilelist);$i++){ $item = $projecttilelist[$i];?>
             <span><?=$item["productname"]?></span>
-                 
+                <?php if($i<count($projecttilelist)-1) { echo "<span>,</span>";}?>
         <?php }?>
     </p>
 </section>
