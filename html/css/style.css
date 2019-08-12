@@ -210,6 +210,9 @@ nav li.dropdown {
   }
   
   #intro .carousel-content {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
     text-align: center;
   }
   
