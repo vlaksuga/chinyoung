@@ -156,15 +156,20 @@ class Welcome extends vlsg_Controller {
 		$technology=$this->input->get("technology",true);
 		$hint=$this->input->get("hint",true);
 
+		$size=$this->input->get("size",true);
+		$thickness=$this->input->get("thickness",true);
+
 		$data["space"] = $space;
 		$data["design"] = $design;
 		$data["finish"] = $finish;
 		$data["technology"] = $technology;
 		$data["hint"] = $hint;
+		$data["size"] = $size;
+		$data["thickness"] = $thickness;
 
 
 		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
-		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$page["start"],$listingcountinpage);
+		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$size,$thickness,$page["start"],$listingcountinpage);
 		$data["page"] = $page;
 
 		$this->appendView("sections","p_search",$data);
