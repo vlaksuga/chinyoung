@@ -33,19 +33,21 @@ class Welcome extends vlsg_Controller {
 		$p = $this->input->get("p",true);
 
 		$menutitlemap["kerlite"] = "KERLITE / BIG SLAB";
-		$menutitlemap["marble"] = "MARBLE";
-		$menutitlemap["stone"] = "STONE";
-		$menutitlemap["concrete"] = "CONCRETE";
-		$menutitlemap["terracotta"] = "TERRACOTTA";
-		$menutitlemap["wood"] = "WOOD";
+		$menutitlemap["MARBLE"] = "MARBLE";
+		$menutitlemap["STONE"] = "STONE";
+		$menutitlemap["CONCRETE"] = "CONCRETE";
+		$menutitlemap["TERRACOTTA"] = "TERRACOTTA";
+		$menutitlemap["WOOD"] = "WOOD";
 		$menutitlemap["brick"] = "BRICK / DÉCOR";
-		$menutitlemap["colour"] = "COLOUR";
+		$menutitlemap["COLOUR"] = "COLOUR";
 		$menutitlemap["outdoor"] = "OUTDOOR";
-		$menutitlemap["cotoo"] = "COTTO D'ESTE";
+		$menutitlemap["cotto"] = "COTTO D'ESTE";
 
 
 		$data["productname"] = $menutitlemap[$p];
-
+		if($p==null){
+			$data["productname"] = "PRODUCTS";
+		}
 		switch($p){
 			case "COLOUR":
 				$p="COLOURS";
