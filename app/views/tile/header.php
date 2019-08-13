@@ -12,6 +12,7 @@
                         <a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a>
                         <a href="./?m=l&p=WOOD">WOOD</a>
                         <a href="./?m=l&p=brick">BRICK / DÉCOR</a>
+                        <a href="./?m=l&p=METAL">METAL</a>
                         <a href="./?m=l&p=COLOUR">COLOUR</a>
                         <a href="./?m=l&p=outdoor">OUTDOOR</a>
                     </div>
@@ -59,6 +60,7 @@
                             <p><a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a></p>
                             <p><a href="./?m=l&p=WOOD">WOOD</a></p>
                             <p><a href="./?m=l&p=brick">BRICK / DÉCOR</a></p>
+                            <p><a href="./?m=l&p=METAL">METAL</a></p>
                             <p><a href="./?m=l&p=COLOUR">COLOUR</a></p>
                             <p><a href="./?m=l&p=outdoor">OUTDOOR</a></p>
                         </div>

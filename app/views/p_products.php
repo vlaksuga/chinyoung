@@ -36,6 +36,7 @@
                     <li data-p="TERRACOTTA"><a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a></li>
                     <li data-p="WOOD"><a href="./?m=l&p=WOOD">WOOD</a></li>
                     <li data-p="brick"><a href="./?m=l&p=brick">BRICK/DÉCOR</a></li>
+                    <li data-p="COLOUR"><a href="./?m=l&p=METAL">METAL</a></li>
                     <li data-p="COLOUR"><a href="./?m=l&p=COLOUR">COLOUR</a></li>
                     <li data-p="outdoor"><a href="./?m=l&p=outdoor">OUTDOOR</a></li>
                 </ul>
