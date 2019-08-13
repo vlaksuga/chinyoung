@@ -40,6 +40,7 @@ class Welcome extends vlsg_Controller {
 		$menutitlemap["WOOD"] = "WOOD";
 		$menutitlemap["brick"] = "BRICK / DÉCOR";
 		$menutitlemap["COLOUR"] = "COLOUR";
+		$menutitlemap["METAL"] = "METAL";
 		$menutitlemap["outdoor"] = "OUTDOOR";
 		$menutitlemap["cotto"] = "COTTO D'ESTE";
 
@@ -55,6 +56,7 @@ class Welcome extends vlsg_Controller {
 			case "STONE":
 			case "CONCRETE":
 			case "TERRACOTTA":
+			case "METAL":
 			case "WOOD":
 			
 			
