@@ -673,7 +673,7 @@ nav li.dropdown {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 350px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -816,7 +816,7 @@ nav li.dropdown {
 }
 
 #modal_container img{
-    padding-top:25vh;
+    padding-top:10vh;
 }
 
 

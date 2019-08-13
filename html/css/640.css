@@ -779,7 +779,7 @@ float: right;
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 350px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -912,7 +912,7 @@ float: right;
 }
 
 #modal_container img{
-    padding-top:25vh;
+    padding-top:10vh;
 }
 
 
