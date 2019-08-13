@@ -42,11 +42,11 @@ function getThicknessStr($item){
 	echo htmlspecialchars($str);
 }
 function getTechStr($item){
-	if($item["kerlite"]=="1") $ret .="<span>KERLITE</span>";
-	if($item["bigslab"]=="1") $ret .="<span>BIGSLAB</span>";
-	if($item["antislip"]=="1") $ret .="<span>ANTISLIP</span>";
-	if($item["antibacterial"]=="1") $ret .="<span>ANTI-BACTERIAL</span>";
-
+	if($item["kerlite"]=="1") $ret .="<span>KERLITE</span><span>,</span>";
+	if($item["bigslab"]=="1") $ret .="<span>BIGSLAB</span><span>,</span>";
+	if($item["antislip"]=="1") $ret .="<span>ANTISLIP</span><span>,</span>";
+	if($item["antibacterial"]=="1") $ret .="<span>ANTI-BACTERIAL</span><span>,</span>";
+	if(strlen($ret)>13){ $ret = substr($ret,0,strlen($ret)-14);}
 	echo ($ret);
 }
 
@@ -55,7 +55,8 @@ function getProjectTypeStr($item){
 	if($item["commercial"]=="1") $ret .="<span>COMMERCIAL</span><span>,</span>";
 	if($item["public"]=="1") $ret .="<span>PUBLIC</span><span>,</span>";
 	if($item["furnishing"]=="1") $ret .="<span>FURNISHING</span><span>,</span>";
-	if($item["etc"]=="1") $ret .="<span>ANTI-ETC</span><span>,</span>";
+	if($item["etc"]=="1") $ret .="<span>ETC</span><span>,</span>";
+
 	if(strlen($ret)>13){ $ret = substr($ret,0,strlen($ret)-14);}
 	echo ($ret);
 }

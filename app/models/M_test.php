@@ -170,7 +170,7 @@ class M_test extends CI_Model{
 
 	public function tilelist($collectionid)
 	{
-		$sql="select * from tile where collectionid = ? ";
+		$sql="select *,(select brand from collection where collectionid=tile.collectionid) brand from tile where collectionid = ? ";
 		$rs = $this->db->query($sql, array($collectionid));
         $rsa = $rs->result_array();
 		$rs->free_result();

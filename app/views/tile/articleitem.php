@@ -14,8 +14,8 @@
 			<div class="t_data"><?=$item["tileid"]?></div>
 		</div>
 		<div class="row  autohide">
-			<div class="t_label">DESIGN</div>
-			<div class="t_data"><?=$item["effect"]?></div>
+			<div class="t_label">BRaNd</div>
+			<div class="t_data"><?=$item["brand"]?></div>
 		</div>
 		<div class="row autohide">
 			<div class="t_label">MATERIAL</div>
