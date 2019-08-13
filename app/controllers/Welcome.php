@@ -118,7 +118,7 @@ class Welcome extends vlsg_Controller {
 		$cate = $this->input->get("cate",true);
 
 		if($cate==""){
-			$cate="indoor";
+			//$cate="indoor";
 		}
 		
 		$page = $this->procpage($listingcountinpage, $this->m_test->projectlistcnt($cate),"page",10000);
