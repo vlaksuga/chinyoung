@@ -776,6 +776,12 @@ nav li.dropdown {
     margin: 10px 0;
 }
 
+#tile_detail .tile_box .row .col .txt_box .row {
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    margin: 10px 0;
+}
+
 .tile_box .row .col {
     width: 100%;
 }
