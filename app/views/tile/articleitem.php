@@ -14,8 +14,8 @@
 			<div class="t_data"><?=$item["tileid"]?></div>
 		</div>
 		<div class="row  autohide">
-			<div class="t_label">DESIGN</div>
-			<div class="t_data"><?=$item["effect"]?></div>
+			<div class="t_label">BRaNd</div>
+			<div class="t_data"><?=$item["brand"]?></div>
 		</div>
 		<div class="row autohide">
 			<div class="t_label">MATERIAL</div>
@@ -44,7 +44,7 @@
 		<a href="?m=product&cid=<?=$item["collectionid"]?>"><img src="./img/i_data/<?=$item["thumb"]?>" alt="thumb1"></a>
 		<div class="detail">
 			<h2><?=$item["cename"]?></h2>
-			<p><?=$item["brand"]?></p>
+			<p><?=$item["effect"]?></p>
 		</div>
 		<div class="new"></div>
 	</div>

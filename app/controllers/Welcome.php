@@ -33,19 +33,21 @@ class Welcome extends vlsg_Controller {
 		$p = $this->input->get("p",true);
 
 		$menutitlemap["kerlite"] = "KERLITE / BIG SLAB";
-		$menutitlemap["marble"] = "MARBLE";
-		$menutitlemap["stone"] = "STONE";
-		$menutitlemap["concrete"] = "CONCRETE";
-		$menutitlemap["terracotta"] = "TERRACOTTA";
-		$menutitlemap["wood"] = "WOOD";
+		$menutitlemap["MARBLE"] = "MARBLE";
+		$menutitlemap["STONE"] = "STONE";
+		$menutitlemap["CONCRETE"] = "CONCRETE";
+		$menutitlemap["TERRACOTTA"] = "TERRACOTTA";
+		$menutitlemap["WOOD"] = "WOOD";
 		$menutitlemap["brick"] = "BRICK / DÉCOR";
-		$menutitlemap["colour"] = "COLOUR";
+		$menutitlemap["COLOUR"] = "COLOUR";
 		$menutitlemap["outdoor"] = "OUTDOOR";
-		$menutitlemap["cotoo"] = "COTTO D'ESTE";
+		$menutitlemap["cotto"] = "COTTO D'ESTE";
 
 
 		$data["productname"] = $menutitlemap[$p];
-
+		if($p==null){
+			$data["productname"] = "PRODUCTS";
+		}
 		switch($p){
 			case "COLOUR":
 				$p="COLOURS";
@@ -77,7 +79,9 @@ class Welcome extends vlsg_Controller {
 				$page = $this->procpage($listingcountinpage, $this->m_test->lbybrandcnt("COTTO D'ESTE"),"page",10000);
 				$data["list"] = $this->m_test->lbybrand("COTTO D'ESTE",$page["start"],$listingcountinpage);
 			break;
-
+			default:
+				$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
+				$data["list"] = $this->m_test->l($page["start"],$listingcountinpage);
 		}
 	//	print_r($data);
 		
@@ -114,7 +118,7 @@ class Welcome extends vlsg_Controller {
 		$cate = $this->input->get("cate",true);
 
 		if($cate==""){
-			$cate="indoor";
+			//$cate="indoor";
 		}
 		
 		$page = $this->procpage($listingcountinpage, $this->m_test->projectlistcnt($cate),"page",10000);

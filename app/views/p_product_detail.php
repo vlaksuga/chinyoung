@@ -13,7 +13,7 @@
         <!-- / PRODUCT_DETAIL / -->
         <section id="product_detail" class="sec_gap">
             <h2><?=$collection["cename"]?></h2>
-            <p><?=$collection["brand"]?></p>
+            <p><?=$collection["effect"]?></p>
         </section>
 
         <!-- / PRODUCT_IMAGE / -->

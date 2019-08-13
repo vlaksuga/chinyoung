@@ -3,7 +3,7 @@
                 <li><a href="./"><img src="img/logo.png" alt="LOGO"></a></li>
                 <li><a href="./?c=etc&m=about">ABOUT</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
+                    <a href="./?m=l" class="dropbtn">PRODUCTS</a>
                     <div class="dropdown-content">
                         <a href="./?m=l&p=kerlite">KERLITE / BIG SLAB</a>
                         <a href="./?m=l&p=MARBLE">MARBLE</a>

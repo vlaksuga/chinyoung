@@ -17,7 +17,7 @@
         <div class="bottom_art">
             <div>
                 <p><?php echo $model["productname"];?></p>
-                <p><span><?php echo $model["producttotalcount"];?></span> COLLECTIONS</p>
+                <p><span><?php echo $model["pageinfo"]["itemcnt"];?></span> COLLECTIONS</p>
             </div>
         </div>
     </section>
