@@ -53,13 +53,13 @@
                     <div class="menu"><a href="javascript:void(0)" onclick="togSub()">PRODUCTS</a>
                         <div class="sub" id="sub">
                             <p><a href="./?m=l&p=kerlite">KERLITE / BIG SLAB</a></p>
-                            <p><a href="./?m=l&p=marble">MARBLE</a></p>
-                            <p><a href="./?m=l&p=stone">STONE</a></p>
-                            <p><a href="./?m=l&p=concrete">CONCRETE</a></p>
-                            <p><a href="./?m=l&p=terracotta">TERRACOTTA</a></p>
-                            <p><a href="./?m=l&p=wood">WOOD</a></p>
+                            <p><a href="./?m=l&p=MARBLE">MARBLE</a></p>
+                            <p><a href="./?m=l&p=STONE">STONE</a></p>
+                            <p><a href="./?m=l&p=CONCRETE">CONCRETE</a></p>
+                            <p><a href="./?m=l&p=TERRACOTTA">TERRACOTTA</a></p>
+                            <p><a href="./?m=l&p=WOOD">WOOD</a></p>
                             <p><a href="./?m=l&p=brick">BRICK / DÉCOR</a></p>
-                            <p><a href="./?m=l&p=colour">COLOUR</a></p>
+                            <p><a href="./?m=l&p=COLOUR">COLOUR</a></p>
                             <p><a href="./?m=l&p=outdoor">OUTDOOR</a></p>
                         </div>
                     </div>
