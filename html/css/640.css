@@ -470,6 +470,7 @@ float: right;
 }
 
 .tile .detail {
+    line-height: 10px;
     position: absolute;
     width:100%;
     bottom: 4px;
