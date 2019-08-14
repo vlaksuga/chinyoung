@@ -861,6 +861,10 @@ nav li.dropdown {
     font-size: 0.8em;
 }
 
+#search li a:hover {
+    cursor: pointer;
+}
+
 #search_result .result {
     text-align: right;
     padding-bottom: 20px;
