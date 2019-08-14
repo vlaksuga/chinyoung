@@ -100,7 +100,7 @@ $(function(){
             <li><a  onclick="sh('X')">X</a></li>
             <li><a  onclick="sh('Y')">Y</a></li>
             <li><a onclick="sh('Z')">Z</a></li>
-            <li><a  onclick="sh('num')">0-9</a></li>
+            <li><a  onclick="sh('1')">0-9</a></li>
         </ul>
     </div>
     <div class="select">
