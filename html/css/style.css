@@ -873,6 +873,11 @@ nav li.dropdown {
     top: 0;
 }
 
+.modal_l:hover,
+.modal_r:hover {
+ cursor: pointer;   
+}
+
 .modal_l {
     left: 10%;
 }
