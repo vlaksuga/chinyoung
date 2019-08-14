@@ -1036,15 +1036,15 @@ float: right;
 }
 
 #btn_reset button {
-    background-color:white;
+    background-color: grey;
     border: none;
-    color:black;
+    color: white;
     border-radius: 3%;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 /*======================
