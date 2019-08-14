@@ -863,21 +863,22 @@ nav li.dropdown {
 }
 
 
-.modal_l {
-     position: absolute;
-     left: 20%;
-     height: 100%;
-     padding-top: 50%;
-     top: 50%;
- }
-
-.modal_r {
+.modal_l,
+.modal_r  {
+    font-size: 2em;
     position: absolute;
-    right: 20%;
     height: 100%;
     padding-top: 50%;
     top: 50%;
- }
+}
+
+.modal_l {
+    left: 25%;
+}
+
+.modal_r {
+    right: 25%;
+}
 
  /*======================
     SEARCH
