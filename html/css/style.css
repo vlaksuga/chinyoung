@@ -863,8 +863,19 @@ nav li.dropdown {
 }
 
 
+.modal_l {
+     position: absolute;
+     left: 20%;
+     top: 50%;
+ }
 
-/*======================
+.modal_r {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+ }
+
+ /*======================
     SEARCH
  ====================== */
 

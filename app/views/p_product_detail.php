@@ -106,8 +106,8 @@
                         <p data-p="pname">GARDENA BIANCO</p>
                         <p data-p="size">400*800*8T</p>
                     </div>
-                    <div style="position:absolute;height:100%;left:0px;text-valign:middle" onclick="movetile(-1)">LLLLLL</div>
-                    <div style="position:absolute;height:100%;right:0px;text-valign:middle" onclick="movetile(1)">RRRRRR</div>
+                    <div class="modal_l" style="position:absolute;height:100%;left:0px;text-valign:middle" onclick="movetile(-1)"><i class="fas fa-angle-left"></i></div>
+                    <div class="modal_r" style="position:absolute;height:100%;right:0px;text-valign:middle" onclick="movetile(1)"><i class="fas fa-angle-right"></i></div>
                 </div>
             </div>
     
