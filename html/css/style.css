@@ -749,8 +749,9 @@ nav li.dropdown {
     bottom: 10%;
 }
 
-#projects_tiles > .detail p {
+#projects_tiles p {
     color: black;
+    font-weight: bold;
 }
 
 /*======================
