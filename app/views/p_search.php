@@ -7,6 +7,8 @@
     $p_finish = $model["finish"];
     $p_technology = $model["technology"];
     $p_hint = $model["hint"];
+    $p_size = $model["size"];
+    $p_thickness = $model["thickness"];
 ?>
 <script>
     function reset(){
@@ -38,6 +40,12 @@
         if($("#technology").val()){
             u+="&technology="+$("#technology").val();
         }
+        if($("#thickness").val()){
+            u+="&thickness="+$("#thickness").val();
+        }
+        if($("#size").val()){
+            u+="&size="+$("#size").val();
+        }
         if(curhint!=""){
             u+="&hint="+curhint;
         }
@@ -54,6 +62,8 @@ $(function(){
     $("#design").val("<?=$p_design?>");
     $("#finish").val("<?=$p_finish?>");
     $("#technology").val("<?=$p_technology?>");
+    $("#size").val("<?=$p_size?>");
+    $("#thickness").val("<?=$p_thickness?>");
     });
 
 </script>
@@ -102,7 +112,7 @@ $(function(){
             </select>
         </div>
         <div class="s_size">
-            <select id="size" name="size" onchange="size0()">
+            <select id="size" name="size"  onchange="search()">
                 <option value="" disabled selected>SIZE</option>
                 <option value="1">150*600 / 200*800 / 150*900</option>
                 <option value="2">200*1200</option>
@@ -149,7 +159,7 @@ $(function(){
         </div>
 
         <div class="s_thickness">
-            <select id="thickness" name="thickness" onchange="thickness()">
+            <select id="thickness" name="thickness"  onchange="search()">
                 <option value="" disabled selected>THICHNESS</option>
                 <option value="1">3.5T - 6.5T</option>
                 <option value="2">8T</option>

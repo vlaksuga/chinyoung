@@ -280,7 +280,7 @@ class M_test extends CI_Model{
 		return $rsa;
 	}
 
-	public function search($space,$design,$finish,$technology,$hint)
+	public function search($space,$design,$finish,$technology,$hint,$size=null,$thickness=null)
 	{
 		$r = array();
 		if($space == "indoor") $where .= " and indoor = 1 ";
@@ -293,6 +293,8 @@ class M_test extends CI_Model{
 		if($technology == "bigslab") $where .= " and bigslab = 1 ";
 		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
 		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
+		if($size!=null) {$where .= " and svalue = ? "; $r[]=$size;}
+		if($thickness!=null) {$where .= " and tvalue = ? "; $r[]=$thickness;}
 		
 		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
 		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
