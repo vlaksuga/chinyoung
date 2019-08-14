@@ -951,6 +951,28 @@ float: right;
 }
 
 
+
+.modal_l,
+.modal_r  {
+    font-size: 2em;
+    width: 30%;
+    position: absolute;
+    height: 100vh;
+    padding-top: 20%;
+    top: 0;
+}
+
+.modal_l {
+    left: 10%;
+}
+
+.modal_r {
+    right: 10%;
+}
+
+
+
+
 /*======================
     SEARCH
  ====================== */
