@@ -50,7 +50,8 @@
 </div>
 
 
-<!-- / RELATED PROJECT / -->
+<!-- / RELATED PROJECT / 
+
 <section id="related_project">
 
 <div class="container">
@@ -77,3 +78,4 @@
 </div>
 
 </section>
+-->
