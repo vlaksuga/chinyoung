@@ -561,6 +561,7 @@ nav li.dropdown {
 }
 
 .half_box .bottom_art div {
+    letter-spacing: 3px;
     font-size:2em;
     font-weight: bold;
     text-align: right;
