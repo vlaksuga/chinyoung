@@ -616,6 +616,10 @@ nav li.dropdown {
     margin: 5px;
 }
 
+.none {
+    display: none;
+}
+
 .new {
     position: absolute;
     right:5px;
