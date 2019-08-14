@@ -21,7 +21,7 @@
                 <li><a href="./?m=projects">PROJECTS</a></li>
                 <li><a href="./?c=etc&m=contact">CONTACT</a></li>
                 <li><a href="./?m=search">SEARCH</a></li>
-                <li style="float: right;"><a href="#">CATALOG</a></li>
+                <li style="float: right;"><a href="./lib/chinyoung_products_2016catalog.zip">CATALOG</a></li>
             </ul>
         </nav>
 
