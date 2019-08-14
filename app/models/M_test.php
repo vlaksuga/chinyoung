@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
+		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -48,7 +48,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffectcnt($effect)
 	{
-		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid";
+		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid";
 		$rs = $this->db->query($sql, array($effect));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -58,7 +58,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslab($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
+		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -78,7 +78,7 @@ class M_test extends CI_Model{
 
 	public function loutdoor($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -88,7 +88,7 @@ class M_test extends CI_Model{
 
 	public function loutdoorcnt()
 	{
-		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile  where outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid ";
+		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile  where outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid ";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -134,7 +134,7 @@ class M_test extends CI_Model{
 
 	public function lbybrand($brand,$start,$cnt)
 	{
-		$sql="select c.* from collection c where c.brand=?  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile  group by collectionid) t  where c.collectionid = t.collectionid and c.brand=?  limit ?,?";
 		$rs = $this->db->query($sql, array($brand,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -297,7 +297,7 @@ class M_test extends CI_Model{
 		if($thickness!=null) {$where .= " and tvalue = ? "; $r[]=$thickness;}
 		
 		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
-		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		$sql="select * from collection c,(select collectionid,sum(case when new=1 then 1 else 0 end) newflag from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
 		
 		$rs = $this->db->query($sql, $r);
         $rsa = $rs->result_array();
@@ -323,7 +323,7 @@ class M_test extends CI_Model{
 		
 		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
 		$sql="select count(*) cnt from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
-		echo $sql;
+	
 		
 		$rs = $this->db->query($sql, $r);
         $rsa = $rs->result_array();
