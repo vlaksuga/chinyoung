@@ -607,7 +607,6 @@ float: right;
 .active,
 .accordion:hover {
     padding-top: 2px;
-    color: black;
     border-top: 1px solid white;
 }
 
