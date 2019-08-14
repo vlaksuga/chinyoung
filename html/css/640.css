@@ -769,6 +769,11 @@ float: right;
     font-weight: bold;
 }
 
+#projects_tiles .new {
+    display: none;
+}
+
+
 /*======================
     PROJECT_DETAIL
  ====================== */
