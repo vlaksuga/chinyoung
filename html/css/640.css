@@ -471,15 +471,19 @@ float: right;
 
 .tile .detail {
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.4);
 }
 
 .detail h2 {
+    padding-left: 5%;
     color: black;
 }
 
 .detail p {
+    padding-left: 5%;
     color: gray;
 }
 
