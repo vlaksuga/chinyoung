@@ -749,6 +749,9 @@ nav li.dropdown {
     bottom: 10%;
 }
 
+#projects_tiles > .detail p {
+    color: black;
+}
 
 /*======================
     PRODUCT DETAIL
