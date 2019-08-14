@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -48,7 +48,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffectcnt($effect)
 	{
-		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid";
+		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid";
 		$rs = $this->db->query($sql, array($effect));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -58,7 +58,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslab($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -78,7 +78,7 @@ class M_test extends CI_Model{
 
 	public function loutdoor($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -88,7 +88,7 @@ class M_test extends CI_Model{
 
 	public function loutdoorcnt()
 	{
-		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile  where outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid ";
+		$sql="select count(*) cnt from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile  where outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid ";
 		$rs = $this->db->query($sql);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -107,7 +107,7 @@ class M_test extends CI_Model{
 		$in = implode(', ', $iiii);
 		$effect[] = $start;
 		$effect[] = $cnt;
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, $effect);
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -134,7 +134,7 @@ class M_test extends CI_Model{
 
 	public function lbybrand($brand,$start,$cnt)
 	{
-		$sql="select c.* from collection c where c.brand=?  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile  group by collectionid) t  where c.collectionid = t.collectionid and c.brand=?  limit ?,?";
 		$rs = $this->db->query($sql, array($brand,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -297,12 +297,39 @@ class M_test extends CI_Model{
 		if($thickness!=null) {$where .= " and tvalue = ? "; $r[]=$thickness;}
 		
 		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
-		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		$sql="select * from collection c,(select collectionid,sum(case when new=1 then 1 else 0 end) newflag from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		
 		$rs = $this->db->query($sql, $r);
         $rsa = $rs->result_array();
 		$rs->free_result();
 
 		return $rsa;
+	}
+	public function searchcnt($space,$design,$finish,$technology,$hint,$size=null,$thickness=null)
+	{
+		$r = array();
+		if($space == "indoor") $where .= " and indoor = 1 ";
+		if($space == "outdoor") $where .= " and outdoor = 1 ";
+		if($design!=null) {$where .= " and effect = ? "; $r[]=$design;}
+		if($finish!=null) {$where .= " and (finish = ? or finish2 = ?) "; $r[]=$finish;$r[]=$finish;}
+		if($technology == "kerlite") $where .= " and kerlite = 1 ";
+		if($technology == "antislip") $where .= " and antislip = 1 ";
+		if($technology == "antibacterial") $where .= " and antibacterial = 1 ";
+		if($technology == "bigslab") $where .= " and bigslab = 1 ";
+		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
+		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
+		if($size!=null) {$where .= " and svalue = ? "; $r[]=$size;}
+		if($thickness!=null) {$where .= " and tvalue = ? "; $r[]=$thickness;}
+		
+		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
+		$sql="select count(*) cnt from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+	
+		
+		$rs = $this->db->query($sql, $r);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
 	}
 	
 }

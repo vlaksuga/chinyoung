@@ -46,6 +46,6 @@
 			<h2><?=$item["cename"]?></h2>
 			<p><?=$item["effect"]?></p>
 		</div>
-		<div class="new"></div>
+		<div class="<? if($item["newflag"]>0) echo "new";?>"><?=$item["newflag"]?></div>
 	</div>
 <?php } ?>
