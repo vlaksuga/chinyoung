@@ -60,7 +60,7 @@ a[href^="tel:"] {
 .half_box {
     height: 200px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 /* xs-done */
