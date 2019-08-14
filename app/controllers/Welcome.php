@@ -51,7 +51,6 @@ class Welcome extends vlsg_Controller {
 		}
 		switch($p){
 			case "COLOUR":
-				$p="COLOURS";
 			case "MARBLE":
 			case "STONE":
 			case "CONCRETE":
