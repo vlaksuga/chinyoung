@@ -298,11 +298,38 @@ class M_test extends CI_Model{
 		
 		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
 		$sql="select * from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		
 		$rs = $this->db->query($sql, $r);
         $rsa = $rs->result_array();
 		$rs->free_result();
 
 		return $rsa;
+	}
+	public function searchcnt($space,$design,$finish,$technology,$hint,$size=null,$thickness=null)
+	{
+		$r = array();
+		if($space == "indoor") $where .= " and indoor = 1 ";
+		if($space == "outdoor") $where .= " and outdoor = 1 ";
+		if($design!=null) {$where .= " and effect = ? "; $r[]=$design;}
+		if($finish!=null) {$where .= " and (finish = ? or finish2 = ?) "; $r[]=$finish;$r[]=$finish;}
+		if($technology == "kerlite") $where .= " and kerlite = 1 ";
+		if($technology == "antislip") $where .= " and antislip = 1 ";
+		if($technology == "antibacterial") $where .= " and antibacterial = 1 ";
+		if($technology == "bigslab") $where .= " and bigslab = 1 ";
+		if($technology == "porcelain") $where .= " and material = 'PORCELAIN' ";
+		if($technology == "ceramic") $where .= " and material = 'CERAMIC' ";
+		if($size!=null) {$where .= " and svalue = ? "; $r[]=$size;}
+		if($thickness!=null) {$where .= " and tvalue = ? "; $r[]=$thickness;}
+		
+		if($hint!=null) {$collectionwhere .= " and searchhint like concat(?,'%') "; $r[]=$hint;}
+		$sql="select count(*) cnt from collection c,(select collectionid from tile where 1=1 ".$where." group by collectionid) t where c.collectionid = t.collectionid ".$collectionwhere;
+		echo $sql;
+		
+		$rs = $this->db->query($sql, $r);
+        $rsa = $rs->result_array();
+		$rs->free_result();
+
+		return $rsa[0]["cnt"];
 	}
 	
 }

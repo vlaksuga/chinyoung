@@ -168,7 +168,7 @@ class Welcome extends vlsg_Controller {
 		$data["thickness"] = $thickness;
 
 
-		$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
+		$page = $this->procpage($listingcountinpage, $this->m_test->searchcnt($space,$design,$finish,$technology,$hint,$size,$thickness),"page",10000);
 		$data["list"] = $this->m_test->search($space,$design,$finish,$technology,$hint,$size,$thickness,$page["start"],$listingcountinpage);
 		$data["page"] = $page;
 
