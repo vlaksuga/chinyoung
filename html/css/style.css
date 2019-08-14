@@ -866,12 +866,16 @@ nav li.dropdown {
 .modal_l {
      position: absolute;
      left: 20%;
+     height: 100%;
+     padding-top: 50%;
      top: 50%;
  }
 
 .modal_r {
     position: absolute;
-    left: 20%;
+    right: 20%;
+    height: 100%;
+    padding-top: 50%;
     top: 50%;
  }
 
