@@ -661,6 +661,8 @@ float: right;
 }
 
 .half_box .bottom_art div {
+    font-size:2em;
+    font-weight: bold;
     text-align: right;
 }
 

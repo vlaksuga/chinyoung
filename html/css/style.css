@@ -68,7 +68,8 @@ a[href^="tel:"] {
 }
 
 .half_box .bottom_art {
-    width: 200px;
+    position: absolute;
+    width: 100%;
     height: 50px;
     bottom: 35%;
     right: 10%;
@@ -560,6 +561,8 @@ nav li.dropdown {
 }
 
 .half_box .bottom_art div {
+    font-size:2em;
+    font-weight: bold;
     text-align: right;
 }
 
