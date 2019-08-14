@@ -21,13 +21,65 @@
     </p>
 </section>
 
+<div id="modal_container" style="display:none">
+                <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
+                <div class="tile_container mo_slide" style="position:relative">
+                    <img src="img/tile/t_0001/td_02.jpg">
+
+                    <div style="position:absolute;height:100%;left:0px;text-valign:middle" onclick="movetile(-1)">LLLLLL</div>
+                    <div style="position:absolute;height:100%;right:0px;text-valign:middle" onclick="movetile(1)">RRRRRR</div>
+                </div>
+            </div>
+    
+            <script>
+                    function closeModal() {
+                    document.getElementById("modal_container").style.display = "none";
+                    }
+
+                    function movetile(a){
+                        var col = $("#projects_detail_tiles .grid .tile");
+                        var curid = $(".tile_container").data("id");
+                        for(var i = 0;i<col.length;i++){
+                            var item = $(col.get(i));
+                            if(item.attr("data-id")==curid) {
+                               var o = i+a;
+                               if(o<0){
+                                   item = $(col.get(col.length-1));
+                                   openModal(item.attr("data-id"));
+                                   return;
+                               }
+                               if(o>=col.length){
+                                   item = $(col.get(0));
+                                   openModal(item.attr("data-id"));
+                                   return;
+                               }
+                               item = $(col.get(o));
+                               openModal(item.attr("data-id"));
+                               return;
+                            }
+                        }
+                    }
+                    function openModal(a) {
+                        
+                        var col = $("#projects_detail_tiles .grid .tile");
+                        for(var i = 0;i<col.length;i++){
+                            var item = $(col.get(i));
+                            if(item.attr("data-id")==a) {
+                                $(".tile_container img").attr("src","/img/i_data/"+item.attr("data-i"));
+                                $(".tile_container").data("id",item.attr("data-id"));
+                                document.getElementById("modal_container").style.display = "block";
+                            }
+                        }
+                        
+                    }
+            </script>
 
 <!-- / PROJECTS_DETAIL TILES / -->
 <section id="projects_detail_tiles" class="sec_gap">
 
     <div class="grid">
         <?php for($i=0;$i<count($projectimglist);$i++){ $item = $projectimglist[$i];?>
-                        <div class="tile">
+                        <div class="tile" onclick="openModal('<?=$item["projectimgid"]?>')" data-id="<?=$item["projectimgid"]?>" data-i="<?=$item["url"]?>">
                             <img src="./img/i_data/<?=$item["url"]?>" alt="thumb1">
                         </div>
                  
