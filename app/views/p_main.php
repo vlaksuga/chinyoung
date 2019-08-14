@@ -15,8 +15,8 @@
                 </div>
                 <div class="carousel-container">
                   <div class="carousel-content">
-                    <h2>GRAYSCALE</span></h2>
-                    <div><a href="#">VIEW MORE</a></div>
+                    <h2>FRAME</span></h2>
+                    <div><a href="./?m=product&cid=52">VIEW MORE</a></div>
                   </div>
                 </div>
               </div>
@@ -25,8 +25,8 @@
                 <div class="carousel-background"><img src="img/intro/intro_02.jpg" alt=""></div>
                 <div class="carousel-container">
                   <div class="carousel-content">
-                    <h2>METAL</h2>
-                    <div><a href="#">VIEW MORE</a></div>
+                    <h2>kerlite VANITY</h2>
+                    <div><a href="./?m=product&cid=8">VIEW MORE</a></div>
                   </div>
                 </div>
               </div>
@@ -35,8 +35,8 @@
                 <div class="carousel-background"><img src="img/intro/intro_03.jpg" alt=""></div>
                 <div class="carousel-container">
                   <div class="carousel-content">
-                    <h2>WOODLAND</h2>
-                    <div><a href="#">VIEW MORE</a></div>
+                    <h2>kerlite LIMESTONE</h2>
+                    <div><a href="./?m=product&cid=2">VIEW MORE</a></div>
                   </div>
                 </div>
               </div>
@@ -45,8 +45,8 @@
                 <div class="carousel-background"><img src="img/intro/intro_04.jpg" alt=""></div>
                 <div class="carousel-container">
                   <div class="carousel-content">
-                    <h2>LIMESTONE</h2>
-                    <div><a href="#">VIEW MORE</a></div>
+                    <h2>RODEN</h2>
+                    <div><a href="./?m=product&cid=63">VIEW MORE</a></div>
                   </div>
                 </div>
               </div>
