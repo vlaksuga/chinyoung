@@ -106,14 +106,14 @@ $(function(){
     <div class="select">
         <div class="s_space">
             <select id="space" name="space" onchange="search()">
-                <option value="" disabled selected>SPACE</option>
+                <option value="" selected>SPACE</option>
                 <option value="indoor">INDOOR</option>
                 <option value="outdoor">OUTDOOR</option>
             </select>
         </div>
         <div class="s_size">
             <select id="size" name="size"  onchange="search()">
-                <option value="" disabled selected>SIZE</option>
+                <option value="" selected>SIZE</option>
                 <option value="1">150*600 / 200*800 / 150*900</option>
                 <option value="2">200*1200</option>
                 <option value="3">260*1600 / 400*1600</option>
@@ -136,7 +136,7 @@ $(function(){
         </div>
         <div class="s_design">
             <select id="design" name="design" onchange="search()">
-                <option value="" disabled selected>DESIGN</option>
+                <option value="" selected>DESIGN</option>
                 <option value="stone">STONE</option>
                 <option value="marble">MARBLE</option>
                 <option value="concrete">CONCRETE</option>
@@ -150,7 +150,7 @@ $(function(){
         </div>
         <div class="s_finish">
             <select id="finish" name="finish" onchange="search()">
-                <option value="" disabled selected>FINISH</option>
+                <option value="" selected>FINISH</option>
                 <option value="matt">MATT, NATURAL</option>
                 <option value="glossy">GLOSSY, POLISHED</option>
                 <option value="lappato">LAPPATO, HONED</option>
@@ -160,7 +160,7 @@ $(function(){
 
         <div class="s_thickness">
             <select id="thickness" name="thickness"  onchange="search()">
-                <option value="" disabled selected>THICHNESS</option>
+                <option value="" selected>THICHNESS</option>
                 <option value="1">3.5T - 6.5T</option>
                 <option value="2">8T</option>
                 <option value="3">9T - 11T</option>
@@ -172,7 +172,7 @@ $(function(){
         </div>
         <div class="s_technology">
             <select id="technology" name="technology" onchange="search()">
-                <option value="" disabled selected>TECHNOLOGY</option>
+                <option value="" selected>TECHNOLOGY</option>
                 <option value="kerite">KERILITE@</option>
                 <option value="bigslab">BIG SLAB</option>
                 <option value="porcelain">PORCELAIN</option>

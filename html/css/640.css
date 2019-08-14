@@ -999,6 +999,13 @@ float: right;
     color: grey;
 }
 
+
+#search .select div select option:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+
 #btn_reset {
     margin: 0; 
     width: 100%;
