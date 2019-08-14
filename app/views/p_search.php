@@ -184,11 +184,11 @@ $(function(){
     </div>
 </section>
 
-<!-- / RESET TEMP./ -->
-<button onclick = "reset()">RESET</button>
+
 
 <!-- / SEARCH RESULT / -->
 <section id="search_result" class="sec_gap">
+    <div id="btn_reset"><button onclick = "reset()">RESET <i class="fas fa-redo"></i></button></div>
     <h2>SEARCH RESULT</h2>
 
     <div class="result">
