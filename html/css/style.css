@@ -868,8 +868,8 @@ nav li.dropdown {
     font-size: 2em;
     width: 30%;
     position: absolute;
-    height: 100%;
-    padding-top: 50%;
+    height: 100pv;
+    padding-top: 20%;
     top: 0;
 }
 
