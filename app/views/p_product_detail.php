@@ -100,12 +100,14 @@
 
                         <div id="modal_container" style="display:none">
                 <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
-                <div class="tile_container mo_slide">
+                <div class="tile_container mo_slide" style="position:relative">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
                         <p data-p="pname">GARDENA BIANCO</p>
                         <p data-p="size">400*800*8T</p>
                     </div>
+                    <div style="position:absolute;height:100%;left:0px;text-valign:middle" onclick="movetile(-1)">LLLLLL</div>
+                    <div style="position:absolute;height:100%;right:0px;text-valign:middle" onclick="movetile(1)">RRRRRR</div>
                 </div>
             </div>
     
@@ -114,12 +116,43 @@
                     document.getElementById("modal_container").style.display = "none";
                     }
 
-                    function openModal(a,b,c) {
+                    function movetile(a){
+                        var col = $(".tile_box .row .col");
+                        var curid = $(".tile_container").data("id");
+                        for(var i = 0;i<col.length;i++){
+                            var item = $(col.get(i));
+                            if(item.attr("data-id")==curid) {
+                               var o = i+a;
+                               if(o<0){
+                                   item = $(col.get(col.length-1));
+                                   openModal(item.attr("data-id"));
+                                   return;
+                               }
+                               if(o>=col.length){
+                                   item = $(col.get(0));
+                                   openModal(item.attr("data-id"));
+                                   return;
+                               }
+                               item = $(col.get(o));
+                               openModal(item.attr("data-id"));
+                               return;
+                            }
+                        }
+                    }
+                    function openModal(a) {
                         
-                        $(".tile_container img").attr("src","/img/i_data/"+a);
-                        $(".tile_container [data-p=pname]").text(b);
-                        $(".tile_container [data-p=size]").text(c);
-                        document.getElementById("modal_container").style.display = "block";
+                        var col = $(".tile_box .row .col");
+                        for(var i = 0;i<col.length;i++){
+                            var item = $(col.get(i));
+                            if(item.attr("data-id")==a) {
+                                $(".tile_container img").attr("src","/img/i_data/"+item.attr("data-i"));
+                                $(".tile_container [data-p=pname]").text(item.attr("data-p"));
+                                $(".tile_container [data-p=size]").text(item.attr("data-s"));
+                                $(".tile_container").data("id",item.attr("data-id"));
+                                document.getElementById("modal_container").style.display = "block";
+                            }
+                        }
+                        
                     }
             </script>
 

@@ -1,8 +1,8 @@
 
 <?php if($type=="tile") { ?>
-<div class="col">
+<div class="col" data-id="<?=$item["tileid"]?>" data-i="<?=$item["imgs"]?>" data-p="<?=$item["productname"]?>" data-s="<?=$item["sizes"]?>">
 	<div class="img_box">
-		<a onclick="openModal('<?=$item["imgs"]?>','<?=$item["productname"]?>','<?=$item["sizes"]?>');">
+		<a onclick="openModal('<?=$item["tileid"]?>');">
 			<img src="./img/i_data/<?=$item["imgs"]?>" class="modal_img">
 		</a>
 	</div>
