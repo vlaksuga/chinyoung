@@ -555,6 +555,7 @@ nav li.dropdown {
  ====================== */
 
 #half_products {
+    background-size: 100%;
     background-image: url('../img/half/products.jpg');
 }
 
