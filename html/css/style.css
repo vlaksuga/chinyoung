@@ -866,18 +866,19 @@ nav li.dropdown {
 .modal_l,
 .modal_r  {
     font-size: 2em;
+    width: 30%;
     position: absolute;
     height: 100%;
     padding-top: 50%;
-    top: 50%;
+    top: 0;
 }
 
 .modal_l {
-    left: 25%;
+    left: 10%;
 }
 
 .modal_r {
-    right: 25%;
+    right: 10%;
 }
 
  /*======================
