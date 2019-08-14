@@ -624,7 +624,7 @@ nav li.dropdown {
     position: absolute;
     right:5px;
     top:5px;
-    background-color: navy;
+    background-color: grey;
     color:white;
     border-radius: 50%;
     width: 50px;
@@ -666,6 +666,10 @@ nav li.dropdown {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     width: 100%;
+}
+
+#projects_tiles .new {
+    display: none;
 }
 
 
@@ -948,15 +952,15 @@ nav li.dropdown {
 }
 
 #btn_reset button {
-    background-color:white;
+    background-color: grey;
     border: none;
-    color:black;
+    color: white;
     border-radius: 3%;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 

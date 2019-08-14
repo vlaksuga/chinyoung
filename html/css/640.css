@@ -720,7 +720,7 @@ float: right;
     position: absolute;
     right:5px;
     top:5px;
-    background-color: navy;
+    background-color: gray;
     color:white;
     border-radius: 50%;
     width: 50px;
@@ -768,6 +768,11 @@ float: right;
     color: black;
     font-weight: bold;
 }
+
+#projects_tiles .new {
+    display: none;
+}
+
 
 /*======================
     PROJECT_DETAIL
@@ -1031,15 +1036,15 @@ float: right;
 }
 
 #btn_reset button {
-    background-color:white;
+    background-color: grey;
     border: none;
-    color:black;
+    color: white;
     border-radius: 3%;
-    padding: 15px 32px;
+    padding: 10px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 /*======================
