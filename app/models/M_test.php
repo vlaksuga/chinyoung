@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -58,7 +58,7 @@ class M_test extends CI_Model{
 
 	public function lkelitebigslab($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where ( kerlite = 1 or bigslab = 1) group by collectionid) t where c.collectionid = t.collectionid   limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -78,7 +78,7 @@ class M_test extends CI_Model{
 
 	public function loutdoor($start,$cnt)
 	{
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where tile.outdoor = 1 group by collectionid) t where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, array($start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
@@ -107,7 +107,7 @@ class M_test extends CI_Model{
 		$in = implode(', ', $iiii);
 		$effect[] = $start;
 		$effect[] = $cnt;
-		$sql="select c.*,t.effect from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag from collection c,(select collectionid,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where  effect in ($in) group by collectionid) t  where c.collectionid = t.collectionid  limit ?,?";
 		$rs = $this->db->query($sql, $effect);
         $rsa = $rs->result_array();
 		$rs->free_result();
