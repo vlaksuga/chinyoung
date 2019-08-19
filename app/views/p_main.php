@@ -119,7 +119,7 @@
         </div>
 
         <div class="more">
-            <a href="./?m=l">VIEW MORE > </a>
+            <a href="./?m=l">VIEW MORE</a>
         </div>
     </section>
 
