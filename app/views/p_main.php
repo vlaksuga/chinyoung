@@ -89,21 +89,22 @@
 
 
     <!-- / INDEX BANNER / -->
-    <section id="index_banner">
+    <section id="index_banner"> 
         <div class="banner_left">
-            <h1>COTTO D'ESTE</h1>
+            <h1><img src="img/coco.png"></h1>
             <svg width="30%" height="20">
-                <rect width="100%" height="10" style="fill:rgba(0,0,255,0.8); stroke:none" />
+                <rect width="100%" height="10" style="fill:rgb(0,44,90); stroke:none" />
             </svg>
             <p>Cotto d’Este’s mission is based on the values of Italian beauty:
                 taste, elegance, and style that bring the highest levels
                 of excellence to our everyday lives.</p>
-           <div>
-                <div class="more"><a href="./?m=l&p=cotto">VIEW MORE</a></div>
+            <div>
+                <div class="more"><a href="#">VIEW MORE</a></div>
             </div>
+
         </div>
         <div class="banner_right"></div>
-    </section> 
+    </section>
 
     <!-- / INDEX TILES / -->
     <section id="index_tiles">
