@@ -354,10 +354,13 @@ nav li .logo {
 }
 
 .banner_left div .more {
-    color:rgb(0,44,90) !important;
     width: 180px;
     border: 2px solid rgb(0,44,90);
     padding: 5px 10px;
+}
+
+.banner_left div .more a {
+    color:rgb(0,44,90);
 }
 
 .banner_right {
