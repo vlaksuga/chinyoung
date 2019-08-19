@@ -118,6 +118,10 @@ nav li:first-child {
     margin: -5px 0 -10px 15px;
 }
 
+nav li .logo {
+    max-width: 150px;
+}
+
 nav li a,
 .dropbtn {
     display: inline-block;
