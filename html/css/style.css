@@ -333,6 +333,16 @@ nav li.dropdown {
     font-size: 1.5rem;
 }
 
+.banner_left div  {
+    float: right;
+    text-align: center;
+}
+
+.banner_left div .more {
+    width: 180px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
 
 .banner_right {
     background-image: url('../img/banner_right/banner_01.jpg');
@@ -392,9 +402,16 @@ nav li.dropdown {
 }
 
 #index_tiles .more {
-    padding-right: 20px;
-    width: 100%;
+    font-size: 1em;
+    float:right;
+    border:2px solid white;
+    margin-right: 15px;
+    padding: 5px 30px;
     text-align: right;
+}
+
+#index_tiles .more:hover {
+    background-color: lightgray;
 }
 
 /*======================

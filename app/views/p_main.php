@@ -98,7 +98,9 @@
             <p>Cotto d’Este’s mission is based on the values of Italian beauty:
                 taste, elegance, and style that bring the highest levels
                 of excellence to our everyday lives.</p>
-            <p><a href="./?m=l&p=cotto"> > view more</a></p>
+           <div>
+                <div class="more"><a href="./?m=l&p=cotto">VIEW MORE</a></div>
+            </div>
         </div>
         <div class="banner_right"></div>
     </section> 
