@@ -154,6 +154,7 @@
                 var curitem = $(curitems.get(i));
                 $(".insta",curitem).attr("src",dd.data[i].images.standard_resolution.url);
                 $("a",curitem).attr("href",dd.data[i].link);
+                $("a",curitem).attr("target","_blank");
                 
             }
         }
