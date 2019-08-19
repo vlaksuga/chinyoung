@@ -192,7 +192,7 @@ $(function(){
     <h2>SEARCH RESULT</h2>
 
     <div class="result">
-        <span><?=$page["itemcnt"]?></span> PRODUCTS
+        <span><?=$page["itemcnt"]?></span> COLLECTIONS
     </div>
 
     <!--  -->
