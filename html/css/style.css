@@ -301,7 +301,9 @@ nav li.dropdown {
 }
 
 .carousel-content div {
-  margin : 0 auto;
+    position: absolute;
+    right:0;
+    margin : 0 auto;
     border: 2px solid white;
     width: 180px;
     padding: 5px 0;
