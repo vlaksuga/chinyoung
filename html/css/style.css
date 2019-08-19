@@ -115,7 +115,7 @@ nav li {
 }
 
 nav li:first-child {
-    margin: -5px 0 0 15px;;
+    margin: -5px 0 -10px 15px;
 }
 
 nav li a,
@@ -134,6 +134,11 @@ nav li a:hover,
 
 nav li.dropdown {
     display: inline-block;
+}
+
+
+nav li .logo {
+    max-width: 150px;
 }
 
 .dropdown-content {
@@ -409,6 +414,7 @@ nav li.dropdown {
     padding: 5px 30px;
     text-align: right;
 }
+
 
 
 /*======================

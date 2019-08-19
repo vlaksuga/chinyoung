@@ -41,7 +41,7 @@
 
         <!-- xs start -->
         <div class="xs" id="nav_top">
-            <div class="menu_logo"><a href="./"><img src="img/logo.png" alt="LOGO"></a></div>
+            <div class="menu_logo"><a href="./"><img class="logo" src="img/logo2.png" alt="LOGO"></a></div>
             <div class="menu_toggle">
                 <a href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"></i></a>
             </div>
