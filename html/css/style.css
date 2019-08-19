@@ -325,6 +325,7 @@ nav li .logo {
  ====================== */
 #index_banner {
     background-color: #eeeeee;
+    color: rgb(0,44,90);
     display: grid;
     grid-template-columns: 60% 40%;
     width: 100%;
