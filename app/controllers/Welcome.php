@@ -47,7 +47,7 @@ class Welcome extends vlsg_Controller {
 
 		$data["productname"] = $menutitlemap[$p];
 		if($p==null){
-			$data["productname"] = "ALL";
+			$data["productname"] = "PRODUCTS";
 		}
 		switch($p){
 			case "COLOUR":
