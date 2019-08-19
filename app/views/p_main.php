@@ -128,7 +128,7 @@
 
         <div class="insta_title">
             <h2>INSTAGRAM</h2>
-            <p>@CHINYOUNGKOREA_OFFICIAL</p>
+            <p><a href="//www.instagram.com/chinyoungkorea_official/" target="_blank"> @CHINYOUNGKOREA_OFFICIAL</a></p>
         </div>
         
         <script>
