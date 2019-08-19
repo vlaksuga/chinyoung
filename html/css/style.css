@@ -680,7 +680,7 @@ nav li.dropdown {
 
 #projects_tiles .grid {
     display: grid;
-    grid-template-columns: 34% 33% 33%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     width: 100%;
 }
 
@@ -950,7 +950,7 @@ nav li.dropdown {
 
 #search_result .grid {
     display: grid;
-    grid-template-columns: 34% 33% 33%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     width: 100%;
 }
 
