@@ -1010,7 +1010,7 @@ nav li.dropdown {
     padding: 0;
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 150px;
 }
 
 footer .row {
@@ -1030,6 +1030,11 @@ footer .add_box {
 
 footer .add_box div {
     padding-top: 5px;
+}
+
+.copyright {
+    padding-top: 30px;
+    text-align: center;
 }
 
 /* Carousel From BS4 */

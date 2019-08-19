@@ -15,3 +15,6 @@
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            COPYRIGHT © 2019 CHINYOUNG KOREA. ALL RIGHTS RESERVED.
+        </div>
