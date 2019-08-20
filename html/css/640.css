@@ -107,15 +107,9 @@ nav li {
     float: left;
 }
 
-
 nav li:first-child {
-    margin: -5px 0 -10px 15px;
+    margin: -5px 0 0 15px;;
 }
-
-nav li .logo {
-    max-width: 150px;
-}
-
 
 nav li a,
 .dropbtn {
@@ -168,7 +162,12 @@ nav li.dropdown {
 
 
 #nav_top .menu_logo {
+    width: 30%;
     float: left;
+}
+
+#nav_top .menu_logo .logo {
+    width: 100%;
 }
 
 #nav_top .menu_toggle {
