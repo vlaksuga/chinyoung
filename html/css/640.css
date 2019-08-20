@@ -448,7 +448,7 @@ float: right;
 
  #index_tiles {
      width: 100%;
-     text-align: center;
+     text-align: left;
  }
  /* xs */
 #index_tiles .grid {
