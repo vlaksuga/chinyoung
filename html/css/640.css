@@ -696,6 +696,9 @@ float: right;
 
 
 #products_tiles .group ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 30px;
     list-style-type: none;
     margin: 0;
     padding: 0;
