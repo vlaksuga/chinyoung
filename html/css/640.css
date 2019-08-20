@@ -65,9 +65,10 @@ a[href^="tel:"] {
 
 /* xs-done */
 .half_box .bottom_art {
-    height: 50px;
-    top: 15%;
-    right: 10%;
+    position: absolute;
+    height: 100px;
+    top: 50px;
+    right: 5%;
 }
 
 
