@@ -103,7 +103,6 @@
                 <div class="tile_container mo_slide" style="position:relative">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
-                        <div class="wrap" style="width: 100vw; height: 850px; display: table-cell; position: relative;">
                         <p data-p="pname">GARDENA BIANCO</p>
                         <p data-p="size">400*800*8T</p>
                     </div>
