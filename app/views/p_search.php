@@ -160,9 +160,9 @@ $(function(){
 
         <div class="s_thickness">
             <select id="thickness" name="thickness"  onchange="search()">
-                <option value="" selected>THICHNESS</option>
+                <option value="" selected>THICKNESS</option>
                 <option value="1">3.5T - 6.5T</option>
-                <option value="2">8T</option>
+                <option value="2">7T - 8T</option>
                 <option value="3">9T - 11T</option>
                 <option value="4">13T</option>
                 <option value="5">14T</option>
@@ -173,7 +173,7 @@ $(function(){
         <div class="s_technology">
             <select id="technology" name="technology" onchange="search()">
                 <option value="" selected>TECHNOLOGY</option>
-                <option value="kerite">KERILITE@</option>
+                <option value="kerite">KERLITE@</option>
                 <option value="bigslab">BIG SLAB</option>
                 <option value="porcelain">PORCELAIN</option>
                 <option value="ceramic">CERAMIC</option>
