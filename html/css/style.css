@@ -661,7 +661,7 @@ nav li .logo {
     position: absolute;
     right:5px;
     top:5px;
-    background-color: grey;
+    background-color: rgba(43, 191, 252, 0.5);
     color:white;
     border-radius: 50%;
     width: 50px;
