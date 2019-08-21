@@ -182,6 +182,9 @@ $(function(){
             </select>
         </div>
     </div>
+    <div class="notice">
+        <h5>*검색결과는 해당제품이 포함된 컬렉션입니다. 클릭하시면 제품상세를 확인하실 수 있습니다.</h5>
+    </div>
 </section>
 
 
