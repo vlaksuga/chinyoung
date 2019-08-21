@@ -107,8 +107,6 @@
                         <p data-p="pname">GARDENA BIANCO</p>
                         <p data-p="size">400*800*8T</p>
                     </div>
-                </div>
-                </div>
                     <div class="modal_l" onclick="movetile(-1)"><i class="fas fa-angle-left"></i></div>
                     <div class="modal_r" onclick="movetile(1)"><i class="fas fa-angle-right"></i></div>
                 </div>
