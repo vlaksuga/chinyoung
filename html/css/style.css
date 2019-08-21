@@ -918,7 +918,7 @@ nav li .logo {
     width: 30%;
     position: absolute;
     height: 800vh;
-    top: 50;
+    top: 50%;
 }
 
 .modal_l:hover,
