@@ -101,11 +101,16 @@
                         <div id="modal_container" style="display:none">
                 <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
                 <div class="tile_container mo_slide" style="position:relative">
+                <div class="wrap" style="width: 100vw; height: 850px; display: table-cell; position: relative;">
+                <div class="box" style="width: 100vw; height: 850px; vertical-align: middle; display: table-cell;">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
+                        <div class="wrap" style="width: 100vw; height: 850px; display: table-cell; position: relative;">
                         <p data-p="pname">GARDENA BIANCO</p>
                         <p data-p="size">400*800*8T</p>
                     </div>
+                </div>
+                </div>
                     <div class="modal_l" onclick="movetile(-1)"><i class="fas fa-angle-left"></i></div>
                     <div class="modal_r" onclick="movetile(1)"><i class="fas fa-angle-right"></i></div>
                 </div>
