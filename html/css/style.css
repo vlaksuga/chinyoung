@@ -899,15 +899,26 @@ nav li .logo {
     padding-top:10vh;
 }
 
+#modal_container .mobox {
+    width: 100vw;
+    text-align: center;
+}
+
+.tile_container {
+    width: 100vw;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    height: 800px;
+}
 
 .modal_l,
 .modal_r  {
     font-size: 2em;
     width: 30%;
     position: absolute;
-    height: 100vh;
-    padding-top: 20%;
-    top: 0;
+    height: 800vh;
+    top: 50;
 }
 
 .modal_l:hover,
