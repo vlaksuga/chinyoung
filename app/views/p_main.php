@@ -92,9 +92,6 @@
     <section id="index_banner"> 
         <div class="banner_left">
             <h1><img src="img/coco.png"></h1>
-            <svg width="30%" height="20">
-                <rect width="100%" height="10" style="fill:rgb(0,44,90); stroke:none" />
-            </svg>
             <p>Cotto d’Este’s mission is based on the values of Italian beauty:
                 taste, elegance, and style that bring the highest levels
                 of excellence to our everyday lives.</p>
