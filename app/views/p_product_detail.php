@@ -101,8 +101,6 @@
                         <div id="modal_container" style="display:none">
                 <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
                 <div class="tile_container mo_slide" style="position:relative">
-                <div class="wrap" style="width: 100vw; height: 850px; display: table-cell; position: relative;">
-                <div class="box" style="width: 100vw; height: 850px; vertical-align: middle; display: table-cell;">
                     <img src="img/tile/t_0001/td_02.jpg">
                     <div class="tile_data">
                         <div class="wrap" style="width: 100vw; height: 850px; display: table-cell; position: relative;">
