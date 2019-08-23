@@ -341,6 +341,14 @@ nav li .logo {
     grid-template-columns: 50% 50%;
 }
 
+.banner_left .cotto_title div img {
+    width: 100%;
+}
+
+.banner_left .cotto_title div h1 {
+    padding-left: 40px;
+    font-size: 3em;
+}
 
 .banner_left h1 img {
     padding-left: -50px;

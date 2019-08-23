@@ -92,10 +92,13 @@
     <section id="index_banner"> 
         <div class="banner_left">
           <div class="cotto_title">
-            <div><img src="img/coco.png"></div>
-            <div>EXTRA THICK, ULTRA THIN</h3>
-            
-          </div>
+            <div>
+              <img src="img/coco.png">
+            </div>
+            <div>
+              <h1>EXTRA THICK<br>ULTRA THIN</h1>
+            </div>
+        </div>
           <div class="cotto_eng">
             <p>-20-YEAR GUARANTEE, PROTECT ANTI-BACTERIAL</p>
             <p>THE ESSENCE OF ITALIAN TILES, STANDARDS OF HIGH-END PRODUCTS.<br>
