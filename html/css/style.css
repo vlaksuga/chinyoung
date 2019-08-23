@@ -355,9 +355,15 @@ nav li .logo {
     font-size: 3em;
 }
 
+.banner_left .cotto_eng p:first-child {
+    margin-bottom: 0;
+}
+
 .banner_left .cotto_eng p:nth-child(2) {
     font-size: 1rem;
+    margin-top: 7px;
 }
+
 
 .banner_left .cotto_viewbox {
     display: grid;
@@ -369,6 +375,7 @@ nav li .logo {
 }
 
 .banner_left .cotto_viewbox .cotto_kor p {
+    margin-top: 2px;
     font-size: 0.7rem;
 }
 
