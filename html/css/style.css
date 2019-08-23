@@ -336,6 +336,10 @@ nav li .logo {
     padding: 25px;
 }
 
+.banner_left p {
+    font-size: 1.5rem;
+}
+
 .banner_left .cotto_title {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -346,16 +350,18 @@ nav li .logo {
 }
 
 .banner_left .cotto_title div h1 {
+    margin: 0;
     padding-left: 40px;
     font-size: 3em;
 }
 
-.banner_left h1 img {
-    padding-left: -50px;
-    width: 50%;
+.banner_left .cotto_eng p:nth-child(2) {
+    font-size: 1rem;
 }
-.banner_left p {
-    font-size: 1.5rem;
+
+.banner_left .cotto_viewbox {
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
 .banner_left .cotto_view .more {
@@ -368,6 +374,8 @@ nav li .logo {
     font-weight: 500;
     color:rgb(0,44,90);
 }
+
+
 
 .banner_right {
     width: 100%;
