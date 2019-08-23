@@ -18,7 +18,6 @@
 
         <!-- / PRODUCT_IMAGE / -->
         <section id="product_image" class="sec_gap">
-            <h2>IMAGES</h2>
 
             <!-- SLIDESHOW GALLERY -->
             <div class="image_container">
