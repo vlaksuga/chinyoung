@@ -1069,6 +1069,7 @@ footer .add_box div {
 }
 
 .copyright {
+    color: gray
     font-size: 0.7em;
     padding-top: 30px;
     text-align: center;
