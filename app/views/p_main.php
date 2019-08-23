@@ -92,8 +92,9 @@
     <section id="index_banner"> 
         <div class="banner_left">
           <div class="cotto_title">
-            <h1><img src="img/coco.png"></h1>
-            <h3>EXTRA THICK, ULTRA THIN</h3>
+            <div><img src="img/coco.png"></div>
+            <div>EXTRA THICK, ULTRA THIN</h3>
+            
           </div>
           <div class="cotto_eng">
             <p>-20-YEAR GUARANTEE, PROTECT ANTI-BACTERIAL</p>
