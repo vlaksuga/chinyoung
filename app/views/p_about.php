@@ -25,15 +25,6 @@
         <section id="history" class="sec_gap">
             <h2>OUR HISTORY</h2>
             <div class="history_box">
-                <div class="row">
-                    <div class="col_1">
-                        <h3>PRIMIUM TILE GALLERY</h3>
-                        <p>프리미엄 타일갤러리</p>
-                    </div>
-                    <div class="col_2">
-
-                    </div>
-                </div>
 
                 <div class="row">
                     <div class="col_1">
@@ -55,6 +46,7 @@
                         <p>2003.02. 제1물류센터 건립</p>
                         <p>1989.05. ㈜진영코리아 법인설립</p>
                     </div>
+                    
                 </div>
             </div>
         </section>
