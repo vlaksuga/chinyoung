@@ -469,7 +469,9 @@ nav li .logo {
 #half_about {
     background-image: url('../img/half/about.jpg');
 }
-
+#story .story_p {
+    line-height: 24px;
+}
 #history h2,
 #faq h2 {
     text-align: center;
