@@ -896,7 +896,7 @@ nav li .logo {
 }
 
 #modal_container img{
-    padding-top:10vh;
+    max-width: 700px;
 }
 
 #modal_container .mobox {
