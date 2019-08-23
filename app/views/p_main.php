@@ -91,9 +91,16 @@
     <!-- / INDEX BANNER / -->
     <section id="index_banner"> 
         <div class="banner_left">
+          <div>
+            <h1><img src="img/coco.png"></h1>
+            <h3>EXTRA THICK, ULTRA THIN</h3>
+          </div>
+            <p>THE ESSENCE OF ITALIAN TILES, STANDARDS OF HIGH-END PRODUCTS.<br>
+               EXPERIENCE COTTO D'ESTE EXCLUSIVELY DISTRIBUTED BY CHINYOUNG.</p>
             <div>
-                <div class="more">VIEW MORE</div>
+                <div class="more"><a href="./?m=l&p=cotto">VIEW MORE</a></div>
             </div>
+
         </div>
         <div class="banner_right"></div>
     </section>
