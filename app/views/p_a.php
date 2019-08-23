@@ -38,11 +38,11 @@
                 <div class="row">
                     <div class="col_1">
                         <img src="img/history/01.jpg">
-                        <img src="img/history/01.jpg">
-                        <img src="img/history/01.jpg">
-                        <img src="img/history/01.jpg">
-                        <img src="img/history/01.jpg">
-                        <img src="img/history/01.jpg">
+                        <img src="img/history/02.jpg">
+                        <img src="img/history/03.jpg">
+                        <img src="img/history/04.jpg">
+                        <img src="img/history/05.jpg">
+                        <img src="img/history/06.jpg">
                     </div>
                     <div class="col_2 l_border">
                         <p>2017.06. 프리미엄 타일 갤러리 오픈 본사 0층</p>
