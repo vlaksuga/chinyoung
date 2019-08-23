@@ -162,7 +162,7 @@ $(function(){
             <select id="thickness" name="thickness"  onchange="search()">
                 <option value="" selected>THICKNESS</option>
                 <option value="1">3.5T - 6.5T</option>
-                <option value="2">7T - 8T</option>
+                <option value="2">7T - 8.5T</option>
                 <option value="3">9T - 11T</option>
                 <option value="4">13T</option>
                 <option value="5">14T</option>
