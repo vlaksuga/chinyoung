@@ -173,12 +173,12 @@ $(function(){
         <div class="s_technology">
             <select id="technology" name="technology" onchange="search()">
                 <option value="" selected>TECHNOLOGY</option>
-                <option value="kerite">KERLITE@</option>
+                <option value="kerlite">KERLITE@</option>
                 <option value="bigslab">BIG SLAB</option>
                 <option value="porcelain">PORCELAIN</option>
                 <option value="ceramic">CERAMIC</option>
-                <option value="anti-bacterial">ANTI-BACTERIAL</option>
-                <option value="anti-slip">ANTI-SLIP</option>
+                <option value="antibacterial">ANTI-BACTERIAL</option>
+                <option value="antislip">ANTI-SLIP</option>
             </select>
         </div>
     </div>
