@@ -96,7 +96,7 @@
                 taste, elegance, and style that bring the highest levels
                 of excellence to our everyday lives.</p>
             <div>
-                <div class="more"><a href="#">VIEW MORE</a></div>
+                <div class="more"><a href="./?m=l&p=coto">VIEW MORE</a></div>
             </div>
 
         </div>
