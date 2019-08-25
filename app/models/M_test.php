@@ -190,8 +190,8 @@ class M_test extends CI_Model{
 			case "outdoor":
 				$ooo = "and p.outdoor = 1";
 			break;
-			case "redidential":
-				$ooo = "and p.redidential = 1";
+			case "residential":
+				$ooo = "and p.residential = 1";
 			break;
 			case "commercial":
 				$ooo = "and p.commercial = 1";

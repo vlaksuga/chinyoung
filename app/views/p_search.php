@@ -160,9 +160,9 @@ $(function(){
 
         <div class="s_thickness">
             <select id="thickness" name="thickness"  onchange="search()">
-                <option value="" selected>THICHNESS</option>
+                <option value="" selected>THICKNESS</option>
                 <option value="1">3.5T - 6.5T</option>
-                <option value="2">8T</option>
+                <option value="2">7T - 8.5T</option>
                 <option value="3">9T - 11T</option>
                 <option value="4">13T</option>
                 <option value="5">14T</option>
@@ -173,14 +173,17 @@ $(function(){
         <div class="s_technology">
             <select id="technology" name="technology" onchange="search()">
                 <option value="" selected>TECHNOLOGY</option>
-                <option value="kerite">KERILITE@</option>
+                <option value="kerlite">KERLITE@</option>
                 <option value="bigslab">BIG SLAB</option>
                 <option value="porcelain">PORCELAIN</option>
                 <option value="ceramic">CERAMIC</option>
-                <option value="anti-bacterial">ANTI-BACTERIAL</option>
-                <option value="anti-slip">ANTI-SLIP</option>
+                <option value="antibacterial">ANTI-BACTERIAL</option>
+                <option value="antislip">ANTI-SLIP</option>
             </select>
         </div>
+    </div>
+    <div class="notice">
+        <h5>*검색결과는 해당제품이 포함된 컬렉션입니다. 클릭하시면 제품상세를 확인하실 수 있습니다.</h5>
     </div>
 </section>
 
@@ -192,7 +195,7 @@ $(function(){
     <h2>SEARCH RESULT</h2>
 
     <div class="result">
-        <span><?=$page["itemcnt"]?></span> PRODUCTS
+        <span><?=$page["itemcnt"]?></span> COLLECTIONS
     </div>
 
     <!--  -->

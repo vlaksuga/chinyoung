@@ -89,19 +89,41 @@
 
 
     <!-- / INDEX BANNER / -->
-    <section id="index_banner">
+    <section id="index_banner"> 
         <div class="banner_left">
-            <h1>COTTO D'ESTE</h1>
-            <svg width="30%" height="20">
-                <rect width="100%" height="10" style="fill:rgba(0,0,255,0.8); stroke:none" />
-            </svg>
-            <p>Cotto d’Este’s mission is based on the values of Italian beauty:
-                taste, elegance, and style that bring the highest levels
-                of excellence to our everyday lives.</p>
-            <p><a href="./?m=l&p=cotto"> > view more</a></p>
+
+          <div class="cotto_title">
+            <div>
+              <img src="img/coco.png">
+            </div>
+            <div>
+              <h1>EXTRA THICK<br>ULTRA THIN</h1>
+            </div>
+          </div>
+
+          <div class="cotto_eng">
+            <p>20-YEAR GUARANTEE, PROTECT ANTI-BACTERIAL</p>
+            <p>THE ESSENCE OF ITALIAN TILES, STANDARDS OF HIGH-END PRODUCTS. EXPERIENCE COTTO D'ESTE EXCLUSIVELY DISTRIBUTED BY CHINYOUNG.</p>
+          </div>
+
+          <div class="cotto_viewbox">
+
+              <div class="cotto_kor">
+                <h6>코토데스테</h6>
+                <p>아주 두껍거나, 아주 얇거나 20년 내구성 보장, 프로텍트 항균 이탈리아 타일의 정수, 하이-엔드의 표본. 진영코리아의 대표 브랜드 코토데스테로 경험하세요.</p>
+              </div>
+
+              <div>
+                <div class="cotto_view">
+                    <div class="more"><a href="./?m=l&p=cotto">VIEW MORE</a></div>
+                </div>
+              </div>
+          </div>
+
         </div>
+
         <div class="banner_right"></div>
-    </section> 
+    </section>
 
     <!-- / INDEX TILES / -->
     <section id="index_tiles">
@@ -117,7 +139,7 @@
         </div>
 
         <div class="more">
-            <a href="./?m=l">VIEW MORE > </a>
+            <a href="./?m=l">VIEW MORE</a>
         </div>
     </section>
 
@@ -126,7 +148,7 @@
 
         <div class="insta_title">
             <h2>INSTAGRAM</h2>
-            <p>@CHINYOUNGKOREA_OFFICIAL</p>
+            <p><a href="//www.instagram.com/chinyoungkorea_official/" target="_blank"> @CHINYOUNGKOREA_OFFICIAL</a></p>
         </div>
         
         <script>
@@ -151,6 +173,7 @@
                 var curitem = $(curitems.get(i));
                 $(".insta",curitem).attr("src",dd.data[i].images.standard_resolution.url);
                 $("a",curitem).attr("href",dd.data[i].link);
+                $("a",curitem).attr("target","_blank");
                 
             }
         }

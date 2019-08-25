@@ -65,9 +65,10 @@ a[href^="tel:"] {
 
 /* xs-done */
 .half_box .bottom_art {
-    height: 50px;
-    top: 15%;
-    right: 10%;
+    position: absolute;
+    height: 100px;
+    top: 50px;
+    right: 5%;
 }
 
 
@@ -162,7 +163,12 @@ nav li.dropdown {
 
 
 #nav_top .menu_logo {
+    width: 30%;
     float: left;
+}
+
+#nav_top .menu_logo .logo {
+    width: 100%;
 }
 
 #nav_top .menu_toggle {
@@ -410,6 +416,7 @@ float: right;
 }
 
 .banner_left {
+    width: 100%;
     height: 100%;
     padding: 25px;
 }
@@ -417,6 +424,10 @@ float: right;
 .banner_left h1 {
     margin: 5px 0;
     font-size: 4rem;
+}
+
+.banner_left h1 img {
+    width: 100%;
 }
 
 .banner_left p {
@@ -438,7 +449,7 @@ float: right;
 
  #index_tiles {
      width: 100%;
-     text-align: center;
+     text-align: left;
  }
  /* xs */
 #index_tiles .grid {
@@ -685,6 +696,9 @@ float: right;
 
 
 #products_tiles .group ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 30px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1077,7 +1091,7 @@ float: right;
     padding: 0;
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 140px;
 }
 
 /*  */
@@ -1116,6 +1130,15 @@ footer .add_box .add_none {
 .topsec_gap {
     margin-top : 50px;
 }
+
+
+.copyright {
+    color: gray
+    font-size: 0.6em;
+    padding-top: 30px;
+    text-align: center;
+}
+
 
 /* Carousel From BS4 */
 

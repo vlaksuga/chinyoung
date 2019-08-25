@@ -18,7 +18,6 @@
 
         <!-- / PRODUCT_IMAGE / -->
         <section id="product_image" class="sec_gap">
-            <h2>IMAGES</h2>
 
             <!-- SLIDESHOW GALLERY -->
             <div class="image_container">
@@ -98,7 +97,8 @@
             
                         <!-- MODAL START -->
 
-                        <div id="modal_container" style="display:none">
+            <div id="modal_container" style="display:none">
+                <div class="mobox">
                 <div class="bt"><a href="javascript:void(0)" onclick="closeModal()"><span>&times;</span></a></div>
                 <div class="tile_container mo_slide" style="position:relative">
                     <img src="img/tile/t_0001/td_02.jpg">
@@ -108,6 +108,7 @@
                     </div>
                     <div class="modal_l" onclick="movetile(-1)"><i class="fas fa-angle-left"></i></div>
                     <div class="modal_r" onclick="movetile(1)"><i class="fas fa-angle-right"></i></div>
+                </div>
                 </div>
             </div>
     
