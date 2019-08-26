@@ -16,5 +16,6 @@
             </div>
         </div>
         <div class="copyright">
-            COPYRIGHT © 2019 CHINYOUNG KOREA. ALL RIGHTS RESERVED.
+            COPYRIGHT © 2019 CHINYOUNG KOREA. ALL RIGHTS RESERVED.<br>
+            <span style="padding-top: 5px; font-size:0.6em;">*본 사이트는 Chrome, Edge에 최적화되어 있습니다.</span>
         </div>
