@@ -411,6 +411,8 @@ float: right;
 
  /* xs */
 #index_banner {
+    background-color: #eeeeee;
+    color: rgb(0,44,90);
     display: table;
     width: 100%;
 }
@@ -421,18 +423,72 @@ float: right;
     padding: 25px;
 }
 
-.banner_left h1 {
-    margin: 5px 0;
-    font-size: 4rem;
-}
-
-.banner_left h1 img {
-    width: 100%;
+.banner_left {
+    height: 100%;
+    padding: 25px;
 }
 
 .banner_left p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
+
+.banner_left .cotto_title {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.banner_left .cotto_title div img {
+    width: 100%;
+}
+
+.banner_left .cotto_title div h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.banner_left .cotto_eng p:first-child {
+    margin-bottom: 0;
+}
+
+.banner_left .cotto_eng p:nth-child(2) {
+    font-size: 1rem;
+    margin-top: 7px;
+}
+
+
+.banner_left .cotto_viewbox {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.banner_left .cotto_viewbox .cotto_kor h6 {
+    margin: 0;
+}
+
+.banner_left .cotto_viewbox .cotto_kor p {
+    margin-top: 2px;
+    font-size: 0.7rem;
+}
+
+.banner_left .cotto_view {
+    margin: 10px 0 0 0;
+    float: right;
+}
+
+.banner_left .cotto_view .more {
+    text-align: center;
+    width: 180px;
+    border: 2px solid rgb(0,44,90);
+    padding: 5px 10px;
+}
+
+.banner_left .cotto_view .more a {
+    font-weight: 500;
+    color:rgb(0,44,90);
+}
+
+
+
 
 /* xs */
 .banner_right {
@@ -734,7 +790,7 @@ float: right;
     position: absolute;
     right:5px;
     top:5px;
-    background-color: gray;
+    background-color: rgba(43, 191, 252, 0.5);
     color:white;
     border-radius: 50%;
     width: 50px;
@@ -1131,14 +1187,12 @@ footer .add_box .add_none {
     margin-top : 50px;
 }
 
-
 .copyright {
-    color: gray
-    font-size: 0.6em;
+    color: gray;
+    font-size: 0.7em;
     padding-top: 30px;
     text-align: center;
 }
-
 
 /* Carousel From BS4 */
 
