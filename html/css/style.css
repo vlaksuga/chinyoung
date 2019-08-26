@@ -367,7 +367,7 @@ nav li .logo {
 
 .banner_left .cotto_viewbox {
     display: grid;
-    grid-template-columns: 75% 35%;
+    grid-template-columns: 75% 25%;
 }
 
 .banner_left .cotto_viewbox .cotto_kor h6 {
