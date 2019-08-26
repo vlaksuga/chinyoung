@@ -102,7 +102,6 @@
           </div>
 
           <div class="cotto_eng">
-<p></p>
             <p>THE ESSENCE OF ITALIAN TILES, STANDARDS OF HIGH-END PRODUCTS. EXPERIENCE COTTO D'ESTE EXCLUSIVELY DISTRIBUTED BY CHINYOUNG.</p>
           </div>
 
