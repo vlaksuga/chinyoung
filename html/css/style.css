@@ -343,7 +343,7 @@ nav li .logo {
 
 .banner_left .cotto_title {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
 }
 
 .banner_left .cotto_title div img {
