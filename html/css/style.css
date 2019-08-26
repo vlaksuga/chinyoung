@@ -593,9 +593,10 @@ nav li .logo {
 
 .faq_box .active,
 .faq_box .accordion:hover {
-    padding-top: 2px;
-    border-top: 1px solid white;
+    color: black;
+    background-color: #ccc;
 }
+
 
 .panel {
     padding: 0 18px;
