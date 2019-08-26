@@ -83,12 +83,12 @@ class Welcome extends vlsg_Controller {
 			default:
 				$page = $this->procpage($listingcountinpage, $this->m_test->lcnt(),"page",10000);
 				$data["list"] = $this->m_test->l($page["start"],$listingcountinpage);
-
+				$p="all";
 		}
 	//	print_r($data);
 		
 
-
+		$data["p"]= strtolower($p);
 		$data["pageinfo"] = $page;
 
 		$this->appendView("sections","p_products",$data);
