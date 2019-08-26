@@ -109,8 +109,8 @@
 
               <div class="cotto_kor">
                 
-                <p>
-<span style="font-size:1.3rem; font-weight:bold;">코토데스데 </span>아주 두껍거나, 아주 얇거나 | 20년 내구성 보장, 프로텍트 항균<br>이탈리아 타일의 정수, 하이-엔드의 표본. <strong>진영코리아</strong>의 대표 브랜드 코토데스테로 경험하세요.</p>
+              <p>
+<span style="font-size: 1.5rem; font-weight: bold;">코토데스데 </span><span style="font-size:0.8rem;">아주 두껍거나, 아주 얇거나 | 20년 내구성 보장, 프로텍트 항균</span><br>이탈리아 타일의 정수, 하이-엔드의 표본. <strong>진영코리아</strong>의 대표 브랜드 코토데스테로 경험하세요.</p>
               </div>
 
               <div>
