@@ -604,6 +604,13 @@ nav li .logo {
     line-height: 30px;
 }
 
+.faq-notice {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
 /*======================
     CONTACT
  ====================== */
