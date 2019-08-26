@@ -17,7 +17,7 @@
             
             <p class="story_p">오로지 '타일'만으로 어떠한 건축물이라도 완성시킬 수 있는 지금.<br>본사 전시장 혹은 논현점을 방문해 타일의 신세계를 직접 경험해보세요.</p>
 
-            <p class="story_p">CUSTOMER 소비자 문의 / WHOLESALE 유통 문의 / PROJECT 프로젝트 문의</p>
+            <p class="story_p" style="font-size:15px; color:#8e8e8e;">CUSTOMER 소비자 문의 / WHOLESALE 유통 문의 / PROJECT 프로젝트 문의</p>
         </section>
 
 
