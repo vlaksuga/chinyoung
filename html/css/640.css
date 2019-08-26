@@ -784,8 +784,13 @@ float: right;
 
 .none {
     display: none;
-
 }
+
+.cotto {
+        display: none;
+    }
+
+
 .new {
     position: absolute;
     right:5px;
