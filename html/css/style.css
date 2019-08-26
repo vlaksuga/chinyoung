@@ -574,7 +574,7 @@ nav li .logo {
     border-left: 4px solid rgba(0, 0, 255, 0.8);
 }
 
-.accordion {
+.faq_box .accordion {
     background-color: #313131;
     color: white;
     cursor: pointer;
@@ -587,8 +587,8 @@ nav li .logo {
     transition: 0.4s;
 }
 
-.active,
-.accordion:hover {
+.faq_box .active,
+.faq_box .accordion:hover {
     padding-top: 2px;
     border-top: 1px solid white;
 }
