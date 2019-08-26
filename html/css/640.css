@@ -1200,6 +1200,7 @@ footer .add_box .add_none {
 }
 
 .copyright {
+    line-height: 15px;
     color: gray;
     font-size: 0.7em;
     padding-top: 30px;

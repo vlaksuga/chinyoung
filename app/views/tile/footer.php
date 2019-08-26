@@ -7,7 +7,7 @@
                 </div>
                 <div class="add_none">
                     <p>논현 TILE PLAZA <span style="margin-left:15px;">TEL|02-543-5117 FAX|02-543-5104</span></p>
-                    <p>서울특별시 강남구 학동로24길 16 (논현동 127-7)</p>
+                    <p>서울시 강남구 학동로24길 16 (논현동 127-7)</p>
                 </div>
                 <div class="add_none">
                     <p>이천 제1물류센터 <span style="margin-left:15px;">TEL|031-631-0951 FAX|031-631-0952 경기도 이천시 모가면 송곡2리 166-5</span></p>
@@ -17,5 +17,5 @@
         </div>
         <div class="copyright">
             COPYRIGHT © 2019 CHINYOUNG KOREA. ALL RIGHTS RESERVED.<br>
-            <span style="padding-top: 5px; font-size:0.6em;">*본 사이트는 Chrome, Edge에 최적화되어 있습니다.</span>
+            <span style="font-size:0.6em;">*본 사이트는 Chrome, Edge에 최적화되어 있습니다.</span>
         </div>
