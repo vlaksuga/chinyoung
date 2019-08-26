@@ -475,6 +475,10 @@ nav li .logo {
     text-align: right;
 }
 
+ .active {
+    padding-top: 2px;
+    border-top: 1px solid white;
+}
 
 
 /*======================

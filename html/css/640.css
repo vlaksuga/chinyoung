@@ -561,6 +561,10 @@ float: right;
     text-align: right;
 }
 
+.active {
+    padding-bottom: 2px;
+    border-top: 1px solid white;
+}
 /*======================
     INSTAGRAM
  ====================== */
@@ -673,8 +677,8 @@ float: right;
 
 .faq_box .active,
 .faq_box .accordion:hover {
-    padding-top: 2px;
-    border-top: 1px solid white;
+    color: black;
+    background-color: #ccc;
 }
 
 .panel {
