@@ -790,7 +790,7 @@ float: right;
     position: absolute;
     right:5px;
     top:5px;
-    background-color: gray;
+    background-color: rgba(43, 191, 252, 0.5);
     color:white;
     border-radius: 50%;
     width: 50px;
@@ -1187,14 +1187,12 @@ footer .add_box .add_none {
     margin-top : 50px;
 }
 
-
 .copyright {
-    color: gray
-    font-size: 0.6em;
+    color: gray;
+    font-size: 0.7em;
     padding-top: 30px;
     text-align: center;
 }
-
 
 /* Carousel From BS4 */
 
