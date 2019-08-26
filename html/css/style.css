@@ -718,6 +718,10 @@ nav li .logo {
     font-weight: bolder;
 }
 
+.cotto {
+    display: none;
+}
+
 /*======================
     PROJECTS
  ====================== */
