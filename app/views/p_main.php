@@ -102,19 +102,21 @@
           </div>
 
           <div class="cotto_eng">
+<p></p>
             <p>THE ESSENCE OF ITALIAN TILES, STANDARDS OF HIGH-END PRODUCTS. EXPERIENCE COTTO D'ESTE EXCLUSIVELY DISTRIBUTED BY CHINYOUNG.</p>
           </div>
 
           <div class="cotto_viewbox">
 
               <div class="cotto_kor">
-                <h4>코토데스테</h4>
-                <p>아주 두껍거나, 아주 얇거나 | 20년 내구성 보장, 프로텍트 항균 이탈리아 타일의 정수, 하이-엔드의 표본. <strong>진영코리아의</strong> 대표 브랜드 코토데스테로 경험하세요.</p>
+                
+                <p>
+<span style="font-size:1.3rem; font-weight:bold;">코토데스데 </span>아주 두껍거나, 아주 얇거나 | 20년 내구성 보장, 프로텍트 항균<br>이탈리아 타일의 정수, 하이-엔드의 표본. <strong>진영코리아</strong>의 대표 브랜드 코토데스테로 경험하세요.</p>
               </div>
 
               <div>
                 <div class="cotto_view">
-                    <div class="more"><a href="./?m=l&p=cotto">VIEW MORE</a></div>
+                    <div class="more"><a href="./?m=l&amp;p=cotto">VIEW MORE</a></div>
                 </div>
               </div>
           </div>
