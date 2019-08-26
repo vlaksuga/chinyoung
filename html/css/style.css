@@ -347,12 +347,15 @@ nav li .logo {
     grid-template-columns: 45% 55%;
 }
 
+.banner_left .cotto_title div:nth-child(2) {
+    margin-top: 32px;
+}
+
 .banner_left .cotto_title div img {
     width: 100%;
 }
 
 .banner_left .cotto_title div h1 {
-    margin-top: 32px;
     margin: 0;
     padding-left: 40px;
     font-size: 2em;
