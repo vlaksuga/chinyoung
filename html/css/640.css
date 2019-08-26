@@ -411,6 +411,8 @@ float: right;
 
  /* xs */
 #index_banner {
+    background-color: #eeeeee;
+    color: rgb(0,44,90);
     display: table;
     width: 100%;
 }
@@ -441,7 +443,6 @@ float: right;
 
 .banner_left .cotto_title div h1 {
     margin: 0;
-    padding-left: 40px;
     font-size: 3em;
 }
 
