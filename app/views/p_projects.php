@@ -13,7 +13,7 @@
         <h2>PROJECTS</h2>
                 <div class="group">
                         <ul>
-                            <li><a <? if(trim($cate)=="") {?>class="active"<? }?>  href="?&m=projects">ALL</a></li>
+                            <li style="font-weight:bolder;"><a <? if(trim($cate)=="") {?>class="active"<? }?>  href="?&m=projects">ALL</a></li>
                             <li><a <? if($cate=="indoor") {?>class="active"<? }?> href="?&m=projects&cate=indoor">INDOOR</a></li>
                             <li><a <? if($cate=="outdoor") {?>class="active"<? }?> href="?&m=projects&cate=outdoor">OUTDOOR</a></li>
                             <li><a <? if($cate=="residential") {?>class="active"<? }?> href="?&m=projects&cate=residential">RESIDENTIAL</a></li> 

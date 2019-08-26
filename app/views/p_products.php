@@ -29,7 +29,7 @@
 
         <div class="group <?php if( trim($p) == "cotto" ) echo "cotto";?>">
                 <ul>
-                    <li data-p="ALL"><a href="./?m=l">ALL</a></li>
+                    <li data-p="ALL" style="font-weight:bolder;"><a href="./?m=l">ALL</a></li>
                     <li data-p="kerlite"><a href="./?m=l&p=kerlite">KERLITE/BIG SLAB</a></li>
                     <li data-p="MARBLE"><a href="./?m=l&p=MARBLE">MARBLE</a></li>
                     <li data-p="STONE"><a href="./?m=l&p=STONE">STONE</a></li>
