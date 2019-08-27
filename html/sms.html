@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+</head>
+
+<body>
+    <div id="log"></div>
+<script>
+   var request =  $.ajax({
+  url: "https://api-sens.ncloud.com/v1/sms/services/ncp:sms:kr:254066187779:dbtosms/messages",
+  method: "POST",
+  beforeSend: function (request) {
+                        //    debugger;
+                            request.setRequestHeader("Access-Control-Allow-Origin", '*');
+                        },
+  contentType: "application/json; charset=utf-8",
+  headers: { "x-ncp-auth-key" : "UvQHOymVJ5yh4RHOjzVD" ,
+        "x-ncp-service-secret" : "26d8de35618d4427b8ee0a0245a29a21"
+  },
+  dataType: "json",
+  crossDomain: true,
+  data :{
+    "type":"SMS",
+    "contentType":"COMM",
+    "countryCode":"KR",
+    "from":"01099473474",
+    "to":[
+        "01099473474"
+    ],
+    "subject":"TTEST",
+    "content":"0505"
+}
+});
+ 
+request.done(function( msg ) {
+  $( "#log" ).html( msg );
+});
+ 
+request.fail(function( jqXHR, textStatus ) {
+  alert( "Request failed: " + textStatus );
+});
+
+
+
+</script>
+
+</body>
+
+</html>
