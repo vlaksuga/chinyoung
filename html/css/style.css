@@ -657,10 +657,6 @@ nav li .logo {
     PRODUCTS
  ====================== */
 
-#half_products {
-    background-image: url('../img/half/products.jpg');
-}
-
 .half_box .bottom_art div {
     letter-spacing: 3px;
     font-size:2em;
