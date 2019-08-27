@@ -735,9 +735,6 @@ float: right;
     PRODUCTS
  ====================== */
 
-#half_products {
-    background-image: url('../img/half/products.jpg');
-}
 
 .half_box .bottom_art div {
     letter-spacing: 3px;
@@ -1419,14 +1416,14 @@ footer .add_box .add_none {
     /*======================
     HALF_BOX BG
  ====================== */
- .hbg_colour {background-image: url('../img/half/colour.jpg');}
- .hbg_concrete {background-image: url('../img/half/concrete.jpg');}
- .hbg_decor {background-image: url('../img/half/decor.jpg');}
- .hbg_kerlite {background-image: url('../img/half/kerlite.jpg');}
- .hbg_marble {background-image: url('../img/half/marble.jpg');}
- .hbg_metal {background-image: url('../img/half/metal.jpg');}
- .hbg_outdoor {background-image: url('../img/half/outdoor.jpg');}
- .hbg_stone {background-image: url('../img/half/stone.jpg');}
- .hbg_terracotta {background-image: url('../img/half/terracotta.jpg');}
- .hbg_wood {background-image: url('../img/half/wood.jpg');}
- .hbg_cotto {background-image: url('../img/half/cotto.jpg');}
+ .colour {background-image: url('../img/half/colour.jpg');}
+ .concrete {background-image: url('../img/half/concrete.jpg');}
+ .decor {background-image: url('../img/half/decor.jpg');}
+ .kerlite {background-image: url('../img/half/kerlite.jpg');}
+ .marble {background-image: url('../img/half/marble.jpg');}
+ .metal {background-image: url('../img/half/metal.jpg');}
+ .outdoor {background-image: url('../img/half/outdoor.jpg');}
+ .stone {background-image: url('../img/half/stone.jpg');}
+ .terracotta {background-image: url('../img/half/terracotta.jpg');}
+ .wood {background-image: url('../img/half/wood.jpg');}
+ .cotto {background-image: url('../img/half/cotto.jpg');}
