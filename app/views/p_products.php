@@ -27,7 +27,7 @@
         <!-- / PRODUCTS TILES / -->
         <section id="products_tiles" class="sec_gap">
 
-        <div class="group <?php if( trim($p) == "wood" ) echo "cotto";?>">
+        <div class="group <?php if( trim($p) == "cotto" ) echo "cotto";?>">
                 <ul>
                     <li data-p="ALL" style="font-weight:bolder;"><a href="./?m=l">ALL</a></li>
                     <li data-p="kerlite"><a href="./?m=l&p=kerlite">KERLITE/BIG SLAB</a></li>
