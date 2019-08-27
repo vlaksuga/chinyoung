@@ -1,6 +1,7 @@
 <?php
     $data = &$model;
     $list = &$model["list"];
+    $p = &$model["p"];
 ?>
 <script>
     $(function(){
