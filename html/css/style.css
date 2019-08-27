@@ -1300,13 +1300,13 @@ footer .add_box div {
  ====================== */
  #half_products.colour {background-image: url('../img/half/colour.jpg');}
  #half_products.concrete {background-image: url('../img/half/concrete.jpg');}
- #half_products.brick {background-image: url('../img/half/brick.jpg');}
+ #half_products.brick {background-image: url('../img/half/brick.jpg'); opacity: 0.7;}
  #half_products.kerlite {background-image: url('../img/half/kerlite.jpg');}
- #half_products.marble {background-image: url('../img/half/marble.jpg');}
+ #half_products.marble {background-image: url('../img/half/marble.jpg'); opacity: 0.7;}
  #half_products.metal {background-image: url('../img/half/metal.jpg');}
  #half_products.outdoor {background-image: url('../img/half/outdoor.jpg');}
  #half_products.stone {background-image: url('../img/half/stone.jpg');}
  #half_products.terracotta {background-image: url('../img/half/terracotta.jpg');}
- #half_products.wood {background-image: url('../img/half/wood.jpg');}
+ #half_products.wood {background-image: url('../img/half/wood.jpg'); opacity: 0.7;}
  #half_products.cotto {background-image: url('../img/half/cotto.jpg');}
  #half_products.all {background-image: url('../img/half/products.jpg');}
