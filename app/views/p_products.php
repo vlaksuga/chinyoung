@@ -18,6 +18,7 @@
 </script>
     <!-- / HALF BOX / -->
     <section id="half_products" class="half_box <?=$p?>">
+        <div class="bg_cover"></div>
         <div class="bottom_art">
             <div>
                 <p><?php echo $model["productname"];?></p>
