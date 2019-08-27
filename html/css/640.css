@@ -794,9 +794,10 @@ float: right;
     display: none;
 }
 
-.cotto {
-        display: none;
-    }
+#products_tiles .cotto {
+    display: none;
+}
+
 
 
 .new {
