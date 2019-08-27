@@ -68,7 +68,7 @@
                             <p><a href="./?m=l&p=outdoor">OUTDOOR</a></p>
                         </div>
                     </div>
-                    <div class="menu"><a href="./?m=project">PROJECTS</a></div>
+                    <div class="menu"><a href="./?m=projects">PROJECTS</a></div>
                     <div class="menu"><a href="./?c=etc&m=contact">CONTACT</a></div>
                     <div class="menu"><a href="./?m=search">SEARCH</a></div>
                 </div>
