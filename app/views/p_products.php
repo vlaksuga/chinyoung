@@ -10,7 +10,7 @@
                 $(this).addClass("active");
             }
             if($(this).attr("data-p")=="ALL" && "<?=$p?>"=="all"){
-                $(this.addClass("active"));
+                $(this).addClass("active"));
             }
         });
     });
