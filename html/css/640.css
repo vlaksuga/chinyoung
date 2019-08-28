@@ -898,7 +898,7 @@ float: right;
 .next {
     cursor: pointer;
     position: absolute;
-    top: 350px;
+    top: 120px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
