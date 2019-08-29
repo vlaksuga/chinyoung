@@ -9,7 +9,7 @@
   
             <div class="carousel-inner" role="listbox">
     
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <div class="carousel-background">
                   <img src="img/intro/intro_01.jpg" alt="">
                 </div>
@@ -21,7 +21,7 @@
                 </div>
               </div>
     
-              <div class="carousel-item">
+              <div class="carousel-item active">
                 <div class="carousel-background"><img src="img/intro/intro_02.jpg" alt=""></div>
                 <div class="carousel-container">
                   <div class="carousel-content">
