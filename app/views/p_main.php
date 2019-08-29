@@ -156,7 +156,7 @@
         $.ajax({
                 url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=2234372569.bdd3947.8d2694232968460190244e85d24b0b64&callback=?',        
                 error: function() {
-                alert('error');
+               // alert('error');
                 },        
                 success: function(data) {
                     set1(data);

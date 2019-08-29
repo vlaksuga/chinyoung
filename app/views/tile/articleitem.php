@@ -10,10 +10,6 @@
 	<div class="txt_box">
 		<h3><?=$item["productname"]?></h3>
 		<div class="row  autohide">
-			<div class="t_label">CODE</div>
-			<div class="t_data"><?=$item["tileid"]?></div>
-		</div>
-		<div class="row  autohide">
 			<div class="t_label">BRAND</div>
 			<div class="t_data"><?=$item["brand"]?></div>
 		</div>
