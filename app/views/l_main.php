@@ -13,9 +13,9 @@
     <link rel="stylesheet" media="(min-width: 640px)" href="./css/style.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="./css/640.css">
 
-    <!--[if lte IE 11]><!-->
-	    <link rel="stylesheet" type="text/css" href="./css/style-ie.css" />
-     <!--<![endif]-->
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="./css/style-ie.css" />
+    <![endif]-->
 
     <!-- LIBs -->
     <script src="./lib/owl.carousel.js"></script>
