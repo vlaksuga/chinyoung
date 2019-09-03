@@ -14,9 +14,9 @@
     <link rel="stylesheet" media="(max-width: 640px)" href="./css/640.css">
 
     <!--[if IE]><!-->
-	    <link rel="stylesheet" type="text/css" href="style-ie.css" />
+	    <link rel="stylesheet" type="text/css" href="./css/style-ie.css" />
      <!--<![endif]-->
-     
+
     <!-- LIBs -->
     <script src="./lib/owl.carousel.js"></script>
     <script src="./lib/bootstrap.bundle.min.js"></script>
