@@ -782,9 +782,6 @@ float: right;
 }
 
 /* xs */
-.pagination {
-    display: none;
-}
 
 .pagination a {
     margin: 5px;
