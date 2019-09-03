@@ -13,6 +13,10 @@
     <link rel="stylesheet" media="(min-width: 640px)" href="./css/style.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="./css/640.css">
 
+    <!--[if IE]><!-->
+	    <link rel="stylesheet" type="text/css" href="style-ie.css" />
+     <!--<![endif]-->
+     
     <!-- LIBs -->
     <script src="./lib/owl.carousel.js"></script>
     <script src="./lib/bootstrap.bundle.min.js"></script>

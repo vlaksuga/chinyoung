@@ -1,0 +1,5 @@
+.places_box .row {
+    display: -ms-grid;
+    -ms-grid-columns: 50% 50%; 
+    margin-bottom: 50px;
+}
