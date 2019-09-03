@@ -20,12 +20,13 @@
 
 </head>
 
+
+<body>
 <script>
 if ($.browser.msie && $.browser.version <=11) {
- $("head").append("<link rel="stylesheet" type="text/css" href="style-ie.css" />");
+ $("head").append("<link rel='stylesheet' type='text/css' href='./css/style-ie.css' />");
 }
     </script>
-<body>
 
     <header>
         <?php echo $header;?>
