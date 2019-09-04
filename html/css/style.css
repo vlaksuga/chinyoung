@@ -1325,7 +1325,7 @@ footer .add_box div {
 
  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
-
+#projects_detail_tiles .grid,
 #products_tiles .grid,
 #projects_tiles .grid,
 #search_result .grid {
@@ -1335,6 +1335,7 @@ footer .add_box div {
     width: 100%;
 }
 
+#projects_detail_tiles .grid .tile,
 #search_result .grid .tile,
 #projects_tiles .grid .tile,
 #products_tiles .grid .tile {
