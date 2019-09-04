@@ -1331,4 +1331,9 @@ footer .add_box div {
         float: left;
         width: 45%;
     }
+
+    .places_box .row .col_2 {
+        float: right;
+        width: 45%;
+    }
 }
