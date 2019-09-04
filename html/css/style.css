@@ -1398,7 +1398,10 @@ footer .add_box div {
     background-image: url('../img/banner_right/banner_01.jpg');
 }
 
-
+footer .row {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
