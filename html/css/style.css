@@ -1422,6 +1422,18 @@ footer .add_box div {
     width: 31%;
 }
 
+#tile_detail .tile_box .row .col .txt_box .row {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.t_label {
+    width: 30%;
+    color: gray;
+}
+
+
 footer .row {
     display: flex;
     justify-content: space-around;
