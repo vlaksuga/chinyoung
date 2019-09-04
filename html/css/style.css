@@ -1398,14 +1398,33 @@ footer .add_box div {
     background-image: url('../img/banner_right/banner_01.jpg');
 }
 
+
+.history_box .row {
+    display: flex;
+}
+
+
+.history_box .row .col_1 {
+    width: 30%;
+    text-align: center;
+}
+
+.tile_box .row {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.tile_box .row .col {
+    margin: 15px;
+    width: 31%;
+}
+
 footer .row {
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
 
 
 #instagram .photos {
