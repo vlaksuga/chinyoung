@@ -1320,19 +1320,35 @@ footer .add_box div {
      opacity: 0.3;
  }
 
- /* if ie 10 11 */
+ /* if ie 10 11 fallback */
 
  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .places_box .row {
+
+
+#products_tiles .grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#products_tiles .grid .tile {
+    width: 30%;
+    position:relative;
+    margin: 15px;
+}
+
+
+#places .places_box .row {
         display: inline;
     }
     
-    .places_box .row .col_1 {
+#places .places_box .row .col_1 {
         float: left;
         width: 45%;
     }
 
-    .places_box .row .col_2 {
+#places .places_box .row .col_2 {
         float: right;
         width: 45%;
     }
