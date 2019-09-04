@@ -1356,6 +1356,55 @@ footer .add_box div {
     margin-top: 15px;
 }
 
+#index_banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    color: rgb(0, 44, 90);
+    width: 100%;
+}
+
+
+.banner_left {
+    width: 100%;
+    margin: 10px 0;
+    height: 250px;
+    padding: 25px;
+}
+
+.banner_left .cotto_title {
+    display: flex;
+}
+
+.banner_left .cotto_title div:first-child {
+    width: 45%;
+}
+
+.banner_left .cotto_title div:nth-child(2) {
+    width: 55%;
+}
+
+
+.banner_left .cotto_viewbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner_right {
+    width: 65%;
+    background-size: cover;
+    height: 270px;
+    background-image: url('../img/banner_right/banner_01.jpg');
+}
+
+
+
+
+
+
+
+
 #instagram .photos {
     display: flex;
     width: 100%;
