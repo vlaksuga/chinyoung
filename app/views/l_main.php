@@ -22,12 +22,6 @@
 
 
 <body>
-<script>
-if (JQuery.browser.msie && JQuery.browser.version <=11) {
- $("head").append("<link rel='stylesheet' type='text/css' href='./css/style-ie.css' />");
-}
-    </script>
-
     <header>
         <?php echo $header;?>
     </header>

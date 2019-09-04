@@ -1325,19 +1325,45 @@ footer .add_box div {
  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
 
-#products_tiles .grid {
+#products_tiles .grid,
+#projects_tiles .grid,
+#search_result .grid {
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
     width: 100%;
 }
 
+#search_result .grid .tile,
+#projects_tiles .grid .tile,
 #products_tiles .grid .tile {
     width: 30%;
     position:relative;
     margin: 15px;
 }
 
+#index_tiles .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#index_tiles .grid .tile {
+    width: 24%;
+    position:relative;
+    margin-top: 15px;
+}
+
+#instagram .photos {
+    display: flex;
+    width: 100%;
+}
+
+#instagram .photos .item {
+    width: 12.5%;
+    position:relative;
+}
 
 #places .places_box .row {
         display: inline;
@@ -1362,18 +1388,6 @@ footer .add_box div {
 #search .select div {
     width: 16.6%;
     padding: 10px;
-}
-
-#search_result .grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#search_result .grid .tile {
-    width: 30%;
-    position: relative;
-    margin: 15px;
 }
 
 }
