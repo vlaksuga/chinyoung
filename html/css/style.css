@@ -696,6 +696,8 @@ nav li .logo {
 
 #products_tiles .grid {
     display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
     grid-template-columns: 33.3% 33.3% 33.3%;
     width: 100%;
 }
