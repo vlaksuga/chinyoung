@@ -696,8 +696,6 @@ nav li .logo {
 
 #products_tiles .grid {
     display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: 33.3% 33.3% 33.3%;
     grid-template-columns: 33.3% 33.3% 33.3%;
     width: 100%;
 }
@@ -1321,3 +1319,16 @@ footer .add_box div {
      background-color: black;
      opacity: 0.3;
  }
+
+ /* if ie 10 11 */
+
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .places_box .row {
+        display: inline;
+    }
+    
+    .places_box .row .col_1 {
+        float: left;
+        width: 45%;
+    }
+}
