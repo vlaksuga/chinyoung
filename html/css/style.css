@@ -1352,4 +1352,29 @@ footer .add_box div {
         float: right;
         width: 45%;
     }
+
+#search .select {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+#search .select div {
+    width: 16.6%;
+    padding: 10px;
 }
+
+#search_result .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#search_result .grid .tile {
+    width: 30%;
+    position: relative;
+    margin: 15px;
+}
+
+}
+
