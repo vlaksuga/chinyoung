@@ -1028,6 +1028,7 @@ float: right;
 }
 
 #modal_container img{
+    max-width: 95%;
     padding-top:10vh;
 }
 
@@ -1036,11 +1037,10 @@ float: right;
 .modal_l,
 .modal_r  {
     font-size: 2em;
-    width: 30%;
+    width: 10%;
     position: absolute;
-    height: 100vh;
-    padding-top: 20%;
-    top: 0;
+    height: 100%;
+    top: 50%;
 }
 
 .modal_l {
