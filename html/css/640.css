@@ -163,6 +163,7 @@ nav li.dropdown {
 
 
 #nav_top .menu_logo {
+    max-width: 150px;
     width: 30%;
     float: left;
 }
