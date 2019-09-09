@@ -1028,6 +1028,7 @@ float: right;
 }
 
 #modal_container img{
+    max-height: 50vh;
     max-width: 95%;
     padding-top:10vh;
 }
