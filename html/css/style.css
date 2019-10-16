@@ -1034,7 +1034,6 @@ nav li .logo {
 
 #search_result h2 {
     margin-bottom: 10px;
-    margin-top: 120px;
 }
 
 #search_result .result {
@@ -1087,6 +1086,7 @@ nav li .logo {
     margin: 0; 
     width: 100%;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 #btn_reset button {
