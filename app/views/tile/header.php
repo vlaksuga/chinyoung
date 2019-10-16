@@ -72,7 +72,7 @@
                     <div class="menu"><a href="./?c=etc&m=contact">CONTACT</a></div>
                     <div class="menu"><a href="./?m=search">SEARCH</a></div>
                     <div class="menu"><a href="./lib/CHINYOUNG_TILE_COLLECTIONS_2019.zip">CATALOG</a></div>
-                    <div style="text-align:right;">
+                    <div style="text-align:center; margin-top:30px;">
                         <a href="https://www.instagram.com/chinyoungkorea_official/" style="margin: 0px; padding-left: 8px; padding-right: 8px;" target="_blank"><i class="fab fa-instagram" style="font-size:1.5rem;"></i></a>    
                         <a href="https://www.pinterest.co.kr/chinyoungkorea_official/" style="margin: 0px; padding-left: 8px; padding-right: 8px;" target="_blank"><i class="fab fa-pinterest-square" style="font-size:1.5rem;"></i></a>
                         <a href="https://www.facebook.com/ChinyoungKoreaOfficial/" style="margin: 0px; padding-left: 8px; padding-right: 8px;" target="_blank"><i class="fab fa-facebook-square" style="font-size:1.5rem;"></i></a>
