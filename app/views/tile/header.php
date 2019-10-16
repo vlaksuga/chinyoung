@@ -71,6 +71,7 @@
                     <div class="menu"><a href="./?m=projects">PROJECTS</a></div>
                     <div class="menu"><a href="./?c=etc&m=contact">CONTACT</a></div>
                     <div class="menu"><a href="./?m=search">SEARCH</a></div>
+                    <div class="menu"><a href="./lib/CHINYOUNG_TILE_COLLECTIONS_2019.zip">CATALOG</a></div>
                 </div>
         
         
