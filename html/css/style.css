@@ -1029,11 +1029,12 @@ nav li .logo {
 }
 
 #search_result {
-    margin-top: 200px;
+    margin-top: 120px;
 }
 
 #search_result h2 {
     margin-bottom: 10px;
+    margin-top: 120px;
 }
 
 #search_result .result {
