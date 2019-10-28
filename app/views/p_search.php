@@ -64,7 +64,7 @@ $(function(){
     $("#technology").val("<?=$p_technology?>");
     $("#size").val("<?=$p_size?>");
     $("#thickness").val("<?=$p_thickness?>");
-    $("[data-sh="+curhint+"]).addClass("active");
+    $("[data-sh="+curhint+"]").addClass("active");
     });
 
 </script>
