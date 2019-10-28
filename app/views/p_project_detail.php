@@ -4,7 +4,14 @@
     $projecttilelist = $model["projecttilelist"];
 ?>
 <div class="container">
-
+<script>
+    $("#project_detail p").each(function(){
+        if($("span",$(this)).html().trim()==""){
+         $(this).hide();   
+        }
+    });
+    
+</script>
 <!-- / PROJECT_DETAIL / -->
 <section id="project_detail" class="sec_gap topsec_gap">
     <h2><?=$item["projectname"]?></h2>
