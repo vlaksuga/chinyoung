@@ -64,6 +64,7 @@ $(function(){
     $("#technology").val("<?=$p_technology?>");
     $("#size").val("<?=$p_size?>");
     $("#thickness").val("<?=$p_thickness?>");
+    $("[data-sh="+curhint+"]).addClass("active");
     });
 
 </script>
@@ -74,33 +75,13 @@ $(function(){
     <h2>SEARCH</h2>
     <div class="alpha">
         <ul>
-            <li><a onclick="sh('A')">A</a></li>
-            <li><a  onclick="sh('B')">B</a></li>
-            <li><a onclick="sh('C')">C</a></li>
-            <li><a  onclick="sh('D')">D</a></li>
-            <li><a  onclick="sh('E')">E</a></li>
-            <li><a  onclick="sh('F')">F</a></li>
-            <li><a  onclick="sh('G')">G</a></li>
-            <li><a  onclick="sh('H')">H</a></li>
-            <li style="display:none;"><a  onclick="sh('I')">I</a></li>
-            <li><a  onclick="sh('J')">J</a></li>
-            <li style="display:none;"><a  onclick="sh('K')">K</a></li>
-            <li><a  onclick="sh('L')">L</a></li>
-            <li><a onclick="sh('M')">M</a></li>
-            <li><a  onclick="sh('N')">N</a></li>
-            <li><a  onclick="sh('O')">O</a></li>
-            <li><a onclick="sh('P')">P</a></li>
-            <li style="display:none;"><a  onclick="sh('Q')">Q</a></li>
-            <li><a  onclick="sh('R')">R</a></li>
-            <li><a onclick="sh('S')">S</a></li>
-            <li style="display:none;"><a  onclick="sh('T')">T</a></li>
-            <li style="display:none;"><a  onclick="sh('U')">U</a></li>
-            <li><a  onclick="sh('V')">V</a></li>
-            <li><a onclick="sh('W')">W</a></li>
-            <li><a  onclick="sh('X')">X</a></li>
-            <li><a  onclick="sh('Y')">Y</a></li>
-            <li style="display:none;"><a onclick="sh('Z')">Z</a></li>
-            <li><a  onclick="sh('1')">0-9</a></li>
+            <?php
+        $searchItem = ["A","B"];
+            for($i=0;$i<count($searchItem);$i++){
+    ?>
+            <li><a data-sh="<?php echo $searchItem[$i];?>" onclick="sh('<?php echo $searchItem[$i];?>')"><?php echo $searchItem[$i];?></a></li>
+            <?php } ?>
+            <li><a data-sh="1" onclick="sh('1')">0-9</a></li>
         </ul>
     </div>
     <div class="select">
