@@ -76,7 +76,7 @@ $(function(){
     <div class="alpha">
         <ul>
             <?php
-        $searchItem = ["A","B"];
+        $searchItem = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
             for($i=0;$i<count($searchItem);$i++){
     ?>
             <li><a data-sh="<?php echo $searchItem[$i];?>" onclick="sh('<?php echo $searchItem[$i];?>')"><?php echo $searchItem[$i];?></a></li>

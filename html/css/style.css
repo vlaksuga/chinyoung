@@ -708,8 +708,9 @@ nav li .logo {
     padding-top: 25px;
 }
 
-.pagination a {
+.pagination > a {
     margin: 5px;
+    font-weight: bolder;
 }
 
 .none {
