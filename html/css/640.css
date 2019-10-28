@@ -784,8 +784,14 @@ float: right;
 
 /* xs */
 
-.pagination a {
+.pagination a  {
     margin: 5px;
+}
+
+.pagination a.active {
+    font-weight: bolder;
+    border: none;
+    font-size:1.1rem;
 }
 
 .none {
@@ -1077,6 +1083,13 @@ float: right;
     margin-right: 15px;
     font-size: 0.8em;
 }
+
+#search li a.active {
+    font-weight: bolder;
+    border: none;
+    font-size: 1.1rem;
+}
+
 #search_result {
     margin-top: 50px;
 }

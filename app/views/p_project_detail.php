@@ -5,10 +5,12 @@
 ?>
 <div class="container">
 <script>
-    $("#project_detail p").each(function(){
-        if($("span",$(this)).html().trim()==""){
-         $(this).hide();   
-        }
+    $(function(){
+        $("#project_detail p").each(function(){
+            if($("span",$(this)).html().trim()==""){
+            $(this).hide();   
+            }
+        });
     });
     
 </script>

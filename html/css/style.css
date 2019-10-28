@@ -710,7 +710,12 @@ nav li .logo {
 
 .pagination > a {
     margin: 5px;
+}
+
+.pagination a.active {
     font-weight: bolder;
+    border: none;
+    font-size:1.1rem;
 }
 
 .none {
@@ -1023,6 +1028,12 @@ nav li .logo {
 
 #search li a:hover {
     cursor: pointer;
+}
+
+#search li a.active {
+    font-weight: bolder;
+    border: none;
+    font-size: 1.1rem;
 }
 
 #search .notice {
