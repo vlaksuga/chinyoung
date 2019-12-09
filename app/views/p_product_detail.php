@@ -177,8 +177,8 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
 
         <section id="document" class="sec_gap">
 
-            <h2>DOCUMENTS</h2>
-            
+            <h2>DOWNLOAD</h2>
+
             <div class="doc_box">
                 <div class="doc_list_box">
                     <a class="list1"><span>카탈로그</span></a>

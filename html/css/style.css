@@ -1011,6 +1011,14 @@ nav li .logo {
     align-items: center;
 }
 
+#document .doc_box .doc_list_box {
+    position: relative;
+    text-align: center;
+    border: white 1px solid;
+    width: 12%;
+    padding: 2px 5px;
+}
+
  /*======================
     SEARCH
  ====================== */
