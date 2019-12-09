@@ -1004,7 +1004,12 @@ nav li .logo {
 }
 
 
-#document
+#document .doc_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
  /*======================
     SEARCH
