@@ -1425,6 +1425,7 @@ footer .add_box div {
 
 .tile_box .row {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 10px 0;
 }
@@ -1432,7 +1433,7 @@ footer .add_box div {
 
 .tile_box .row .col {
     margin: 15px;
-    width: 31%;
+    width: 30%;
 }
 
 #tile_detail .tile_box .row .col .txt_box .row {
