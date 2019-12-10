@@ -180,25 +180,25 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
             <h2>DOWNLOAD</h2>
 
             <div class="doc_box">
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["brochure"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["brochure"]?>" class="list1" download><span>카탈로그</span></a>
                 </div>
                 <div class="doc_list_box <? if($collection["testreportkor"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["testreportkor"]?>" class="list2" download><span>시험성적서(국내)</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["testreporteng"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["testreporteng"]?>" class="list3" download><span>시험성적서(해외)</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["registration"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["registration"]?>" class="list4" download><span>공장등록증</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["etc1"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["etc1"]?>" class="list5" download><span>기타1</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["etc2"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["etc2"]?>" class="list6" download><span>기타2</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["etc3"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["etc3"]?>" class="list7" download><span>기타3</span></a>
                 </div>
             </div>
