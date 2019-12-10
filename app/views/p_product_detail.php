@@ -183,7 +183,7 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
                 <div class="doc_list_box">
                     <a href="./img/d_data/<?=$collection["brochure"]?>" class="list1" download><span>카탈로그</span></a>
                 </div>
-                <div class="doc_list_box">
+                <div class="doc_list_box <? if($collection["testreportkor"]==null) echo "none";?>">
                     <a href="./img/d_data/<?=$collection["testreportkor"]?>" class="list2" download><span>시험성적서(국내)</span></a>
                 </div>
                 <div class="doc_list_box">
