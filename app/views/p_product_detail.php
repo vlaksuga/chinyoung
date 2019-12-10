@@ -181,25 +181,25 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
 
             <div class="doc_box">
                 <div class="doc_list_box">
-                    <a href="./img/d_data/<?=$collection["brochure"]?>" target="_blank" class="list1"><span>카탈로그</span></a>
+                    <a href="./img/d_data/<?=$collection["brochure"]?>" class="list1"><span>카탈로그</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list2"><span>시험성적서(국내)</span></a>
+                    <a href="./img/d_data/<?=$collection["testreportkor"]?>" class="list2"><span>시험성적서(국내)</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list3"><span>시험성적서(해외)</span></a>
+                    <a href="./img/d_data/<?=$collection["testreporteng"]?>" class="list3"><span>시험성적서(해외)</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list4"><span>공장등록증</span></a>
+                    <a href="./img/d_data/<?=$collection["registration"]?>" class="list4"><span>공장등록증</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list5"><span>기타1</span></a>
+                    <a href="./img/d_data/<?=$collection["etc1"]?>" class="list5"><span>기타1</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list6"><span>기타2</span></a>
+                    <a href="./img/d_data/<?=$collection["etc2"]?>" class="list6"><span>기타2</span></a>
                 </div>
                 <div class="doc_list_box">
-                    <a class="list7"><span>기타3</span></a>
+                    <a href="./img/d_data/<?=$collection["etc3"]?>" class="list7"><span>기타3</span></a>
                 </div>
             </div>
 
