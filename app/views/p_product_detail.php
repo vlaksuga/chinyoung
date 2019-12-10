@@ -181,7 +181,7 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
 
             <div class="doc_box">
                 <div class="doc_list_box">
-                    <a class="list1"><span>카탈로그</span></a>
+                    <a href="./img/d_data/<?=$collection["brochure"]?>" target="_blank" class="list1"><span>카탈로그</span></a>
                 </div>
                 <div class="doc_list_box">
                     <a class="list2"><span>시험성적서(국내)</span></a>
