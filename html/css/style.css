@@ -1014,9 +1014,17 @@ nav li .logo {
 #document .doc_box .doc_list_box {
     position: relative;
     text-align: center;
-    border: white 1px solid;
     width: 12%;
     padding: 2px 5px;
+    font-size: 15px;
+    border: #313131 1px solid;
+}
+
+#document .doc_box .doc_list_box:hover
+    {
+    cursor: pointer;
+    border: white 1px solid;
+    
 }
 
  /*======================
