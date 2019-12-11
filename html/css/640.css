@@ -1058,6 +1058,21 @@ float: right;
     right: 10%;
 }
 
+#document .doc_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#document .doc_box .doc_list_box {
+    position: relative;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    font-size: 13px;
+}
 
 
 
