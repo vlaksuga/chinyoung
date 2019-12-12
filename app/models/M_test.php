@@ -38,7 +38,7 @@ class M_test extends CI_Model{
 
 	public function lbyeffect($effect,$start,$cnt)
 	{
-		$sql="select c.*,t.effect,t.newflag,kerlite from collection c,(select collectionid,kerlite,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid order by (case when kerlite =1 then 2 else 0 end + case when newflag>0 then 5 else 0 end + c.sortbonus) desc,collectionid desc  limit ?,?";
+		$sql="select c.*,t.effect,t.newflag,kerlite from collection c,(select collectionid,kerlite,GROUP_CONCAT(DISTINCT effect ORDER BY collectionid SEPARATOR ',') effect,sum(case when new=1 then 1 else 0 end) newflag from tile where effect = ? group by collectionid) t  where c.collectionid = t.collectionid order by (case when kerlite =1 then 2 else 0 end + case when newflag>0 then 3 else 0 end + c.sortbonus) desc,collectionid desc  limit ?,?";
 		$rs = $this->db->query($sql, array($effect,$start,$cnt));
         $rsa = $rs->result_array();
 		$rs->free_result();
