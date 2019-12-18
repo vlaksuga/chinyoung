@@ -10,7 +10,7 @@
                     <p>서울시 강남구 학동로24길 16 (논현동 127-7)</p>
                 </div>
                 <div class="add_none">
-                    <p>이천 제1물류센터 <span style="margin-left:15px;">TEL|031-631-0951 FAX|031-631-0952 경기도 이천시 모가면 송곡2리 166-5</span></p>
+                    <p>이천 제1물류센터 <span style="margin-left:15px;">TEL|031-631-0951 FAX|031-631-0952 경기도 이천시 모가면 진상미로 931 (송곡리 166-6)</span></p>
                     <p>삼패 제2물류센터 <span style="margin-left:15px;">경기도 남양주시 경강로334번길 48-12 (삼패동 445-4)</span></p>
                 </div>
             </div>

@@ -174,6 +174,7 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
                
             </div>
         </section>
+        
 
         <section id="document" class="sec_gap <? if($collection["brochure"]==null and $collection["testreportkor"]==null and $collection["testreporteng"]==null and $collection["registration"]==null and $collection["etc1"]==null and $collection["etc2"]==null and $collection["etc3"]==null) echo "none";?>">
 
@@ -204,4 +205,6 @@ for($i=0;$i<count($tilelist);$i++){$item = $tilelist[$i];
             </div>
 
         </section>
+
+
     </div>
