@@ -56,7 +56,8 @@
                 <div class="row">
                     <div class="col_1">
                         <div class="map">
-                            <div id="map03"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.328692916993!2d127.49177761562892!3d37.14488315592008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564a50a3ba11c93%3A0x24b32a01d9d65b31!2z6rK96riw64-EIOydtOyynOyLnCDrqqjqsIDrqbQg7Iah6rOh66asIDE2Ni01!5e0!3m2!1sko!2skr!4v1565174151742!5m2!1sko!2skr" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                            <div id="map03"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3269090665235!2d127.49196981529952!3d37.14492557987893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564a50a23526e1d%3A0x7eb8eb405fe79d56!2z6rK96riw64-EIOydtOyynOyLnCDrqqjqsIDrqbQg7Iah6rOh66asIDE2Ni02!5e0!3m2!1sko!2skr!4v1576645821166!5m2!1sko!2skr" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
                         </div>
                         <div class="con l_border">
                             <p>이천 제1물류센터</p>
