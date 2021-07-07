@@ -30,9 +30,9 @@
                         </div>
                         <div class="con l_border">
                             <p>본사 전시장 | PREMIUM TILE GALLERY</p>
-                            <p>(주)진영코리아 서울시 송파구 삼전로2길, 3, 진영빌딩(삼전동 38-1)</p>
+                            <p>(주)진영코리아 서울시 송파구 삼전로2길, 3, 진영빌딩 (삼전동 38-1)</p>
                             <p>전화 : 02-416-0417 / 팩스 : 02-416-6292</p>
-                            <p>월 - 토. 공휴일 : 9AM - 6pm / 일요일 : 휴무</p>
+                            <p>월-금 : 9AM – 6pm / 토.공휴일 : 9AM – 5pm / 일요일 : 휴무</p>
                         </div>
                     </div>
                     <div class="col_2">
@@ -56,13 +56,14 @@
                 <div class="row">
                     <div class="col_1">
                         <div class="map">
-                            <div id="map03"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.328692916993!2d127.49177761562892!3d37.14488315592008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564a50a3ba11c93%3A0x24b32a01d9d65b31!2z6rK96riw64-EIOydtOyynOyLnCDrqqjqsIDrqbQg7Iah6rOh66asIDE2Ni01!5e0!3m2!1sko!2skr!4v1565174151742!5m2!1sko!2skr" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                            <div id="map03"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3269090665235!2d127.49196981529952!3d37.14492557987893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3564a50a23526e1d%3A0x7eb8eb405fe79d56!2z6rK96riw64-EIOydtOyynOyLnCDrqqjqsIDrqbQg7Iah6rOh66asIDE2Ni02!5e0!3m2!1sko!2skr!4v1576645821166!5m2!1sko!2skr" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
                         </div>
                         <div class="con l_border">
                             <p>이천 제1물류센터</p>
-                            <p>경기도 이천시 모가면 송곡2리 166-5</p>
-                            <p>전화:031-631-0951 / 팩스:031-631-0952</p>
-                            <p>월-금 : 7:00AM – 4:00 pm ./ 토.공휴일 : 7AM – 12pm / 일요일 : 휴무</p>
+                            <p>경기도 이천시 모가면 진상미로 931 (송곡리 166-6)</p>
+                            <p>전화 : 031-631-0951 / 팩스 : 031-631-0952</p>
+                            <p>월-금 : 7:00AM – 4:00 pm / 토.공휴일 : 7AM – 12pm / 일요일 : 휴무</p>
                         </div>
                     </div>
                     <div class="col_2">

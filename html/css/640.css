@@ -163,6 +163,7 @@ nav li.dropdown {
 
 
 #nav_top .menu_logo {
+    max-width: 150px;
     width: 30%;
     float: left;
 }
@@ -540,7 +541,7 @@ float: right;
     line-height: 10px;
     position: absolute;
     width:100%;
-    bottom: 4px;
+    bottom: 5px;
     left: 0;
     background-color: rgba(255,255,255,0.4);
 }
@@ -782,12 +783,15 @@ float: right;
 }
 
 /* xs */
-.pagination {
-    display: none;
+
+.pagination a  {
+    margin: 5px;
 }
 
-.pagination a {
-    margin: 5px;
+.pagination a.active {
+    font-weight: bolder;
+    border: none;
+    font-size:1.1rem;
 }
 
 .none {
@@ -898,10 +902,9 @@ float: right;
 .next {
     cursor: pointer;
     position: absolute;
-    top: 350px;
+    top: 20%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -1031,6 +1034,8 @@ float: right;
 }
 
 #modal_container img{
+    max-height: 50vh;
+    max-width: 95%;
     padding-top:10vh;
 }
 
@@ -1039,11 +1044,10 @@ float: right;
 .modal_l,
 .modal_r  {
     font-size: 2em;
-    width: 30%;
+    width: 10%;
     position: absolute;
-    height: 100vh;
-    padding-top: 20%;
-    top: 0;
+    height: 100%;
+    top: 50%;
 }
 
 .modal_l {
@@ -1054,6 +1058,21 @@ float: right;
     right: 10%;
 }
 
+#document .doc_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#document .doc_box .doc_list_box {
+    position: relative;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    font-size: 13px;
+}
 
 
 
@@ -1079,8 +1098,15 @@ float: right;
     margin-right: 15px;
     font-size: 0.8em;
 }
+
+#search li a.active {
+    font-weight: bolder;
+    border: none;
+    font-size: 1.1rem;
+}
+
 #search_result {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 #search_result h2 {

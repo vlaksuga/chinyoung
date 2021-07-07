@@ -8,8 +8,8 @@
     
   
             <div class="carousel-inner" role="listbox">
-    
-              <div class="carousel-item active">
+
+              <div class="carousel-item">
                 <div class="carousel-background">
                   <img src="img/intro/intro_01.jpg" alt="">
                 </div>
@@ -17,6 +17,16 @@
                   <div class="carousel-content">
                     <h2>FRAME</span></h2>
                     <div><a href="./?m=product&cid=52">VIEW MORE</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item  active">
+                <div class="carousel-background"><img src="img/intro/intro_06.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2>BIANCO</h2>
+                    <div><a href="./?m=product&cid=60">VIEW MORE</a></div>
                   </div>
                 </div>
               </div>
@@ -50,6 +60,8 @@
                   </div>
                 </div>
               </div>
+
+              
     
             </div>
 
@@ -156,7 +168,7 @@
         $.ajax({
                 url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=2234372569.bdd3947.8d2694232968460190244e85d24b0b64&callback=?',        
                 error: function() {
-                alert('error');
+               // alert('error');
                 },        
                 success: function(data) {
                     set1(data);

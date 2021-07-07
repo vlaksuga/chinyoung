@@ -10,12 +10,11 @@
                     <p>서울시 강남구 학동로24길 16 (논현동 127-7)</p>
                 </div>
                 <div class="add_none">
-                    <p>이천 제1물류센터 <span style="margin-left:15px;">TEL|031-631-0951 FAX|031-631-0952 경기도 이천시 모가면 송곡2리 166-5</span></p>
+                    <p>이천 제1물류센터 <span style="margin-left:15px;">TEL|031-631-0951 FAX|031-631-0952 경기도 이천시 모가면 진상미로 931 (송곡리 166-6)</span></p>
                     <p>삼패 제2물류센터 <span style="margin-left:15px;">경기도 남양주시 경강로334번길 48-12 (삼패동 445-4)</span></p>
                 </div>
             </div>
         </div>
         <div class="copyright">
             COPYRIGHT © 2019 CHINYOUNG KOREA. ALL RIGHTS RESERVED.<br>
-            <span style="font-size:0.6em;">*본 사이트는 Chrome, Edge에 최적화되어 있습니다.</span>
         </div>

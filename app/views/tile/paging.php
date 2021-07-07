@@ -21,6 +21,7 @@ $pageurl = $pageinfo["pageurl"];
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
 ?>
 
 <?php
@@ -30,7 +31,7 @@ $pageurl = $pageinfo["pageurl"];
 
         <div class="pagination">
             <?php for($i=$curviewpagestart;$i<$curviewpageend+1;$i++){?>
-		    <a href="<?php echo $pageurl;?>&page=<?php echo $i;?>"><?php echo $i;?></a>
+		    <a href="<?php echo $pageurl;?>&page=<?php echo $i;?>" <?php if($i==$page){ echo "class='active'";}?>><?php echo $i;?></a>
 		    <?php }?>
         </div>
 <?php

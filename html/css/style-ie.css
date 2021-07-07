@@ -1,0 +1,8 @@
+.places_box .row {
+    display: inline;
+}
+
+.places_box .row .col_1 {
+    float: left;
+    width: 45%;
+}

@@ -454,7 +454,7 @@ nav li .logo {
     line-height: 10px;
     position: absolute;
     width:100%;
-    bottom: 4px;
+    bottom: 5px;
     left: 0;
     background-color: rgba(255,255,255,0.4);
 }
@@ -510,6 +510,7 @@ nav li .logo {
 }
 
 #instaarea .item img {
+    height: 100%;
     max-height: 200px;
 }
 
@@ -707,8 +708,14 @@ nav li .logo {
     padding-top: 25px;
 }
 
-.pagination a {
+.pagination > a {
     margin: 5px;
+}
+
+.pagination a.active {
+    font-weight: bolder;
+    border: none;
+    font-size:1.1rem;
 }
 
 .none {
@@ -996,6 +1003,30 @@ nav li .logo {
     right: 10%;
 }
 
+
+#document .doc_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#document .doc_box .doc_list_box {
+    position: relative;
+    text-align: center;
+    width: 12%;
+    padding: 2px 5px;
+    font-size: 13px;
+    border: #313131 1px solid;
+}
+
+#document .doc_box .doc_list_box:hover
+    {
+    cursor: pointer;
+    border: white 1px solid;
+    
+}
+
  /*======================
     SEARCH
  ====================== */
@@ -1023,12 +1054,18 @@ nav li .logo {
     cursor: pointer;
 }
 
+#search li a.active {
+    font-weight: bolder;
+    border: none;
+    font-size: 1.1rem;
+}
+
 #search .notice {
     text-align: center;
 }
 
 #search_result {
-    margin-top: 200px;
+    margin-top: 120px;
 }
 
 #search_result h2 {
@@ -1085,6 +1122,7 @@ nav li .logo {
     margin: 0; 
     width: 100%;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 #btn_reset button {
@@ -1123,7 +1161,7 @@ footer .row .footer_logo {
 
 footer .add_box {
     font-size: 0.7em;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 33%;
 }
 
 footer .add_box div {
@@ -1319,3 +1357,165 @@ footer .add_box div {
      background-color: black;
      opacity: 0.3;
  }
+
+ /* if ie 10 11 fallback */
+
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+#projects_detail_tiles .grid,
+#products_tiles .grid,
+#projects_tiles .grid,
+#search_result .grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#projects_detail_tiles .grid .tile,
+#search_result .grid .tile,
+#projects_tiles .grid .tile,
+#products_tiles .grid .tile {
+    width: 30%;
+    position:relative;
+    margin: 15px;
+}
+
+#index_tiles .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#index_tiles .grid .tile {
+    width: 23%;
+    position:relative;
+    margin-top: 15px;
+}
+
+#index_banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    color: rgb(0, 44, 90);
+    width: 100%;
+}
+
+
+.banner_left {
+    width: 100%;
+    margin: 10px 0;
+    height: 250px;
+    padding: 25px;
+}
+
+.banner_left .cotto_title {
+    display: flex;
+}
+
+.banner_left .cotto_title div:first-child {
+    width: 45%;
+}
+
+.banner_left .cotto_title div:nth-child(2) {
+    width: 55%;
+}
+
+
+.banner_left .cotto_viewbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner_right {
+    width: 65%;
+    background-size: cover;
+    height: 270px;
+    background-image: url('../img/banner_right/banner_01.jpg');
+}
+
+
+.history_box .row {
+    display: flex;
+}
+
+
+.history_box .row .col_1 {
+    width: 30%;
+    text-align: center;
+}
+
+.tile_box .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.tile_box .row .col {
+    margin: 15px;
+    width: 30%;
+}
+
+#tile_detail .tile_box .row .col .txt_box .row {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.t_label {
+    width: 30%;
+    color: gray;
+}
+
+
+footer .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .row .footer_logo {
+    width: 200px;
+}
+
+
+#instagram .photos {
+    display: flex;
+    width: 100%;
+}
+
+#instagram .photos .item {
+    width: 12.5%;
+    position:relative;
+}
+
+#places .places_box .row {
+        display: inline;
+    }
+    
+#places .places_box .row .col_1 {
+        float: left;
+        width: 45%;
+    }
+
+#places .places_box .row .col_2 {
+        float: right;
+        width: 45%;
+    }
+
+#search .select {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+#search .select div {
+    width: 16.6%;
+    padding: 10px;
+}
+
+}
+
